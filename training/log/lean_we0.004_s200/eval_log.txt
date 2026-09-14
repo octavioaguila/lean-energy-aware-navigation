@@ -1,0 +1,111 @@
+[2026-09-07 16:42:05] step=   45000 | mean_reward= -640.03 | ema_reward= -640.03 ◆ MODEL SAVED
+[2026-09-07 16:53:32] step=   90000 | mean_reward= -499.78 | ema_reward= -583.93 ◆ MODEL SAVED
+[2026-09-07 17:04:54] step=  135000 | mean_reward= -499.75 | ema_reward= -550.26 ◆ MODEL SAVED
+[2026-09-07 17:16:33] step=  180000 | mean_reward= -766.81 | ema_reward= -636.88
+[2026-09-07 17:28:07] step=  225000 | mean_reward= -934.68 | ema_reward= -756.00
+[2026-09-07 17:38:10] step=  270000 | mean_reward= -137.98 | ema_reward= -508.79 ◆ MODEL SAVED
+[2026-09-07 17:48:30] step=  315000 | mean_reward= -119.12 | ema_reward= -352.92 ◆ MODEL SAVED
+[2026-09-07 17:59:06] step=  360000 | mean_reward= -172.75 | ema_reward= -280.85 ◆ MODEL SAVED
+[2026-09-07 18:09:55] step=  405000 | mean_reward= -208.87 | ema_reward= -252.06 ◆ MODEL SAVED
+[2026-09-07 18:20:39] step=  450000 | mean_reward= -225.69 | ema_reward= -241.51 ◆ MODEL SAVED
+[2026-09-07 18:31:44] step=  495000 | mean_reward= -282.29 | ema_reward= -257.82
+[2026-09-07 18:42:26] step=  540000 | mean_reward= -230.73 | ema_reward= -246.99
+[2026-09-07 18:53:30] step=  585000 | mean_reward= -477.69 | ema_reward= -339.27
+[2026-09-07 19:04:30] step=  630000 | mean_reward= -168.15 | ema_reward= -270.82
+[2026-09-07 19:14:57] step=  675000 | mean_reward= -125.02 | ema_reward= -212.50 ◆ MODEL SAVED
+[2026-09-07 19:25:21] step=  720000 | mean_reward= -111.61 | ema_reward= -172.14 ◆ MODEL SAVED
+[2026-09-07 19:35:40] step=  765000 | mean_reward= -102.04 | ema_reward= -144.10 ◆ MODEL SAVED
+[2026-09-07 19:45:51] step=  810000 | mean_reward= -103.92 | ema_reward= -128.03 ◆ MODEL SAVED
+[2026-09-07 19:56:12] step=  855000 | mean_reward= -101.33 | ema_reward= -117.35 ◆ MODEL SAVED
+[2026-09-07 20:06:30] step=  900000 | mean_reward=  -74.58 | ema_reward= -100.24 ◆ MODEL SAVED
+[2026-09-07 20:17:21] step=  945000 | mean_reward= -148.10 | ema_reward= -119.39
+[2026-09-07 20:27:50] step=  990000 | mean_reward=  -81.46 | ema_reward= -104.22
+[2026-09-07 20:38:02] step= 1035000 | mean_reward=  -89.52 | ema_reward=  -98.34 ◆ MODEL SAVED
+[2026-09-07 20:48:28] step= 1080000 | mean_reward= -130.64 | ema_reward= -111.26
+[2026-09-07 20:58:50] step= 1125000 | mean_reward=  -83.75 | ema_reward= -100.25
+[2026-09-07 21:08:53] step= 1170000 | mean_reward=  -56.00 | ema_reward=  -82.55 ◆ MODEL SAVED
+[2026-09-07 21:19:16] step= 1215000 | mean_reward= -110.60 | ema_reward=  -93.77
+[2026-09-07 21:29:22] step= 1260000 | mean_reward=  -57.36 | ema_reward=  -79.21 ◆ MODEL SAVED
+[2026-09-07 21:39:31] step= 1305000 | mean_reward=  -52.12 | ema_reward=  -68.37 ◆ MODEL SAVED
+[2026-09-07 21:49:39] step= 1350000 | mean_reward=  -71.50 | ema_reward=  -69.62
+[2026-09-07 21:59:42] step= 1395000 | mean_reward=  -65.28 | ema_reward=  -67.88 ◆ MODEL SAVED
+[2026-09-07 22:10:21] step= 1440000 | mean_reward= -144.47 | ema_reward=  -98.52
+[2026-09-07 22:20:53] step= 1485000 | mean_reward= -146.08 | ema_reward= -117.54
+[2026-09-07 22:31:14] step= 1530000 | mean_reward=  -90.17 | ema_reward= -106.59
+[2026-09-07 22:41:36] step= 1575000 | mean_reward=  -82.95 | ema_reward=  -97.14
+[2026-09-07 22:51:54] step= 1620000 | mean_reward=  -76.75 | ema_reward=  -88.98
+[2026-09-07 23:02:20] step= 1665000 | mean_reward= -153.60 | ema_reward= -114.83
+[2026-09-07 23:13:28] step= 1710000 | mean_reward= -337.67 | ema_reward= -203.97
+[2026-09-07 23:24:06] step= 1755000 | mean_reward= -201.63 | ema_reward= -203.03
+[2026-09-07 23:35:05] step= 1800000 | mean_reward= -380.78 | ema_reward= -274.13
+[2026-09-07 23:46:06] step= 1845000 | mean_reward= -392.90 | ema_reward= -321.64
+[2026-09-07 23:57:46] step= 1890000 | mean_reward= -678.23 | ema_reward= -464.28
+[2026-09-08 00:09:07] step= 1935000 | mean_reward= -501.84 | ema_reward= -479.30
+[2026-09-08 00:19:52] step= 1980000 | mean_reward= -229.33 | ema_reward= -379.31
+[2026-09-08 00:30:23] step= 2025000 | mean_reward= -147.94 | ema_reward= -286.76
+[2026-09-08 00:40:46] step= 2070000 | mean_reward=  -99.06 | ema_reward= -211.68
+[2026-09-08 00:51:03] step= 2115000 | mean_reward=  -79.25 | ema_reward= -158.71
+[2026-09-08 01:02:00] step= 2160000 | mean_reward= -167.36 | ema_reward= -162.17
+[2026-09-08 01:12:23] step= 2205000 | mean_reward=  -93.01 | ema_reward= -134.50
+[2026-09-08 01:22:42] step= 2250000 | mean_reward=  -71.29 | ema_reward= -109.22
+[2026-09-08 01:32:45] step= 2295000 | mean_reward=  -49.05 | ema_reward=  -85.15
+[2026-09-08 01:43:11] step= 2340000 | mean_reward=  -54.22 | ema_reward=  -72.78
+[2026-09-08 01:53:26] step= 2385000 | mean_reward=  -69.78 | ema_reward=  -71.58
+[2026-09-08 02:03:42] step= 2430000 | mean_reward=  -61.59 | ema_reward=  -67.58 ◆ MODEL SAVED
+[2026-09-08 02:14:24] step= 2475000 | mean_reward=  -77.16 | ema_reward=  -71.42
+[2026-09-08 02:24:32] step= 2520000 | mean_reward=  -44.98 | ema_reward=  -60.84 ◆ MODEL SAVED
+[2026-09-08 02:34:55] step= 2565000 | mean_reward=  -94.44 | ema_reward=  -74.28
+[2026-09-08 02:45:02] step= 2610000 | mean_reward=  -65.44 | ema_reward=  -70.75
+[2026-09-08 02:55:06] step= 2655000 | mean_reward=  -48.45 | ema_reward=  -61.83
+[2026-09-08 03:05:12] step= 2700000 | mean_reward=  -42.65 | ema_reward=  -54.16 ◆ MODEL SAVED
+[2026-09-08 03:15:16] step= 2745000 | mean_reward=  -39.73 | ema_reward=  -48.39 ◆ MODEL SAVED
+[2026-09-08 03:25:42] step= 2790000 | mean_reward=  -75.27 | ema_reward=  -59.14
+[2026-09-08 03:36:06] step= 2835000 | mean_reward=  -74.47 | ema_reward=  -65.27
+[2026-09-08 03:46:10] step= 2880000 | mean_reward=  -50.61 | ema_reward=  -59.41
+[2026-09-08 03:56:40] step= 2925000 | mean_reward=  -71.77 | ema_reward=  -64.35
+[2026-09-08 04:07:09] step= 2970000 | mean_reward= -148.25 | ema_reward=  -97.91
+[2026-09-08 04:17:13] step= 3015000 | mean_reward=  -51.35 | ema_reward=  -79.29
+[2026-09-08 04:27:20] step= 3060000 | mean_reward=  -62.54 | ema_reward=  -72.59
+[2026-09-08 04:37:28] step= 3105000 | mean_reward=  -69.17 | ema_reward=  -71.22
+[2026-09-08 04:47:32] step= 3150000 | mean_reward=  -50.85 | ema_reward=  -63.07
+[2026-09-08 04:57:35] step= 3195000 | mean_reward=  -40.17 | ema_reward=  -53.91
+[2026-09-08 05:07:39] step= 3240000 | mean_reward=  -48.57 | ema_reward=  -51.77
+[2026-09-08 05:17:40] step= 3285000 | mean_reward=  -37.05 | ema_reward=  -45.88 ◆ MODEL SAVED
+[2026-09-08 05:27:46] step= 3330000 | mean_reward=  -48.47 | ema_reward=  -46.92
+[2026-09-08 05:37:53] step= 3375000 | mean_reward=  -47.73 | ema_reward=  -47.24
+[2026-09-08 05:48:01] step= 3420000 | mean_reward=  -42.01 | ema_reward=  -45.15 ◆ MODEL SAVED
+[2026-09-08 05:58:10] step= 3465000 | mean_reward=  -51.63 | ema_reward=  -47.74
+[2026-09-08 06:08:36] step= 3510000 | mean_reward=  -74.00 | ema_reward=  -58.25
+[2026-09-08 06:18:40] step= 3555000 | mean_reward=  -31.78 | ema_reward=  -47.66
+[2026-09-08 06:29:00] step= 3600000 | mean_reward=  -47.82 | ema_reward=  -47.73
+[2026-09-08 06:39:24] step= 3645000 | mean_reward= -129.47 | ema_reward=  -80.42
+[2026-09-08 06:50:44] step= 3690000 | mean_reward= -401.60 | ema_reward= -208.89
+[2026-09-08 07:01:10] step= 3735000 | mean_reward=  -59.77 | ema_reward= -149.25
+[2026-09-08 07:11:22] step= 3780000 | mean_reward=  -62.19 | ema_reward= -114.42
+[2026-09-08 07:21:39] step= 3825000 | mean_reward=  -40.60 | ema_reward=  -84.89
+[2026-09-08 07:32:13] step= 3870000 | mean_reward=  -93.29 | ema_reward=  -88.25
+[2026-09-08 07:42:55] step= 3915000 | mean_reward=  -68.59 | ema_reward=  -80.39
+[2026-09-08 07:53:10] step= 3960000 | mean_reward=  -43.97 | ema_reward=  -65.82
+[2026-09-08 08:03:43] step= 4005000 | mean_reward=  -73.87 | ema_reward=  -69.04
+[2026-09-08 08:14:06] step= 4050000 | mean_reward=  -55.92 | ema_reward=  -63.79
+[2026-09-08 08:24:23] step= 4095000 | mean_reward=  -48.29 | ema_reward=  -57.59
+[2026-09-08 08:34:59] step= 4140000 | mean_reward=  -53.70 | ema_reward=  -56.03
+[2026-09-08 08:45:16] step= 4185000 | mean_reward=  -44.93 | ema_reward=  -51.59
+[2026-09-08 08:55:44] step= 4230000 | mean_reward=  -53.35 | ema_reward=  -52.30
+[2026-09-08 09:06:10] step= 4275000 | mean_reward=  -70.26 | ema_reward=  -59.48
+[2026-09-08 09:16:24] step= 4320000 | mean_reward=  -51.26 | ema_reward=  -56.19
+[2026-09-08 09:26:40] step= 4365000 | mean_reward=  -48.67 | ema_reward=  -53.18
+[2026-09-08 09:37:11] step= 4410000 | mean_reward=  -53.59 | ema_reward=  -53.35
+[2026-09-08 09:47:29] step= 4455000 | mean_reward=  -48.04 | ema_reward=  -51.22
+[2026-09-08 09:57:46] step= 4500000 | mean_reward=  -42.93 | ema_reward=  -47.91
+[2026-09-08 10:08:00] step= 4545000 | mean_reward=  -45.66 | ema_reward=  -47.01
+[2026-09-08 10:18:35] step= 4590000 | mean_reward=  -74.32 | ema_reward=  -57.93
+[2026-09-08 10:28:51] step= 4635000 | mean_reward=  -39.88 | ema_reward=  -50.71
+[2026-09-08 10:39:05] step= 4680000 | mean_reward=  -50.29 | ema_reward=  -50.54
+[2026-09-08 10:49:36] step= 4725000 | mean_reward=  -70.55 | ema_reward=  -58.55
+[2026-09-08 10:59:49] step= 4770000 | mean_reward=  -45.35 | ema_reward=  -53.27
+[2026-09-08 11:10:03] step= 4815000 | mean_reward=  -41.97 | ema_reward=  -48.75
+[2026-09-08 11:20:16] step= 4860000 | mean_reward=  -37.18 | ema_reward=  -44.12 ◆ MODEL SAVED
+[2026-09-08 11:30:29] step= 4905000 | mean_reward=  -38.91 | ema_reward=  -42.04 ◆ MODEL SAVED
+[2026-09-08 11:40:47] step= 4950000 | mean_reward=  -45.11 | ema_reward=  -43.27
+[2026-09-08 11:51:03] step= 4995000 | mean_reward=  -37.91 | ema_reward=  -41.12 ◆ MODEL SAVED

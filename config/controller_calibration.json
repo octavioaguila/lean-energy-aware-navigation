@@ -1,0 +1,28 @@
+{
+  "R_terminal": 0.8431434123958652,
+  "fidelity_factor": 1.214641767802742,
+  "max_current_real": 37.20000076293945,
+  "calibration_path": "dynamics_model",
+  "rmse": {
+    "linear": 433.9065249413115,
+    "angular": 1070.183867987903,
+    "nav": 888.8610559492786
+  },
+  "rel_rmse_pct": {
+    "linear": 92.0224549863567,
+    "angular": 52.325965537006184,
+    "nav": 63.19081675506718
+  },
+  "bias": {
+    "linear": -365.44803301018925,
+    "angular": -857.3210544557714,
+    "nav": -6.42153650675664e-14
+  },
+  "kt_eff_obs": 4.3063,
+  "asym_obs": 1.5556,
+  "max_current_obs": 26.6,
+  "calib_rmse_current": {
+    "right_A": 0.891,
+    "left_A": 1.5891
+  }
+}

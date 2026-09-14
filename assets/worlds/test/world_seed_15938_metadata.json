@@ -1,0 +1,69 @@
+{
+  "seed": 15938,
+  "difficulty": "easy",
+  "density_profile": "sparse",
+  "num_obstacles": 4,
+  "metrics": {
+    "distance_to_closest_obstacle": 2.6428,
+    "average_visibility": 18.7317,
+    "dispersion": 0.76,
+    "characteristic_dimension": 2.4026,
+    "tortuosity": 1.0754
+  },
+  "obstacles": [
+    {
+      "type": "box",
+      "pos": [
+        5.3331,
+        1.1671,
+        0.3904
+      ],
+      "size": [
+        0.3249,
+        0.3329,
+        0.3904
+      ],
+      "yaw": 1.814359
+    },
+    {
+      "type": "cylinder",
+      "pos": [
+        -1.6541,
+        0.859,
+        0.5496
+      ],
+      "size": [
+        0.1778,
+        0.5496
+      ]
+    },
+    {
+      "type": "box",
+      "pos": [
+        -0.3228,
+        -1.6372,
+        0.2404
+      ],
+      "size": [
+        0.2652,
+        0.188,
+        0.2404
+      ],
+      "yaw": 3.9237
+    },
+    {
+      "type": "box",
+      "pos": [
+        5.8802,
+        9.0544,
+        0.3875
+      ],
+      "size": [
+        0.3385,
+        0.3326,
+        0.3875
+      ],
+      "yaw": 3.714808
+    }
+  ]
+}

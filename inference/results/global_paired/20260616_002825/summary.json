@@ -1,0 +1,5062 @@
+{
+  "config": {
+    "timestamp": "2026-06-16T00:28:25.208951",
+    "controllers": [
+      {
+        "label": "NMPC_we0",
+        "type": "NMPC",
+        "energy_weight": 0.0,
+        "step_weight": 1.0,
+        "run": null
+      },
+      {
+        "label": "NMPC_we0.05",
+        "type": "NMPC",
+        "energy_weight": 0.05,
+        "step_weight": 1.0,
+        "run": null
+      },
+      {
+        "label": "NMPC_we0.1",
+        "type": "NMPC",
+        "energy_weight": 0.1,
+        "step_weight": 1.0,
+        "run": null
+      },
+      {
+        "label": "eadwa_we0",
+        "type": "EADWA",
+        "energy_weight": 0.0,
+        "step_weight": 1.0,
+        "run": null
+      },
+      {
+        "label": "eadwa_we0.0003",
+        "type": "EADWA",
+        "energy_weight": 0.0003,
+        "step_weight": 1.0,
+        "run": null
+      },
+      {
+        "label": "eadwa_we0.0005",
+        "type": "EADWA",
+        "energy_weight": 0.0005,
+        "step_weight": 1.0,
+        "run": null
+      }
+    ],
+    "lookahead_distance": 2.0,
+    "ompl_interpolation_steps": 200,
+    "ompl_solve_seconds": 30.0,
+    "ompl_inflation_radius": 0.1,
+    "max_ep_steps": 600,
+    "max_goal_sampling_distance": 20.0,
+    "n_episodes_per_world": 100,
+    "difficulty_filter": null,
+    "benchmark_path": "inference/global_benchmark.json",
+    "seed": 42,
+    "ci_n_batches": 5,
+    "goal_distance_range": [
+      8.0,
+      20.0
+    ]
+  },
+  "per_difficulty": {
+    "easy": {
+      "n_episodes": 300,
+      "n_plan_success": 291,
+      "planning_success_rate": 0.97,
+      "plan_fail_rate": 0.03,
+      "controllers": {
+        "NMPC_we0": {
+          "n_episodes": 291,
+          "n_success": 284,
+          "n_collision": 0,
+          "n_timeout": 7,
+          "n_batches_ci": 5,
+          "end_to_end_success_rate": 0.946667,
+          "end_to_end_collision_rate": 0.0,
+          "end_to_end_timeout_rate": 0.023333,
+          "controller_success_rate_given_plan": [
+            0.9759649122807018,
+            0.018075354613039
+          ],
+          "controller_collision_rate_given_plan": [
+            0.0,
+            0.0
+          ],
+          "controller_timeout_rate_given_plan": [
+            0.024035087719298246,
+            0.018075354613038996
+          ],
+          "eavg": [
+            35133.43943508585,
+            718.2964336786838
+          ],
+          "jpm": [
+            3249.760157062339,
+            51.60558925808624
+          ],
+          "spl": [
+            0.9838149351851851,
+            0.005596934806882282
+          ],
+          "steps": [
+            221.99060428849901,
+            5.344306906611609
+          ],
+          "alpha_rms": [
+            7.732132547875243,
+            0.14363114495278503
+          ],
+          "decision_time_ms": [
+            23.43185903508772,
+            0.2631548668804347
+          ]
+        },
+        "NMPC_we0.05": {
+          "n_episodes": 291,
+          "n_success": 282,
+          "n_collision": 0,
+          "n_timeout": 9,
+          "n_batches_ci": 5,
+          "end_to_end_success_rate": 0.94,
+          "end_to_end_collision_rate": 0.0,
+          "end_to_end_timeout_rate": 0.03,
+          "controller_success_rate_given_plan": [
+            0.9689473684210527,
+            0.02374390178418914
+          ],
+          "controller_collision_rate_given_plan": [
+            0.0,
+            0.0
+          ],
+          "controller_timeout_rate_given_plan": [
+            0.03105263157894737,
+            0.02374390178418914
+          ],
+          "eavg": [
+            6567.645689616852,
+            511.92454905792175
+          ],
+          "jpm": [
+            618.0694319505079,
+            44.577173615764906
+          ],
+          "spl": [
+            0.9845757010354318,
+            0.005451842990884224
+          ],
+          "steps": [
+            225.49147001490653,
+            6.3589026146694305
+          ],
+          "alpha_rms": [
+            0.45251823026602456,
+            0.019838983348720276
+          ],
+          "decision_time_ms": [
+            39.69839454385965,
+            0.7417846925375413
+          ]
+        },
+        "NMPC_we0.1": {
+          "n_episodes": 291,
+          "n_success": 279,
+          "n_collision": 0,
+          "n_timeout": 12,
+          "n_batches_ci": 5,
+          "end_to_end_success_rate": 0.93,
+          "end_to_end_collision_rate": 0.0,
+          "end_to_end_timeout_rate": 0.04,
+          "controller_success_rate_given_plan": [
+            0.958421052631579,
+            0.03496786836722162
+          ],
+          "controller_collision_rate_given_plan": [
+            0.0,
+            0.0
+          ],
+          "controller_timeout_rate_given_plan": [
+            0.041578947368421056,
+            0.03496786836722163
+          ],
+          "eavg": [
+            6379.8655393789095,
+            458.6447176805298
+          ],
+          "jpm": [
+            599.7512666340212,
+            40.881436345393126
+          ],
+          "spl": [
+            0.9845135531647746,
+            0.005384370903624174
+          ],
+          "steps": [
+            225.37199633069602,
+            5.57300781125493
+          ],
+          "alpha_rms": [
+            0.4302902035557849,
+            0.020489085452959535
+          ],
+          "decision_time_ms": [
+            49.01304996491228,
+            1.0927019985896502
+          ]
+        },
+        "eadwa_we0": {
+          "n_episodes": 291,
+          "n_success": 278,
+          "n_collision": 0,
+          "n_timeout": 13,
+          "n_batches_ci": 5,
+          "end_to_end_success_rate": 0.926667,
+          "end_to_end_collision_rate": 0.0,
+          "end_to_end_timeout_rate": 0.043333,
+          "controller_success_rate_given_plan": [
+            0.9552631578947369,
+            0.023984188334439663
+          ],
+          "controller_collision_rate_given_plan": [
+            0.0,
+            0.0
+          ],
+          "controller_timeout_rate_given_plan": [
+            0.04473684210526316,
+            0.023984188334439657
+          ],
+          "eavg": [
+            6819.30017844367,
+            582.2159971562226
+          ],
+          "jpm": [
+            635.057443796263,
+            48.39247089453367
+          ],
+          "spl": [
+            0.9797335893991516,
+            0.007247978612087661
+          ],
+          "steps": [
+            241.02660818713449,
+            5.389928089045186
+          ],
+          "alpha_rms": [
+            0.41044536713564955,
+            0.016196200402051254
+          ],
+          "decision_time_ms": [
+            5.9085625087719285,
+            0.016461602246950587
+          ]
+        },
+        "eadwa_we0.0003": {
+          "n_episodes": 291,
+          "n_success": 273,
+          "n_collision": 0,
+          "n_timeout": 18,
+          "n_batches_ci": 5,
+          "end_to_end_success_rate": 0.91,
+          "end_to_end_collision_rate": 0.0,
+          "end_to_end_timeout_rate": 0.06,
+          "controller_success_rate_given_plan": [
+            0.9380701754385965,
+            0.027162875262133457
+          ],
+          "controller_collision_rate_given_plan": [
+            0.0,
+            0.0
+          ],
+          "controller_timeout_rate_given_plan": [
+            0.0619298245614035,
+            0.027162875262133457
+          ],
+          "eavg": [
+            6563.969456807295,
+            515.8653663494073
+          ],
+          "jpm": [
+            612.9587260855131,
+            43.97153372564604
+          ],
+          "spl": [
+            0.9796524277296181,
+            0.00669786848513493
+          ],
+          "steps": [
+            241.00522445820437,
+            5.090776361890402
+          ],
+          "alpha_rms": [
+            0.355839123540305,
+            0.018290381729831613
+          ],
+          "decision_time_ms": [
+            5.90086098245614,
+            0.015480993051556743
+          ]
+        },
+        "eadwa_we0.0005": {
+          "n_episodes": 291,
+          "n_success": 270,
+          "n_collision": 0,
+          "n_timeout": 21,
+          "n_batches_ci": 5,
+          "end_to_end_success_rate": 0.9,
+          "end_to_end_collision_rate": 0.0,
+          "end_to_end_timeout_rate": 0.07,
+          "controller_success_rate_given_plan": [
+            0.9278947368421053,
+            0.026056524880949655
+          ],
+          "controller_collision_rate_given_plan": [
+            0.0,
+            0.0
+          ],
+          "controller_timeout_rate_given_plan": [
+            0.07210526315789474,
+            0.026056524880949655
+          ],
+          "eavg": [
+            6426.318798290409,
+            485.9092347221721
+          ],
+          "jpm": [
+            599.0324945099403,
+            41.75680512086503
+          ],
+          "spl": [
+            0.9792137974145741,
+            0.006817739757493047
+          ],
+          "steps": [
+            241.66936102511178,
+            5.272279356096969
+          ],
+          "alpha_rms": [
+            0.33754785551026256,
+            0.017684688739012924
+          ],
+          "decision_time_ms": [
+            5.906090228070175,
+            0.013779441775214984
+          ]
+        }
+      }
+    },
+    "hard": {
+      "n_episodes": 300,
+      "n_plan_success": 282,
+      "planning_success_rate": 0.94,
+      "plan_fail_rate": 0.06,
+      "controllers": {
+        "NMPC_we0": {
+          "n_episodes": 282,
+          "n_success": 237,
+          "n_collision": 1,
+          "n_timeout": 44,
+          "n_batches_ci": 5,
+          "end_to_end_success_rate": 0.79,
+          "end_to_end_collision_rate": 0.003333,
+          "end_to_end_timeout_rate": 0.146667,
+          "controller_success_rate_given_plan": [
+            0.8395321637426901,
+            0.055783282492428726
+          ],
+          "controller_collision_rate_given_plan": [
+            0.003508771929824561,
+            0.007525567326024307
+          ],
+          "controller_timeout_rate_given_plan": [
+            0.15695906432748538,
+            0.05301193362062706
+          ],
+          "eavg": [
+            37957.555235612694,
+            1832.7990709110484
+          ],
+          "jpm": [
+            3156.524225828828,
+            67.23562747968965
+          ],
+          "spl": [
+            0.8953012739847963,
+            0.020737404258680738
+          ],
+          "steps": [
+            247.1593965268191,
+            10.953021841819588
+          ],
+          "alpha_rms": [
+            6.907287401016245,
+            0.12636069419251564
+          ],
+          "decision_time_ms": [
+            25.186818142300194,
+            0.4710419651824658
+          ]
+        },
+        "NMPC_we0.05": {
+          "n_episodes": 282,
+          "n_success": 235,
+          "n_collision": 1,
+          "n_timeout": 46,
+          "n_batches_ci": 5,
+          "end_to_end_success_rate": 0.783333,
+          "end_to_end_collision_rate": 0.003333,
+          "end_to_end_timeout_rate": 0.153333,
+          "controller_success_rate_given_plan": [
+            0.8325146198830411,
+            0.05871800385057394
+          ],
+          "controller_collision_rate_given_plan": [
+            0.003508771929824561,
+            0.007525567326024307
+          ],
+          "controller_timeout_rate_given_plan": [
+            0.1639766081871345,
+            0.05623589304312279
+          ],
+          "eavg": [
+            12216.288543440367,
+            929.4801504792855
+          ],
+          "jpm": [
+            1012.5244716384254,
+            54.91668099931736
+          ],
+          "spl": [
+            0.8972098433372303,
+            0.020720748864672317
+          ],
+          "steps": [
+            250.14189954438405,
+            10.894487825795956
+          ],
+          "alpha_rms": [
+            0.5810646330637567,
+            0.025254002800599314
+          ],
+          "decision_time_ms": [
+            40.27824711500975,
+            1.4518771552259422
+          ]
+        },
+        "NMPC_we0.1": {
+          "n_episodes": 282,
+          "n_success": 229,
+          "n_collision": 0,
+          "n_timeout": 53,
+          "n_batches_ci": 5,
+          "end_to_end_success_rate": 0.763333,
+          "end_to_end_collision_rate": 0.0,
+          "end_to_end_timeout_rate": 0.176667,
+          "controller_success_rate_given_plan": [
+            0.8110721247563352,
+            0.0544203015178071
+          ],
+          "controller_collision_rate_given_plan": [
+            0.0,
+            0.0
+          ],
+          "controller_timeout_rate_given_plan": [
+            0.1889278752436647,
+            0.05442030151780709
+          ],
+          "eavg": [
+            11631.280876851048,
+            883.2515195761671
+          ],
+          "jpm": [
+            964.8908227254807,
+            53.21816997910879
+          ],
+          "spl": [
+            0.8979213395014665,
+            0.020847634114526902
+          ],
+          "steps": [
+            249.59237879881843,
+            10.972555603066137
+          ],
+          "alpha_rms": [
+            0.5458692328601131,
+            0.02153347856001967
+          ],
+          "decision_time_ms": [
+            47.195045052631585,
+            1.5823512076132118
+          ]
+        },
+        "eadwa_we0": {
+          "n_episodes": 282,
+          "n_success": 214,
+          "n_collision": 5,
+          "n_timeout": 63,
+          "n_batches_ci": 5,
+          "end_to_end_success_rate": 0.713333,
+          "end_to_end_collision_rate": 0.016667,
+          "end_to_end_timeout_rate": 0.21,
+          "controller_success_rate_given_plan": [
+            0.7576413255360623,
+            0.06029017518317534
+          ],
+          "controller_collision_rate_given_plan": [
+            0.01812865497076023,
+            0.014703695864427217
+          ],
+          "controller_timeout_rate_given_plan": [
+            0.22423001949317736,
+            0.0592488179892004
+          ],
+          "eavg": [
+            11085.784049693215,
+            634.5390223701644
+          ],
+          "jpm": [
+            912.8365024691042,
+            39.23732602025968
+          ],
+          "spl": [
+            0.893664618161958,
+            0.018865089234784454
+          ],
+          "steps": [
+            267.0712886568769,
+            10.501827175919741
+          ],
+          "alpha_rms": [
+            0.5408275589734449,
+            0.023176307084518018
+          ],
+          "decision_time_ms": [
+            5.903333003898636,
+            0.009068001332243851
+          ]
+        },
+        "eadwa_we0.0003": {
+          "n_episodes": 282,
+          "n_success": 205,
+          "n_collision": 2,
+          "n_timeout": 75,
+          "n_batches_ci": 5,
+          "end_to_end_success_rate": 0.683333,
+          "end_to_end_collision_rate": 0.006667,
+          "end_to_end_timeout_rate": 0.25,
+          "controller_success_rate_given_plan": [
+            0.7262183235867447,
+            0.05538199809362976
+          ],
+          "controller_collision_rate_given_plan": [
+            0.007212475633528265,
+            0.010544938905210655
+          ],
+          "controller_timeout_rate_given_plan": [
+            0.266569200779727,
+            0.05431771290424693
+          ],
+          "eavg": [
+            10593.900093668979,
+            697.5636316922827
+          ],
+          "jpm": [
+            872.2443037645239,
+            41.45358459283049
+          ],
+          "spl": [
+            0.8933199112538602,
+            0.020778700167984922
+          ],
+          "steps": [
+            267.9056835811247,
+            11.872586637471331
+          ],
+          "alpha_rms": [
+            0.4764347902178051,
+            0.019424194109603526
+          ],
+          "decision_time_ms": [
+            5.907009206627681,
+            0.007487996759267897
+          ]
+        },
+        "eadwa_we0.0005": {
+          "n_episodes": 282,
+          "n_success": 197,
+          "n_collision": 6,
+          "n_timeout": 79,
+          "n_batches_ci": 5,
+          "end_to_end_success_rate": 0.656667,
+          "end_to_end_collision_rate": 0.02,
+          "end_to_end_timeout_rate": 0.263333,
+          "controller_success_rate_given_plan": [
+            0.6984990253411306,
+            0.05584749343548541
+          ],
+          "controller_collision_rate_given_plan": [
+            0.021247563352826508,
+            0.018547912973452894
+          ],
+          "controller_timeout_rate_given_plan": [
+            0.28025341130604287,
+            0.0579307731408986
+          ],
+          "eavg": [
+            10367.743506352095,
+            698.8513323170412
+          ],
+          "jpm": [
+            849.7905061704289,
+            43.66891263487659
+          ],
+          "spl": [
+            0.8912132182153794,
+            0.02074156790936949
+          ],
+          "steps": [
+            269.6959452965335,
+            12.39980372789498
+          ],
+          "alpha_rms": [
+            0.44885189884579474,
+            0.01860833142905779
+          ],
+          "decision_time_ms": [
+            5.909686185185185,
+            0.011604894022928951
+          ]
+        }
+      }
+    },
+    "medium": {
+      "n_episodes": 300,
+      "n_plan_success": 282,
+      "planning_success_rate": 0.94,
+      "plan_fail_rate": 0.06,
+      "controllers": {
+        "NMPC_we0": {
+          "n_episodes": 282,
+          "n_success": 247,
+          "n_collision": 1,
+          "n_timeout": 34,
+          "n_batches_ci": 5,
+          "end_to_end_success_rate": 0.823333,
+          "end_to_end_collision_rate": 0.003333,
+          "end_to_end_timeout_rate": 0.113333,
+          "controller_success_rate_given_plan": [
+            0.8758089668615985,
+            0.05682313116967301
+          ],
+          "controller_collision_rate_given_plan": [
+            0.003508771929824561,
+            0.007525567326024307
+          ],
+          "controller_timeout_rate_given_plan": [
+            0.120682261208577,
+            0.05332645662185914
+          ],
+          "eavg": [
+            35771.01620154244,
+            1417.9061984070602
+          ],
+          "jpm": [
+            3153.6867337512017,
+            75.28467457143874
+          ],
+          "spl": [
+            0.9494057184712124,
+            0.010486095427353875
+          ],
+          "steps": [
+            233.8138257439728,
+            6.8824034690371
+          ],
+          "alpha_rms": [
+            7.1520475039561235,
+            0.16574799068508655
+          ],
+          "decision_time_ms": [
+            24.465623001949314,
+            0.5728041148158723
+          ]
+        },
+        "NMPC_we0.05": {
+          "n_episodes": 282,
+          "n_success": 246,
+          "n_collision": 1,
+          "n_timeout": 35,
+          "n_batches_ci": 5,
+          "end_to_end_success_rate": 0.82,
+          "end_to_end_collision_rate": 0.003333,
+          "end_to_end_timeout_rate": 0.116667,
+          "controller_success_rate_given_plan": [
+            0.872300194931774,
+            0.06105156691818608
+          ],
+          "controller_collision_rate_given_plan": [
+            0.003508771929824561,
+            0.007525567326024307
+          ],
+          "controller_timeout_rate_given_plan": [
+            0.12419103313840155,
+            0.05682313116967301
+          ],
+          "eavg": [
+            9772.535775731749,
+            1009.5828910604647
+          ],
+          "jpm": [
+            854.7589418039643,
+            74.08182160671142
+          ],
+          "spl": [
+            0.9516249206143943,
+            0.010370944232506323
+          ],
+          "steps": [
+            235.7854182937232,
+            6.912329804608258
+          ],
+          "alpha_rms": [
+            0.5362216691370268,
+            0.022359529426562726
+          ],
+          "decision_time_ms": [
+            40.21660178557504,
+            1.026569702470156
+          ]
+        },
+        "NMPC_we0.1": {
+          "n_episodes": 282,
+          "n_success": 239,
+          "n_collision": 1,
+          "n_timeout": 42,
+          "n_batches_ci": 5,
+          "end_to_end_success_rate": 0.796667,
+          "end_to_end_collision_rate": 0.003333,
+          "end_to_end_timeout_rate": 0.14,
+          "controller_success_rate_given_plan": [
+            0.8471345029239767,
+            0.059301971786775466
+          ],
+          "controller_collision_rate_given_plan": [
+            0.003508771929824561,
+            0.007525567326024307
+          ],
+          "controller_timeout_rate_given_plan": [
+            0.14935672514619883,
+            0.055464635709190205
+          ],
+          "eavg": [
+            9246.860135378405,
+            928.970684071831
+          ],
+          "jpm": [
+            807.0090359066669,
+            67.93080790529386
+          ],
+          "spl": [
+            0.952587703560236,
+            0.009915351234656427
+          ],
+          "steps": [
+            239.0919351672293,
+            8.514481222641347
+          ],
+          "alpha_rms": [
+            0.5061106645832436,
+            0.02018086701228182
+          ],
+          "decision_time_ms": [
+            47.755401128654974,
+            1.4514719313183169
+          ]
+        },
+        "eadwa_we0": {
+          "n_episodes": 282,
+          "n_success": 236,
+          "n_collision": 4,
+          "n_timeout": 42,
+          "n_batches_ci": 5,
+          "end_to_end_success_rate": 0.786667,
+          "end_to_end_collision_rate": 0.013333,
+          "end_to_end_timeout_rate": 0.14,
+          "controller_success_rate_given_plan": [
+            0.8364327485380117,
+            0.063719085956824
+          ],
+          "controller_collision_rate_given_plan": [
+            0.014230019493177388,
+            0.013531893241877768
+          ],
+          "controller_timeout_rate_given_plan": [
+            0.14933723196881094,
+            0.056292455243198584
+          ],
+          "eavg": [
+            9240.092621861293,
+            890.1857838266877
+          ],
+          "jpm": [
+            805.638960919609,
+            64.8455188988445
+          ],
+          "spl": [
+            0.9463961612263302,
+            0.010254845762772219
+          ],
+          "steps": [
+            253.71019371667208,
+            7.010645768540079
+          ],
+          "alpha_rms": [
+            0.5068030050017244,
+            0.03969471354037042
+          ],
+          "decision_time_ms": [
+            5.912523298245616,
+            0.008807804730119571
+          ]
+        },
+        "eadwa_we0.0003": {
+          "n_episodes": 282,
+          "n_success": 221,
+          "n_collision": 4,
+          "n_timeout": 57,
+          "n_batches_ci": 5,
+          "end_to_end_success_rate": 0.736667,
+          "end_to_end_collision_rate": 0.013333,
+          "end_to_end_timeout_rate": 0.19,
+          "controller_success_rate_given_plan": [
+            0.7833528265107212,
+            0.06656783534811543
+          ],
+          "controller_collision_rate_given_plan": [
+            0.014230019493177388,
+            0.013531893241877768
+          ],
+          "controller_timeout_rate_given_plan": [
+            0.20241715399610136,
+            0.06071365501037899
+          ],
+          "eavg": [
+            8664.757235247958,
+            801.675140490277
+          ],
+          "jpm": [
+            753.8735120155296,
+            60.35524157899482
+          ],
+          "spl": [
+            0.9457473612936138,
+            0.01139249925501797
+          ],
+          "steps": [
+            254.65055823805824,
+            7.711215446112825
+          ],
+          "alpha_rms": [
+            0.42906053457274207,
+            0.021296554328638074
+          ],
+          "decision_time_ms": [
+            5.916795233918128,
+            0.009978913812469127
+          ]
+        },
+        "eadwa_we0.0005": {
+          "n_episodes": 282,
+          "n_success": 216,
+          "n_collision": 4,
+          "n_timeout": 62,
+          "n_batches_ci": 5,
+          "end_to_end_success_rate": 0.72,
+          "end_to_end_collision_rate": 0.013333,
+          "end_to_end_timeout_rate": 0.206667,
+          "controller_success_rate_given_plan": [
+            0.765224171539961,
+            0.066462305276772
+          ],
+          "controller_collision_rate_given_plan": [
+            0.014230019493177388,
+            0.013531893241877768
+          ],
+          "controller_timeout_rate_given_plan": [
+            0.22054580896686163,
+            0.05987537404899062
+          ],
+          "eavg": [
+            8489.85650478805,
+            793.6719075909173
+          ],
+          "jpm": [
+            738.1614459940761,
+            59.67933388044179
+          ],
+          "spl": [
+            0.9441388901406,
+            0.01164856774381986
+          ],
+          "steps": [
+            254.32690929440932,
+            7.743783379272102
+          ],
+          "alpha_rms": [
+            0.4061843783596034,
+            0.022117834083938907
+          ],
+          "decision_time_ms": [
+            5.9186641208577,
+            0.00915602685184859
+          ]
+        }
+      }
+    }
+  },
+  "overall": {
+    "n_episodes": 900,
+    "n_plan_success": 855,
+    "planning_success_rate": 0.95,
+    "plan_fail_rate": 0.05,
+    "controllers": {
+      "NMPC_we0": {
+        "n_episodes": 855,
+        "n_success": 768,
+        "n_collision": 2,
+        "n_timeout": 85,
+        "n_batches_ci": 5,
+        "end_to_end_success_rate": 0.853333,
+        "end_to_end_collision_rate": 0.002222,
+        "end_to_end_timeout_rate": 0.094444,
+        "controller_success_rate_given_plan": [
+          0.8971020142949968,
+          0.030523521744032465
+        ],
+        "controller_collision_rate_given_plan": [
+          0.0023391812865497076,
+          0.0032954220212970684
+        ],
+        "controller_timeout_rate_given_plan": [
+          0.10055880441845357,
+          0.029165123662798498
+        ],
+        "eavg": [
+          36287.33695741366,
+          828.3582373651026
+        ],
+        "jpm": [
+          3186.657038880791,
+          37.248178171164774
+        ],
+        "spl": [
+          0.9428406425470646,
+          0.01326764847031054
+        ],
+        "steps": [
+          234.32127551976365,
+          5.30124652136219
+        ],
+        "alpha_rms": [
+          7.263822484282539,
+          0.13055350612969369
+        ],
+        "decision_time_ms": [
+          24.361433393112414,
+          0.3253850371080013
+        ]
+      },
+      "NMPC_we0.05": {
+        "n_episodes": 855,
+        "n_success": 763,
+        "n_collision": 2,
+        "n_timeout": 90,
+        "n_batches_ci": 5,
+        "end_to_end_success_rate": 0.847778,
+        "end_to_end_collision_rate": 0.002222,
+        "end_to_end_timeout_rate": 0.1,
+        "controller_success_rate_given_plan": [
+          0.8912540610786224,
+          0.03205750805061927
+        ],
+        "controller_collision_rate_given_plan": [
+          0.0023391812865497076,
+          0.0032954220212970684
+        ],
+        "controller_timeout_rate_given_plan": [
+          0.10640675763482779,
+          0.030622924481567018
+        ],
+        "eavg": [
+          9518.823336262987,
+          833.5274653444743
+        ],
+        "jpm": [
+          828.4509484642992,
+          58.38038530395832
+        ],
+        "spl": [
+          0.9444701549956853,
+          0.013147559299612933
+        ],
+        "steps": [
+          237.13959595100462,
+          5.367450472669854
+        ],
+        "alpha_rms": [
+          0.523268177488936,
+          0.020133925000624362
+        ],
+        "decision_time_ms": [
+          40.06441448148148,
+          0.5948643295899487
+        ]
+      },
+      "NMPC_we0.1": {
+        "n_episodes": 855,
+        "n_success": 747,
+        "n_collision": 1,
+        "n_timeout": 107,
+        "n_batches_ci": 5,
+        "end_to_end_success_rate": 0.83,
+        "end_to_end_collision_rate": 0.001111,
+        "end_to_end_timeout_rate": 0.118889,
+        "controller_success_rate_given_plan": [
+          0.8722092267706302,
+          0.03292781195777036
+        ],
+        "controller_collision_rate_given_plan": [
+          0.0011695906432748538,
+          0.002357155057828963
+        ],
+        "controller_timeout_rate_given_plan": [
+          0.12662118258609484,
+          0.0322154757232378
+        ],
+        "eavg": [
+          9086.002183869452,
+          773.9841984733305
+        ],
+        "jpm": [
+          790.550375088723,
+          54.01528432764547
+        ],
+        "spl": [
+          0.9450075320754924,
+          0.013062810301870786
+        ],
+        "steps": [
+          238.01877009891453,
+          5.481879179094856
+        ],
+        "alpha_rms": [
+          0.4940900336663805,
+          0.018250188939055955
+        ],
+        "decision_time_ms": [
+          47.98783204873294,
+          0.772611410681601
+        ]
+      },
+      "eadwa_we0": {
+        "n_episodes": 855,
+        "n_success": 728,
+        "n_collision": 9,
+        "n_timeout": 118,
+        "n_batches_ci": 5,
+        "end_to_end_success_rate": 0.808889,
+        "end_to_end_collision_rate": 0.01,
+        "end_to_end_timeout_rate": 0.131111,
+        "controller_success_rate_given_plan": [
+          0.8497790773229369,
+          0.037196369364281875
+        ],
+        "controller_collision_rate_given_plan": [
+          0.010786224821312541,
+          0.006557288755220598
+        ],
+        "controller_timeout_rate_given_plan": [
+          0.13943469785575047,
+          0.034344846020290164
+        ],
+        "eavg": [
+          9048.392283332729,
+          652.2354854721123
+        ],
+        "jpm": [
+          784.5109690616588,
+          44.32844026820566
+        ],
+        "spl": [
+          0.9399314562624796,
+          0.012806122831084222
+        ],
+        "steps": [
+          253.93603018689453,
+          5.299999913221177
+        ],
+        "alpha_rms": [
+          0.48602531037027286,
+          0.02244753412617019
+        ],
+        "decision_time_ms": [
+          5.908139603638727,
+          0.006453681033202677
+        ]
+      },
+      "eadwa_we0.0003": {
+        "n_episodes": 855,
+        "n_success": 699,
+        "n_collision": 6,
+        "n_timeout": 150,
+        "n_batches_ci": 5,
+        "end_to_end_success_rate": 0.776667,
+        "end_to_end_collision_rate": 0.006667,
+        "end_to_end_timeout_rate": 0.166667,
+        "controller_success_rate_given_plan": [
+          0.815880441845354,
+          0.03886702968832353
+        ],
+        "controller_collision_rate_given_plan": [
+          0.007147498375568551,
+          0.005538654374682634
+        ],
+        "controller_timeout_rate_given_plan": [
+          0.17697205977907735,
+          0.03694273775309471
+        ],
+        "eavg": [
+          8607.542261908076,
+          616.998835044294
+        ],
+        "jpm": [
+          746.3588472885222,
+          41.47366279734707
+        ],
+        "spl": [
+          0.9395732334256977,
+          0.013161248760537175
+        ],
+        "steps": [
+          254.5204887591291,
+          5.685939348287144
+        ],
+        "alpha_rms": [
+          0.42044481611028395,
+          0.018338845853900325
+        ],
+        "decision_time_ms": [
+          5.908221807667317,
+          0.0064026422816921315
+        ]
+      },
+      "eadwa_we0.0005": {
+        "n_episodes": 855,
+        "n_success": 683,
+        "n_collision": 10,
+        "n_timeout": 162,
+        "n_batches_ci": 5,
+        "end_to_end_success_rate": 0.758889,
+        "end_to_end_collision_rate": 0.011111,
+        "end_to_end_timeout_rate": 0.18,
+        "controller_success_rate_given_plan": [
+          0.7972059779077322,
+          0.04032544030575535
+        ],
+        "controller_collision_rate_given_plan": [
+          0.011825860948667964,
+          0.007521799692332176
+        ],
+        "controller_timeout_rate_given_plan": [
+          0.1909681611435997,
+          0.03769010174316834
+        ],
+        "eavg": [
+          8427.97293647685,
+          604.996836415167
+        ],
+        "jpm": [
+          728.9948155581485,
+          40.57956203168288
+        ],
+        "spl": [
+          0.9381886352568511,
+          0.013346425132053032
+        ],
+        "steps": [
+          255.2307385386849,
+          5.894077155080193
+        ],
+        "alpha_rms": [
+          0.3975280442385535,
+          0.017366269668728417
+        ],
+        "decision_time_ms": [
+          5.911480178037687,
+          0.006389409585607666
+        ]
+      }
+    }
+  },
+  "paired_deltas": {
+    "easy": {
+      "NMPC_we0_vs_NMPC_we0.05": {
+        "n_paired": 282,
+        "delta_energy_total": [
+          28522.07920841228,
+          924.2643913680947
+        ],
+        "delta_energy_per_executed_meter": [
+          2628.659694286939,
+          75.26777083198024
+        ],
+        "delta_spl_euclidean": [
+          -0.00023140389863547558,
+          0.0007252458731411308
+        ],
+        "delta_steps": [
+          -3.6491228070175437,
+          1.8200512464134424
+        ],
+        "delta_alpha_rms": [
+          7.286614308966861,
+          0.1600753860780142
+        ]
+      },
+      "NMPC_we0_vs_NMPC_we0.1": {
+        "n_paired": 279,
+        "delta_energy_total": [
+          28671.87599504561,
+          969.41781980667
+        ],
+        "delta_energy_per_executed_meter": [
+          2643.5589018639375,
+          75.61687966663317
+        ],
+        "delta_spl_euclidean": [
+          -0.00012250116959064089,
+          0.0006124304189744642
+        ],
+        "delta_steps": [
+          -3.406432748538012,
+          0.27538036175130765
+        ],
+        "delta_alpha_rms": [
+          7.308189876608188,
+          0.1635297060410302
+        ]
+      },
+      "NMPC_we0_vs_eadwa_we0": {
+        "n_paired": 278,
+        "delta_energy_total": [
+          28216.303861387907,
+          925.3849777010687
+        ],
+        "delta_energy_per_executed_meter": [
+          2610.2211078356722,
+          81.9293437975436
+        ],
+        "delta_spl_euclidean": [
+          0.004214147758284603,
+          0.0019322350072185023
+        ],
+        "delta_steps": [
+          -19.302923976608188,
+          0.6793485268648302
+        ],
+        "delta_alpha_rms": [
+          7.314581030994151,
+          0.17446280308348489
+        ]
+      },
+      "NMPC_we0_vs_eadwa_we0.0003": {
+        "n_paired": 273,
+        "delta_energy_total": [
+          28381.495340198402,
+          932.0724773982915
+        ],
+        "delta_energy_per_executed_meter": [
+          2627.9846207074647,
+          81.30235153846495
+        ],
+        "delta_spl_euclidean": [
+          0.004431759637656233,
+          0.0016682833299017758
+        ],
+        "delta_steps": [
+          -19.53413599357872,
+          0.608291683774564
+        ],
+        "delta_alpha_rms": [
+          7.368392797569087,
+          0.17390966255927776
+        ]
+      },
+      "NMPC_we0_vs_eadwa_we0.0005": {
+        "n_paired": 270,
+        "delta_energy_total": [
+          28524.570701388504,
+          860.9161826377032
+        ],
+        "delta_energy_per_executed_meter": [
+          2638.9511808080383,
+          74.13717889079582
+        ],
+        "delta_spl_euclidean": [
+          0.005249160497649355,
+          0.0018705052320397912
+        ],
+        "delta_steps": [
+          -19.954202499713332,
+          0.6984477557486362
+        ],
+        "delta_alpha_rms": [
+          7.388756452964111,
+          0.15505198441374315
+        ]
+      },
+      "NMPC_we0.05_vs_NMPC_we0.1": {
+        "n_paired": 279,
+        "delta_energy_total": [
+          131.41471033547757,
+          54.99140050366877
+        ],
+        "delta_energy_per_executed_meter": [
+          12.918404232358673,
+          4.869083524821188
+        ],
+        "delta_spl_euclidean": [
+          0.00021994463937621866,
+          0.0005283237069453274
+        ],
+        "delta_steps": [
+          -0.5573099415204678,
+          0.20565203684597885
+        ],
+        "delta_alpha_rms": [
+          0.020519375243664716,
+          0.012090650621239134
+        ]
+      },
+      "NMPC_we0.05_vs_eadwa_we0": {
+        "n_paired": 276,
+        "delta_energy_total": [
+          -243.99877079322326,
+          165.78882737929246
+        ],
+        "delta_energy_per_executed_meter": [
+          -14.898241647999084,
+          14.255295843857596
+        ],
+        "delta_spl_euclidean": [
+          0.004895998704277034,
+          0.00211633799883168
+        ],
+        "delta_steps": [
+          -15.803394106180486,
+          1.619271624597428
+        ],
+        "delta_alpha_rms": [
+          0.04166866860451783,
+          0.016025500280843073
+        ]
+      },
+      "NMPC_we0.05_vs_eadwa_we0.0003": {
+        "n_paired": 271,
+        "delta_energy_total": [
+          -39.412575799151455,
+          153.34614790129854
+        ],
+        "delta_energy_per_executed_meter": [
+          3.3804162414975347,
+          13.524138289444268
+        ],
+        "delta_spl_euclidean": [
+          0.005036101410388718,
+          0.0018479403963754316
+        ],
+        "delta_steps": [
+          -16.029652562779493,
+          1.7021043795387167
+        ],
+        "delta_alpha_rms": [
+          0.09466113661277377,
+          0.01614972679049497
+        ]
+      },
+      "NMPC_we0.05_vs_eadwa_we0.0005": {
+        "n_paired": 268,
+        "delta_energy_total": [
+          64.01131860051602,
+          171.8736652192039
+        ],
+        "delta_energy_per_executed_meter": [
+          13.287726915938546,
+          15.567616180416254
+        ],
+        "delta_spl_euclidean": [
+          0.005859018220387571,
+          0.001892986010177282
+        ],
+        "delta_steps": [
+          -16.43517945189772,
+          1.5457383215736784
+        ],
+        "delta_alpha_rms": [
+          0.11270160666208004,
+          0.015708986614505933
+        ]
+      },
+      "NMPC_we0.1_vs_eadwa_we0": {
+        "n_paired": 273,
+        "delta_energy_total": [
+          -397.0747985160646,
+          184.84611467364888
+        ],
+        "delta_energy_per_executed_meter": [
+          -30.197874429732824,
+          15.326760755222297
+        ],
+        "delta_spl_euclidean": [
+          0.004480608783396401,
+          0.001792797703685988
+        ],
+        "delta_steps": [
+          -16.013691090471276,
+          0.5870354736194605
+        ],
+        "delta_alpha_rms": [
+          0.02138753973168215,
+          0.017993570017861327
+        ]
+      },
+      "NMPC_we0.1_vs_eadwa_we0.0003": {
+        "n_paired": 270,
+        "delta_energy_total": [
+          -191.71799479941518,
+          164.69594780412876
+        ],
+        "delta_energy_per_executed_meter": [
+          -11.498635497270955,
+          13.984141890905265
+        ],
+        "delta_spl_euclidean": [
+          0.004860522841417269,
+          0.0017671632398389282
+        ],
+        "delta_steps": [
+          -16.25362917096663,
+          0.5941916194431167
+        ],
+        "delta_alpha_rms": [
+          0.07433836529067768,
+          0.020735837261129198
+        ]
+      },
+      "NMPC_we0.1_vs_eadwa_we0.0005": {
+        "n_paired": 267,
+        "delta_energy_total": [
+          -85.22765917000348,
+          170.5193129716362
+        ],
+        "delta_energy_per_executed_meter": [
+          -1.342168865428271,
+          15.042445089265929
+        ],
+        "delta_spl_euclidean": [
+          0.005652781951611055,
+          0.001809059470937199
+        ],
+        "delta_steps": [
+          -16.658169934640522,
+          0.5835056322611096
+        ],
+        "delta_alpha_rms": [
+          0.09231873483545465,
+          0.020267817371329738
+        ]
+      },
+      "eadwa_we0_vs_eadwa_we0.0003": {
+        "n_paired": 273,
+        "delta_energy_total": [
+          216.9140116110996,
+          58.466304614807534
+        ],
+        "delta_energy_per_executed_meter": [
+          19.56595713336773,
+          5.2073576953059835
+        ],
+        "delta_spl_euclidean": [
+          0.0003537450521729146,
+          0.00022563424597143533
+        ],
+        "delta_steps": [
+          -0.3108588464625616,
+          0.1784670746531561
+        ],
+        "delta_alpha_rms": [
+          0.05284309137713565,
+          0.008122226449312332
+        ]
+      },
+      "eadwa_we0_vs_eadwa_we0.0005": {
+        "n_paired": 270,
+        "delta_energy_total": [
+          344.37423688869393,
+          93.1742532018892
+        ],
+        "delta_energy_per_executed_meter": [
+          31.755748837277842,
+          8.743884203487504
+        ],
+        "delta_spl_euclidean": [
+          0.001092327233115468,
+          0.0002736180481125158
+        ],
+        "delta_steps": [
+          -0.7369682375874326,
+          0.2937957634353615
+        ],
+        "delta_alpha_rms": [
+          0.07095156483201467,
+          0.008703052890340499
+        ]
+      },
+      "eadwa_we0.0003_vs_eadwa_we0.0005": {
+        "n_paired": 270,
+        "delta_energy_total": [
+          129.18209149479415,
+          58.52280495853499
+        ],
+        "delta_energy_per_executed_meter": [
+          12.394148013175101,
+          5.288570427843234
+        ],
+        "delta_spl_euclidean": [
+          0.0007307116844398584,
+          0.0001664697208138894
+        ],
+        "delta_steps": [
+          -0.44180713220960904,
+          0.24576019170109847
+        ],
+        "delta_alpha_rms": [
+          0.017660043332186678,
+          0.003024349831750083
+        ]
+      }
+    },
+    "hard": {
+      "NMPC_we0_vs_NMPC_we0.05": {
+        "n_paired": 235,
+        "delta_energy_total": [
+          25728.289798202306,
+          1437.1077676341815
+        ],
+        "delta_energy_per_executed_meter": [
+          2144.3961269050305,
+          79.1838876294683
+        ],
+        "delta_spl_euclidean": [
+          -0.00218379795985061,
+          0.0007453721042157545
+        ],
+        "delta_steps": [
+          -3.3727591036414566,
+          1.4843307420112282
+        ],
+        "delta_alpha_rms": [
+          6.320106122861811,
+          0.18233307988727443
+        ]
+      },
+      "NMPC_we0_vs_NMPC_we0.1": {
+        "n_paired": 228,
+        "delta_energy_total": [
+          26298.431723944534,
+          1488.2604948476783
+        ],
+        "delta_energy_per_executed_meter": [
+          2187.09305036859,
+          83.99101131181291
+        ],
+        "delta_spl_euclidean": [
+          -0.0026735845378151294,
+          0.0009438315421470053
+        ],
+        "delta_steps": [
+          -2.65312324929972,
+          0.4698324640122775
+        ],
+        "delta_alpha_rms": [
+          6.368229793961251,
+          0.1941876729150716
+        ]
+      },
+      "NMPC_we0_vs_eadwa_we0": {
+        "n_paired": 213,
+        "delta_energy_total": [
+          26763.097845176067,
+          1666.1471149060555
+        ],
+        "delta_energy_per_executed_meter": [
+          2236.578095784933,
+          94.66302865812898
+        ],
+        "delta_spl_euclidean": [
+          0.003417222564102563,
+          0.0035330369841847357
+        ],
+        "delta_steps": [
+          -20.191013431013435,
+          1.43910119596551
+        ],
+        "delta_alpha_rms": [
+          6.390148565421245,
+          0.21821717066328408
+        ]
+      },
+      "NMPC_we0_vs_eadwa_we0.0003": {
+        "n_paired": 204,
+        "delta_energy_total": [
+          27169.259605221123,
+          1729.0986397298377
+        ],
+        "delta_energy_per_executed_meter": [
+          2268.957341896764,
+          95.33819539928106
+        ],
+        "delta_spl_euclidean": [
+          0.00471395195360195,
+          0.003148400754702695
+        ],
+        "delta_steps": [
+          -21.490354090354092,
+          1.3508382302826611
+        ],
+        "delta_alpha_rms": [
+          6.4456183508547005,
+          0.2148797367585862
+        ]
+      },
+      "NMPC_we0_vs_eadwa_we0.0005": {
+        "n_paired": 196,
+        "delta_energy_total": [
+          27464.525761784927,
+          1798.0137707562462
+        ],
+        "delta_energy_per_executed_meter": [
+          2288.406367299206,
+          82.0655873115121
+        ],
+        "delta_spl_euclidean": [
+          0.007017307875457877,
+          0.0026886620811237363
+        ],
+        "delta_steps": [
+          -22.86294261294261,
+          1.2497827507275394
+        ],
+        "delta_alpha_rms": [
+          6.504640495665445,
+          0.2005035103108011
+        ]
+      },
+      "NMPC_we0.05_vs_NMPC_we0.1": {
+        "n_paired": 228,
+        "delta_energy_total": [
+          465.3309149403967,
+          102.70177727315144
+        ],
+        "delta_energy_per_executed_meter": [
+          36.878855313746506,
+          8.81959352909873
+        ],
+        "delta_spl_euclidean": [
+          -0.0006880452707749769,
+          0.0003957058690019164
+        ],
+        "delta_steps": [
+          -0.1512208216619981,
+          0.6146915838335314
+        ],
+        "delta_alpha_rms": [
+          0.03531434951914099,
+          0.008330671868337462
+        ]
+      },
+      "NMPC_we0.05_vs_eadwa_we0": {
+        "n_paired": 212,
+        "delta_energy_total": [
+          931.7244638011233,
+          407.3638653667479
+        ],
+        "delta_energy_per_executed_meter": [
+          81.9252108388523,
+          29.07157959064578
+        ],
+        "delta_spl_euclidean": [
+          0.005361811941391945,
+          0.003575185447818588
+        ],
+        "delta_steps": [
+          -17.6592673992674,
+          1.4238028091450636
+        ],
+        "delta_alpha_rms": [
+          0.04422875846153846,
+          0.021666704201079506
+        ]
+      },
+      "NMPC_we0.05_vs_eadwa_we0.0003": {
+        "n_paired": 203,
+        "delta_energy_total": [
+          1408.861430664994,
+          426.0540743088579
+        ],
+        "delta_energy_per_executed_meter": [
+          119.31904134383393,
+          30.210129518215652
+        ],
+        "delta_spl_euclidean": [
+          0.00631575921855922,
+          0.0030802930457392657
+        ],
+        "delta_steps": [
+          -19.16311355311355,
+          1.4081823892598706
+        ],
+        "delta_alpha_rms": [
+          0.10875421246642245,
+          0.021780429606393755
+        ]
+      },
+      "NMPC_we0.05_vs_eadwa_we0.0005": {
+        "n_paired": 195,
+        "delta_energy_total": [
+          1438.7865253272284,
+          438.3907851375149
+        ],
+        "delta_energy_per_executed_meter": [
+          123.19215428974357,
+          31.931457523252217
+        ],
+        "delta_spl_euclidean": [
+          0.00839320903540904,
+          0.0028987116856320633
+        ],
+        "delta_steps": [
+          -20.406410256410254,
+          1.2218397559138547
+        ],
+        "delta_alpha_rms": [
+          0.1320490136141636,
+          0.019650420122174588
+        ]
+      },
+      "NMPC_we0.1_vs_eadwa_we0": {
+        "n_paired": 210,
+        "delta_energy_total": [
+          400.792571488547,
+          385.2837202092217
+        ],
+        "delta_energy_per_executed_meter": [
+          40.309670396141655,
+          28.966597797908136
+        ],
+        "delta_spl_euclidean": [
+          0.006277124713064716,
+          0.0036015558373449917
+        ],
+        "delta_steps": [
+          -17.783858363858364,
+          1.377827810623613
+        ],
+        "delta_alpha_rms": [
+          0.00873507755799756,
+          0.023098085301802726
+        ]
+      },
+      "NMPC_we0.1_vs_eadwa_we0.0003": {
+        "n_paired": 203,
+        "delta_energy_total": [
+          939.3523484482051,
+          406.4077378342551
+        ],
+        "delta_energy_per_executed_meter": [
+          83.07264110197802,
+          29.92093918985482
+        ],
+        "delta_spl_euclidean": [
+          0.007026837301587303,
+          0.003392083753009171
+        ],
+        "delta_steps": [
+          -18.851391941391945,
+          1.3463864776488583
+        ],
+        "delta_alpha_rms": [
+          0.0737193936141636,
+          0.023127913131397962
+        ]
+      },
+      "NMPC_we0.1_vs_eadwa_we0.0005": {
+        "n_paired": 195,
+        "delta_energy_total": [
+          975.4540173197191,
+          408.81336407867553
+        ],
+        "delta_energy_per_executed_meter": [
+          87.55157530763123,
+          30.256809451146957
+        ],
+        "delta_spl_euclidean": [
+          0.009021231562881567,
+          0.0032651541272315197
+        ],
+        "delta_steps": [
+          -20.096520146520145,
+          1.1426169418864625
+        ],
+        "delta_alpha_rms": [
+          0.0983534960927961,
+          0.02041947484699056
+        ]
+      },
+      "eadwa_we0_vs_eadwa_we0.0003": {
+        "n_paired": 201,
+        "delta_energy_total": [
+          365.6443521009769,
+          46.19560110231854
+        ],
+        "delta_energy_per_executed_meter": [
+          32.19645552429792,
+          3.3659910725262465
+        ],
+        "delta_spl_euclidean": [
+          0.001963976434676433,
+          0.0005670963776804653
+        ],
+        "delta_steps": [
+          -1.0113553113553115,
+          0.41482658580514353
+        ],
+        "delta_alpha_rms": [
+          0.05580647173382173,
+          0.017307190166576163
+        ]
+      },
+      "eadwa_we0_vs_eadwa_we0.0005": {
+        "n_paired": 190,
+        "delta_energy_total": [
+          516.5203667053725,
+          101.7310876986438
+        ],
+        "delta_energy_per_executed_meter": [
+          46.437896490598284,
+          7.741152543500015
+        ],
+        "delta_spl_euclidean": [
+          0.0036798023199023228,
+          0.0007960710649001091
+        ],
+        "delta_steps": [
+          -1.8702686202686205,
+          0.786801502750902
+        ],
+        "delta_alpha_rms": [
+          0.08418649090354088,
+          0.01583264512064221
+        ]
+      },
+      "eadwa_we0.0003_vs_eadwa_we0.0005": {
+        "n_paired": 194,
+        "delta_energy_total": [
+          171.93629693137967,
+          74.3335294844863
+        ],
+        "delta_energy_per_executed_meter": [
+          16.070208381684985,
+          6.02666208808452
+        ],
+        "delta_spl_euclidean": [
+          0.0017974981684981731,
+          0.000366579710319687
+        ],
+        "delta_steps": [
+          -0.5831501831501831,
+          0.8904030583866592
+        ],
+        "delta_alpha_rms": [
+          0.026129800549450556,
+          0.00681574846488141
+        ]
+      }
+    },
+    "medium": {
+      "NMPC_we0_vs_NMPC_we0.05": {
+        "n_paired": 246,
+        "delta_energy_total": [
+          25854.729595779252,
+          885.6303579500832
+        ],
+        "delta_energy_per_executed_meter": [
+          2294.6395580022368,
+          83.16342792425431
+        ],
+        "delta_spl_euclidean": [
+          -0.0020213307113371654,
+          0.0011151548984306915
+        ],
+        "delta_steps": [
+          -2.3042720362999,
+          0.3519792491767326
+        ],
+        "delta_alpha_rms": [
+          6.607747375848608,
+          0.17878840805621654
+        ]
+      },
+      "NMPC_we0_vs_NMPC_we0.1": {
+        "n_paired": 239,
+        "delta_energy_total": [
+          26388.012397355924,
+          867.9715727760645
+        ],
+        "delta_energy_per_executed_meter": [
+          2339.3977800328566,
+          74.41671325704112
+        ],
+        "delta_spl_euclidean": [
+          -0.0018717610714285686,
+          0.0011024990722606326
+        ],
+        "delta_steps": [
+          -5.419365079365079,
+          4.262859530801634
+        ],
+        "delta_alpha_rms": [
+          6.663518273716932,
+          0.16786667234130986
+        ]
+      },
+      "NMPC_we0_vs_eadwa_we0": {
+        "n_paired": 236,
+        "delta_energy_total": [
+          26183.95574189991,
+          1141.6815080301537
+        ],
+        "delta_energy_per_executed_meter": [
+          2335.398949268899,
+          83.6953537164094
+        ],
+        "delta_spl_euclidean": [
+          0.004157035106897462,
+          0.0027246785743650173
+        ],
+        "delta_steps": [
+          -20.71287886949652,
+          0.9891059031154968
+        ],
+        "delta_alpha_rms": [
+          6.6308171509686,
+          0.19832684510152135
+        ]
+      },
+      "NMPC_we0_vs_eadwa_we0.0003": {
+        "n_paired": 221,
+        "delta_energy_total": [
+          26688.26742229051,
+          932.4041464818699
+        ],
+        "delta_energy_per_executed_meter": [
+          2385.094296895295,
+          85.7737619373571
+        ],
+        "delta_spl_euclidean": [
+          0.006592899274222511,
+          0.002406034089965919
+        ],
+        "delta_steps": [
+          -21.834519500107735,
+          2.3551994533706173
+        ],
+        "delta_alpha_rms": [
+          6.739103946320835,
+          0.20576002623497172
+        ]
+      },
+      "NMPC_we0_vs_eadwa_we0.0005": {
+        "n_paired": 216,
+        "delta_energy_total": [
+          26862.972384294608,
+          943.8365309324818
+        ],
+        "delta_energy_per_executed_meter": [
+          2397.940355407043,
+          80.42625414619542
+        ],
+        "delta_spl_euclidean": [
+          0.0076660403181785545,
+          0.0023548887338408317
+        ],
+        "delta_steps": [
+          -21.19089905192846,
+          0.7933184491438703
+        ],
+        "delta_alpha_rms": [
+          6.755957284080298,
+          0.19874944969114786
+        ]
+      },
+      "NMPC_we0.05_vs_NMPC_we0.1": {
+        "n_paired": 238,
+        "delta_energy_total": [
+          381.77582492373017,
+          96.24582092433144
+        ],
+        "delta_energy_per_executed_meter": [
+          33.3041546311508,
+          8.199553252539687
+        ],
+        "delta_spl_euclidean": [
+          -0.00025856089947089774,
+          0.0003098035581321028
+        ],
+        "delta_steps": [
+          -3.0397883597883606,
+          4.386476136542925
+        ],
+        "delta_alpha_rms": [
+          0.025759189973544972,
+          0.010871369492843655
+        ]
+      },
+      "NMPC_we0.05_vs_eadwa_we0": {
+        "n_paired": 236,
+        "delta_energy_total": [
+          395.5106566283532,
+          293.25502603523415
+        ],
+        "delta_energy_per_executed_meter": [
+          40.051597297050684,
+          25.351465018143546
+        ],
+        "delta_spl_euclidean": [
+          0.006195806445031004,
+          0.002212164215351769
+        ],
+        "delta_steps": [
+          -18.43069920275802,
+          0.9338949084765285
+        ],
+        "delta_alpha_rms": [
+          0.023865224302951953,
+          0.027614174476736076
+        ]
+      },
+      "NMPC_we0.05_vs_eadwa_we0.0003": {
+        "n_paired": 221,
+        "delta_energy_total": [
+          841.7432530555553,
+          313.52364065159975
+        ],
+        "delta_energy_per_executed_meter": [
+          78.64083223997143,
+          27.117174684539076
+        ],
+        "delta_spl_euclidean": [
+          0.007813669955469367,
+          0.002166153942151886
+        ],
+        "delta_steps": [
+          -19.445478345184224,
+          2.270665753912002
+        ],
+        "delta_alpha_rms": [
+          0.10055875371920563,
+          0.016086875730153705
+        ]
+      },
+      "NMPC_we0.05_vs_eadwa_we0.0005": {
+        "n_paired": 216,
+        "delta_energy_total": [
+          1014.5064889972491,
+          301.7672805615777
+        ],
+        "delta_energy_per_executed_meter": [
+          93.30760317733159,
+          26.25457587615218
+        ],
+        "delta_spl_euclidean": [
+          0.008840968513431014,
+          0.0021106529154918804
+        ],
+        "delta_steps": [
+          -18.79244146376499,
+          0.6840631132628833
+        ],
+        "delta_alpha_rms": [
+          0.12068427832273933,
+          0.015820936861819585
+        ]
+      },
+      "NMPC_we0.1_vs_eadwa_we0": {
+        "n_paired": 228,
+        "delta_energy_total": [
+          -0.3999162617084001,
+          272.1808240471552
+        ],
+        "delta_energy_per_executed_meter": [
+          4.292933313054658,
+          24.008661718974402
+        ],
+        "delta_spl_euclidean": [
+          0.005904867163207163,
+          0.002038643613566895
+        ],
+        "delta_steps": [
+          -15.363045320692377,
+          4.232815330748732
+        ],
+        "delta_alpha_rms": [
+          0.00438338566257272,
+          0.028192925498818824
+        ]
+      },
+      "NMPC_we0.1_vs_eadwa_we0.0003": {
+        "n_paired": 217,
+        "delta_energy_total": [
+          400.4445368863348,
+          301.15337840527457
+        ],
+        "delta_energy_per_executed_meter": [
+          40.14135349928141,
+          26.67605816967205
+        ],
+        "delta_spl_euclidean": [
+          0.008064631491417076,
+          0.0023643745162090202
+        ],
+        "delta_steps": [
+          -18.617164045105223,
+          2.7715596057882
+        ],
+        "delta_alpha_rms": [
+          0.07784103423795162,
+          0.013115287660978185
+        ]
+      },
+      "NMPC_we0.1_vs_eadwa_we0.0005": {
+        "n_paired": 212,
+        "delta_energy_total": [
+          589.8903452143074,
+          293.7511924562722
+        ],
+        "delta_energy_per_executed_meter": [
+          56.07677933798302,
+          25.450592061697442
+        ],
+        "delta_spl_euclidean": [
+          0.009005579376750698,
+          0.002420253873899765
+        ],
+        "delta_steps": [
+          -17.89765765280471,
+          1.353617992022386
+        ],
+        "delta_alpha_rms": [
+          0.0987239999290742,
+          0.015696144424786472
+        ]
+      },
+      "eadwa_we0_vs_eadwa_we0.0003": {
+        "n_paired": 219,
+        "delta_energy_total": [
+          349.37608038170623,
+          42.79928657746424
+        ],
+        "delta_energy_per_executed_meter": [
+          31.532247784972526,
+          4.037627882579043
+        ],
+        "delta_spl_euclidean": [
+          0.0015778062350068215,
+          0.0008041885106215156
+        ],
+        "delta_steps": [
+          -0.4852240896358543,
+          0.535028810394907
+        ],
+        "delta_alpha_rms": [
+          0.047657041383861246,
+          0.0064220216000591985
+        ]
+      },
+      "eadwa_we0_vs_eadwa_we0.0005": {
+        "n_paired": 216,
+        "delta_energy_total": [
+          500.84514873569003,
+          70.64379036327782
+        ],
+        "delta_energy_per_executed_meter": [
+          45.260201689711266,
+          6.047050861303023
+        ],
+        "delta_spl_euclidean": [
+          0.0030724414386267313,
+          0.0009885621968425034
+        ],
+        "delta_steps": [
+          -1.059453781512605,
+          0.5542890760074086
+        ],
+        "delta_alpha_rms": [
+          0.0685402066059757,
+          0.007827237414980879
+        ]
+      },
+      "eadwa_we0.0003_vs_eadwa_we0.0005": {
+        "n_paired": 216,
+        "delta_energy_total": [
+          149.7386267643737,
+          39.61338074300884
+        ],
+        "delta_energy_per_executed_meter": [
+          13.690247710978234,
+          3.4242339760901648
+        ],
+        "delta_spl_euclidean": [
+          0.001479001538820656,
+          0.0003061819818458655
+        ],
+        "delta_steps": [
+          -0.5768090569561157,
+          0.208690716357605
+        ],
+        "delta_alpha_rms": [
+          0.02105063450316024,
+          0.007392373505698748
+        ]
+      }
+    },
+    "all": {
+      "NMPC_we0_vs_NMPC_we0.05": {
+        "n_paired": 763,
+        "delta_energy_total": [
+          26701.699534131276,
+          707.1451074733761
+        ],
+        "delta_energy_per_executed_meter": [
+          2355.8984597314015,
+          74.47554865264149
+        ],
+        "delta_spl_euclidean": [
+          -0.001478844189941084,
+          0.0005384898219381545
+        ],
+        "delta_steps": [
+          -3.1087179823196327,
+          0.7477880374820021
+        ],
+        "delta_alpha_rms": [
+          6.7381559358924275,
+          0.15382882541256343
+        ]
+      },
+      "NMPC_we0_vs_NMPC_we0.1": {
+        "n_paired": 746,
+        "delta_energy_total": [
+          27119.440038782028,
+          690.8983294749664
+        ],
+        "delta_energy_per_executed_meter": [
+          2390.016577421795,
+          70.98346915761189
+        ],
+        "delta_spl_euclidean": [
+          -0.0015559489262781132,
+          0.000580608648324267
+        ],
+        "delta_steps": [
+          -3.82630702573427,
+          1.362128024096932
+        ],
+        "delta_alpha_rms": [
+          6.779979314762123,
+          0.15130700124483132
+        ]
+      },
+      "NMPC_we0_vs_eadwa_we0": {
+        "n_paired": 727,
+        "delta_energy_total": [
+          27054.45248282129,
+          727.7989014376948
+        ],
+        "delta_energy_per_executed_meter": [
+          2394.066050963168,
+          66.56237646528801
+        ],
+        "delta_spl_euclidean": [
+          0.00392946847642821,
+          0.0014919639135259535
+        ],
+        "delta_steps": [
+          -20.068938759039376,
+          0.600045788651447
+        ],
+        "delta_alpha_rms": [
+          6.778515582461331,
+          0.15858098767802667
+        ]
+      },
+      "NMPC_we0_vs_eadwa_we0.0003": {
+        "n_paired": 698,
+        "delta_energy_total": [
+          27413.00745590335,
+          699.7199872952424
+        ],
+        "delta_energy_per_executed_meter": [
+          2427.3454198331747,
+          64.998044479334
+        ],
+        "delta_spl_euclidean": [
+          0.0052462036218268995,
+          0.0013475763387403477
+        ],
+        "delta_steps": [
+          -20.95300319468018,
+          0.9053920381153663
+        ],
+        "delta_alpha_rms": [
+          6.851038364914874,
+          0.1574804950503437
+        ]
+      },
+      "NMPC_we0_vs_eadwa_we0.0005": {
+        "n_paired": 682,
+        "delta_energy_total": [
+          27617.35628248935,
+          706.4950469960454
+        ],
+        "delta_energy_per_executed_meter": [
+          2441.765967838096,
+          61.076730312825376
+        ],
+        "delta_spl_euclidean": [
+          0.006644169563761927,
+          0.0012728841940683035
+        ],
+        "delta_steps": [
+          -21.336014721528137,
+          0.6180912670522695
+        ],
+        "delta_alpha_rms": [
+          6.883118077569951,
+          0.14995906816587817
+        ]
+      },
+      "NMPC_we0.05_vs_NMPC_we0.1": {
+        "n_paired": 745,
+        "delta_energy_total": [
+          326.1738167332015,
+          63.21850475778017
+        ],
+        "delta_energy_per_executed_meter": [
+          27.700471392418653,
+          5.107128766679437
+        ],
+        "delta_spl_euclidean": [
+          -0.00024222051028988532,
+          0.00024997522792403955
+        ],
+        "delta_steps": [
+          -1.249439707656942,
+          1.4112787190578848
+        ],
+        "delta_alpha_rms": [
+          0.027197638245450222,
+          0.005892355661277205
+        ]
+      },
+      "NMPC_we0.05_vs_eadwa_we0": {
+        "n_paired": 724,
+        "delta_energy_total": [
+          361.0787832120843,
+          217.9218505240206
+        ],
+        "delta_energy_per_executed_meter": [
+          35.69285549596796,
+          17.420499817289294
+        ],
+        "delta_spl_euclidean": [
+          0.005484539030233327,
+          0.0014496187290780381
+        ],
+        "delta_steps": [
+          -17.297786902735307,
+          0.7932817580947392
+        ],
+        "delta_alpha_rms": [
+          0.03658755045633609,
+          0.012124101193459807
+        ]
+      },
+      "NMPC_we0.05_vs_eadwa_we0.0003": {
+        "n_paired": 695,
+        "delta_energy_total": [
+          737.0640359737993,
+          247.3512978052619
+        ],
+        "delta_energy_per_executed_meter": [
+          67.11342994176765,
+          19.60602561860579
+        ],
+        "delta_spl_euclidean": [
+          0.006388510194805767,
+          0.001329168933825074
+        ],
+        "delta_steps": [
+          -18.212748153692424,
+          1.0775197367944227
+        ],
+        "delta_alpha_rms": [
+          0.10132470093280065,
+          0.0098064756408448
+        ]
+      },
+      "NMPC_we0.05_vs_eadwa_we0.0005": {
+        "n_paired": 679,
+        "delta_energy_total": [
+          839.1014443083311,
+          244.52041766071474
+        ],
+        "delta_energy_per_executed_meter": [
+          76.59582812767123,
+          19.53099286743056
+        ],
+        "delta_spl_euclidean": [
+          0.007697731923075876,
+          0.0013033659892518798
+        ],
+        "delta_steps": [
+          -18.544677057357653,
+          0.8079897315286481
+        ],
+        "delta_alpha_rms": [
+          0.12181163286632768,
+          0.009408936433540734
+        ]
+      },
+      "NMPC_we0.1_vs_eadwa_we0": {
+        "n_paired": 711,
+        "delta_energy_total": [
+          1.1059522369246577,
+          183.93720393958657
+        ],
+        "delta_energy_per_executed_meter": [
+          4.8015764264878245,
+          15.200363639469913
+        ],
+        "delta_spl_euclidean": [
+          0.0055542002198894274,
+          0.0014000872198949871
+        ],
+        "delta_steps": [
+          -16.386864925007337,
+          1.4087201526000555
+        ],
+        "delta_alpha_rms": [
+          0.011502000984084142,
+          0.012630090985916885
+        ]
+      },
+      "NMPC_we0.1_vs_eadwa_we0.0003": {
+        "n_paired": 690,
+        "delta_energy_total": [
+          382.6929635117083,
+          214.93713242252025
+        ],
+        "delta_energy_per_executed_meter": [
+          37.23845303466282,
+          17.51521887469309
+        ],
+        "delta_spl_euclidean": [
+          0.006650663878140549,
+          0.0014345614097458406
+        ],
+        "delta_steps": [
+          -17.90739505248793,
+          1.02433126842265
+        ],
+        "delta_alpha_rms": [
+          0.0752995977142643,
+          0.01033296267859267
+        ]
+      },
+      "NMPC_we0.1_vs_eadwa_we0.0005": {
+        "n_paired": 674,
+        "delta_energy_total": [
+          493.37223445467436,
+          210.22351296840552
+        ],
+        "delta_energy_per_executed_meter": [
+          47.42872859339533,
+          17.105775663037065
+        ],
+        "delta_spl_euclidean": [
+          0.007893197630414442,
+          0.0014439886139020165
+        ],
+        "delta_steps": [
+          -18.21744924465513,
+          0.7157824254384406
+        ],
+        "delta_alpha_rms": [
+          0.096465410285775,
+          0.010068907976081816
+        ]
+      },
+      "eadwa_we0_vs_eadwa_we0.0003": {
+        "n_paired": 693,
+        "delta_energy_total": [
+          310.64481469792753,
+          33.18242310057785
+        ],
+        "delta_energy_per_executed_meter": [
+          27.764886814212726,
+          2.8699421702860954
+        ],
+        "delta_spl_euclidean": [
+          0.0012985092406187233,
+          0.00037274633584414294
+        ],
+        "delta_steps": [
+          -0.602479415817909,
+          0.2325697698700528
+        ],
+        "delta_alpha_rms": [
+          0.05210220149827287,
+          0.006256057091521466
+        ]
+      },
+      "eadwa_we0_vs_eadwa_we0.0005": {
+        "n_paired": 676,
+        "delta_energy_total": [
+          453.91325077658547,
+          52.98216774786317
+        ],
+        "delta_energy_per_executed_meter": [
+          41.151282339195795,
+          4.504647368106747
+        ],
+        "delta_spl_euclidean": [
+          0.002614856997214841,
+          0.0005201384863314543
+        ],
+        "delta_steps": [
+          -1.222230213122886,
+          0.3403104662422237
+        ],
+        "delta_alpha_rms": [
+          0.07455942078051044,
+          0.0063774953200784945
+        ]
+      },
+      "eadwa_we0.0003_vs_eadwa_we0.0005": {
+        "n_paired": 680,
+        "delta_energy_total": [
+          150.2856717301825,
+          31.831874704482555
+        ],
+        "delta_energy_per_executed_meter": [
+          14.051534701946103,
+          2.7078624262340605
+        ],
+        "delta_spl_euclidean": [
+          0.0013357371305862294,
+          0.0002059489412797156
+        ],
+        "delta_steps": [
+          -0.5339221241053027,
+          0.29046850346981334
+        ],
+        "delta_alpha_rms": [
+          0.02161349279493249,
+          0.003382713024401127
+        ]
+      }
+    }
+  },
+  "paired_tests": {
+    "easy": {
+      "NMPC_we0_vs_NMPC_we0.05": {
+        "n_plan": 291,
+        "sr_mcnemar": {
+          "n": 291,
+          "n_a_only": 2,
+          "n_b_only": 0,
+          "p_value": 0.5
+        },
+        "metrics": {
+          "energy": {
+            "n": 282,
+            "median_delta": 27916.0153605,
+            "statistic": 5.0,
+            "p_value": 5.650827374408851e-48
+          },
+          "energy_per_m": {
+            "n": 282,
+            "median_delta": 2746.9805555000003,
+            "statistic": 5.0,
+            "p_value": 5.650827374408851e-48
+          },
+          "spl": {
+            "n": 282,
+            "median_delta": 0.0,
+            "statistic": 4707.0,
+            "p_value": 0.19828638144619182
+          },
+          "steps": {
+            "n": 282,
+            "median_delta": -3.0,
+            "statistic": 1067.0,
+            "p_value": 1.3118611282704432e-41
+          },
+          "alpha_rms": {
+            "n": 282,
+            "median_delta": 7.567220000000001,
+            "statistic": 13.0,
+            "p_value": 6.154089691491467e-48
+          }
+        }
+      },
+      "NMPC_we0_vs_NMPC_we0.1": {
+        "n_plan": 291,
+        "sr_mcnemar": {
+          "n": 291,
+          "n_a_only": 5,
+          "n_b_only": 0,
+          "p_value": 0.0625
+        },
+        "metrics": {
+          "energy": {
+            "n": 279,
+            "median_delta": 28079.757169,
+            "statistic": 5.0,
+            "p_value": 1.7508198124327789e-47
+          },
+          "energy_per_m": {
+            "n": 279,
+            "median_delta": 2762.037057,
+            "statistic": 6.0,
+            "p_value": 1.7697978170147713e-47
+          },
+          "spl": {
+            "n": 279,
+            "median_delta": 0.0,
+            "statistic": 4617.5,
+            "p_value": 0.5089818856024414
+          },
+          "steps": {
+            "n": 279,
+            "median_delta": -3.0,
+            "statistic": 581.5,
+            "p_value": 3.4362973017460277e-44
+          },
+          "alpha_rms": {
+            "n": 279,
+            "median_delta": 7.575654,
+            "statistic": 12.0,
+            "p_value": 1.8880430021213028e-47
+          }
+        }
+      },
+      "NMPC_we0_vs_eadwa_we0": {
+        "n_plan": 291,
+        "sr_mcnemar": {
+          "n": 291,
+          "n_a_only": 6,
+          "n_b_only": 0,
+          "p_value": 0.03125
+        },
+        "metrics": {
+          "energy": {
+            "n": 278,
+            "median_delta": 28026.948287,
+            "statistic": 13.0,
+            "p_value": 2.7831963395439064e-47
+          },
+          "energy_per_m": {
+            "n": 278,
+            "median_delta": 2726.8967789999997,
+            "statistic": 11.0,
+            "p_value": 2.72363432159006e-47
+          },
+          "spl": {
+            "n": 278,
+            "median_delta": 0.0,
+            "statistic": 2311.5,
+            "p_value": 2.013913887410039e-12
+          },
+          "steps": {
+            "n": 278,
+            "median_delta": -19.0,
+            "statistic": 0.0,
+            "p_value": 2.327251059051128e-47
+          },
+          "alpha_rms": {
+            "n": 278,
+            "median_delta": 7.6034295,
+            "statistic": 1.0,
+            "p_value": 2.4443261748793606e-47
+          }
+        }
+      },
+      "NMPC_we0_vs_eadwa_we0.0003": {
+        "n_plan": 291,
+        "sr_mcnemar": {
+          "n": 291,
+          "n_a_only": 11,
+          "n_b_only": 0,
+          "p_value": 0.0009765625
+        },
+        "metrics": {
+          "energy": {
+            "n": 273,
+            "median_delta": 28117.910825,
+            "statistic": 11.0,
+            "p_value": 1.7959712803631018e-46
+          },
+          "energy_per_m": {
+            "n": 273,
+            "median_delta": 2753.6651789999996,
+            "statistic": 10.0,
+            "p_value": 1.776295865698784e-46
+          },
+          "spl": {
+            "n": 273,
+            "median_delta": 0.0,
+            "statistic": 1956.0,
+            "p_value": 1.0032185090298179e-13
+          },
+          "steps": {
+            "n": 273,
+            "median_delta": -19.0,
+            "statistic": 0.0,
+            "p_value": 1.0752361272916995e-46
+          },
+          "alpha_rms": {
+            "n": 273,
+            "median_delta": 7.671531,
+            "statistic": 0.0,
+            "p_value": 1.5909646697973122e-46
+          }
+        }
+      },
+      "NMPC_we0_vs_eadwa_we0.0005": {
+        "n_plan": 291,
+        "sr_mcnemar": {
+          "n": 291,
+          "n_a_only": 14,
+          "n_b_only": 0,
+          "p_value": 0.0001220703125
+        },
+        "metrics": {
+          "energy": {
+            "n": 270,
+            "median_delta": 28260.229818,
+            "statistic": 10.0,
+            "p_value": 5.508119777539206e-46
+          },
+          "energy_per_m": {
+            "n": 270,
+            "median_delta": 2776.3149719999997,
+            "statistic": 9.0,
+            "p_value": 5.447105380736833e-46
+          },
+          "spl": {
+            "n": 270,
+            "median_delta": 0.0,
+            "statistic": 1647.0,
+            "p_value": 8.713694144366362e-16
+          },
+          "steps": {
+            "n": 270,
+            "median_delta": -20.0,
+            "statistic": 0.0,
+            "p_value": 3.3514158817493796e-46
+          },
+          "alpha_rms": {
+            "n": 270,
+            "median_delta": 7.6867755,
+            "statistic": 0.0,
+            "p_value": 4.927374817504415e-46
+          }
+        }
+      },
+      "NMPC_we0.05_vs_NMPC_we0.1": {
+        "n_plan": 291,
+        "sr_mcnemar": {
+          "n": 291,
+          "n_a_only": 3,
+          "n_b_only": 0,
+          "p_value": 0.25
+        },
+        "metrics": {
+          "energy": {
+            "n": 279,
+            "median_delta": 135.12499000000025,
+            "statistic": 9563.0,
+            "p_value": 1.4798655161549874e-13
+          },
+          "energy_per_m": {
+            "n": 279,
+            "median_delta": 12.535290000000032,
+            "statistic": 9516.0,
+            "p_value": 1.138080978370243e-13
+          },
+          "spl": {
+            "n": 279,
+            "median_delta": 0.0,
+            "statistic": 4537.5,
+            "p_value": 0.793516492452492
+          },
+          "steps": {
+            "n": 279,
+            "median_delta": 0.0,
+            "statistic": 1588.5,
+            "p_value": 7.890511002804129e-15
+          },
+          "alpha_rms": {
+            "n": 279,
+            "median_delta": 0.018915000000000015,
+            "statistic": 12263.0,
+            "p_value": 7.151116939284029e-08
+          }
+        }
+      },
+      "NMPC_we0.05_vs_eadwa_we0": {
+        "n_plan": 291,
+        "sr_mcnemar": {
+          "n": 291,
+          "n_a_only": 6,
+          "n_b_only": 2,
+          "p_value": 0.2890625
+        },
+        "metrics": {
+          "energy": {
+            "n": 276,
+            "median_delta": -173.6687734999996,
+            "statistic": 14455.0,
+            "p_value": 0.00044891094657706235
+          },
+          "energy_per_m": {
+            "n": 276,
+            "median_delta": -11.388569000000018,
+            "statistic": 15643.0,
+            "p_value": 0.008937476224925944
+          },
+          "spl": {
+            "n": 276,
+            "median_delta": 0.0,
+            "statistic": 1786.0,
+            "p_value": 1.6696808532925168e-14
+          },
+          "steps": {
+            "n": 276,
+            "median_delta": -16.0,
+            "statistic": 276.0,
+            "p_value": 6.7165371764689865e-46
+          },
+          "alpha_rms": {
+            "n": 276,
+            "median_delta": 0.02502600000000002,
+            "statistic": 12145.0,
+            "p_value": 1.5212448303373242e-07
+          }
+        }
+      },
+      "NMPC_we0.05_vs_eadwa_we0.0003": {
+        "n_plan": 291,
+        "sr_mcnemar": {
+          "n": 291,
+          "n_a_only": 11,
+          "n_b_only": 2,
+          "p_value": 0.0224609375
+        },
+        "metrics": {
+          "energy": {
+            "n": 271,
+            "median_delta": -49.09252800000013,
+            "statistic": 17073.0,
+            "p_value": 0.29406648905614896
+          },
+          "energy_per_m": {
+            "n": 271,
+            "median_delta": -1.0278099999999313,
+            "statistic": 18315.0,
+            "p_value": 0.9302729645890973
+          },
+          "spl": {
+            "n": 271,
+            "median_delta": 0.0,
+            "statistic": 1517.0,
+            "p_value": 1.6342710135717512e-15
+          },
+          "steps": {
+            "n": 271,
+            "median_delta": -16.0,
+            "statistic": 271.0,
+            "p_value": 4.268854459973373e-45
+          },
+          "alpha_rms": {
+            "n": 271,
+            "median_delta": 0.07732399999999995,
+            "statistic": 3522.0,
+            "p_value": 8.060329096966332e-31
+          }
+        }
+      },
+      "NMPC_we0.05_vs_eadwa_we0.0005": {
+        "n_plan": 291,
+        "sr_mcnemar": {
+          "n": 291,
+          "n_a_only": 14,
+          "n_b_only": 2,
+          "p_value": 0.004180908203125
+        },
+        "metrics": {
+          "energy": {
+            "n": 268,
+            "median_delta": -28.037767499999973,
+            "statistic": 17681.0,
+            "p_value": 0.7877156775546256
+          },
+          "energy_per_m": {
+            "n": 268,
+            "median_delta": 1.245360499999947,
+            "statistic": 16347.0,
+            "p_value": 0.18696185471968607
+          },
+          "spl": {
+            "n": 268,
+            "median_delta": 0.0,
+            "statistic": 1206.5,
+            "p_value": 8.839878086025823e-18
+          },
+          "steps": {
+            "n": 268,
+            "median_delta": -17.0,
+            "statistic": 268.0,
+            "p_value": 1.4631342014260418e-44
+          },
+          "alpha_rms": {
+            "n": 268,
+            "median_delta": 0.0951485,
+            "statistic": 1698.0,
+            "p_value": 8.199358143415846e-38
+          }
+        }
+      },
+      "NMPC_we0.1_vs_eadwa_we0": {
+        "n_plan": 291,
+        "sr_mcnemar": {
+          "n": 291,
+          "n_a_only": 6,
+          "n_b_only": 5,
+          "p_value": 1.0
+        },
+        "metrics": {
+          "energy": {
+            "n": 273,
+            "median_delta": -427.5445380000001,
+            "statistic": 10893.0,
+            "p_value": 2.2377673945976175e-09
+          },
+          "energy_per_m": {
+            "n": 273,
+            "median_delta": -36.738050000000044,
+            "statistic": 11861.0,
+            "p_value": 1.6217539711862553e-07
+          },
+          "spl": {
+            "n": 273,
+            "median_delta": 0.0,
+            "statistic": 1696.0,
+            "p_value": 9.909423802794954e-14
+          },
+          "steps": {
+            "n": 273,
+            "median_delta": -16.0,
+            "statistic": 0.0,
+            "p_value": 1.0682509345679631e-46
+          },
+          "alpha_rms": {
+            "n": 273,
+            "median_delta": 0.0008530000000000482,
+            "statistic": 16258.0,
+            "p_value": 0.06139517053890716
+          }
+        }
+      },
+      "NMPC_we0.1_vs_eadwa_we0.0003": {
+        "n_plan": 291,
+        "sr_mcnemar": {
+          "n": 291,
+          "n_a_only": 9,
+          "n_b_only": 3,
+          "p_value": 0.14599609375
+        },
+        "metrics": {
+          "energy": {
+            "n": 270,
+            "median_delta": -214.32914600000072,
+            "statistic": 13570.0,
+            "p_value": 0.00023584590080901648
+          },
+          "energy_per_m": {
+            "n": 270,
+            "median_delta": -15.96345500000001,
+            "statistic": 14736.0,
+            "p_value": 0.005618428479838805
+          },
+          "spl": {
+            "n": 270,
+            "median_delta": 0.0,
+            "statistic": 1491.5,
+            "p_value": 8.339242866980232e-15
+          },
+          "steps": {
+            "n": 270,
+            "median_delta": -16.0,
+            "statistic": 0.0,
+            "p_value": 3.129891962370322e-46
+          },
+          "alpha_rms": {
+            "n": 270,
+            "median_delta": 0.05457000000000002,
+            "statistic": 6534.5,
+            "p_value": 5.4192660423786245e-20
+          }
+        }
+      },
+      "NMPC_we0.1_vs_eadwa_we0.0005": {
+        "n_plan": 291,
+        "sr_mcnemar": {
+          "n": 291,
+          "n_a_only": 12,
+          "n_b_only": 3,
+          "p_value": 0.03515625
+        },
+        "metrics": {
+          "energy": {
+            "n": 267,
+            "median_delta": -173.5679250000003,
+            "statistic": 14828.0,
+            "p_value": 0.015365612039584267
+          },
+          "energy_per_m": {
+            "n": 267,
+            "median_delta": -10.951111999999966,
+            "statistic": 16230.0,
+            "p_value": 0.18899210386839715
+          },
+          "spl": {
+            "n": 267,
+            "median_delta": 0.0,
+            "statistic": 1238.0,
+            "p_value": 6.292042705343884e-17
+          },
+          "steps": {
+            "n": 267,
+            "median_delta": -16.0,
+            "statistic": 0.0,
+            "p_value": 1.0280124090191557e-45
+          },
+          "alpha_rms": {
+            "n": 267,
+            "median_delta": 0.067133,
+            "statistic": 3443.0,
+            "p_value": 2.6977498668774746e-30
+          }
+        }
+      },
+      "eadwa_we0_vs_eadwa_we0.0003": {
+        "n_plan": 291,
+        "sr_mcnemar": {
+          "n": 291,
+          "n_a_only": 5,
+          "n_b_only": 0,
+          "p_value": 0.0625
+        },
+        "metrics": {
+          "energy": {
+            "n": 273,
+            "median_delta": 186.7510089999996,
+            "statistic": 6795.0,
+            "p_value": 7.647297891636149e-20
+          },
+          "energy_per_m": {
+            "n": 273,
+            "median_delta": 17.111479000000003,
+            "statistic": 6634.0,
+            "p_value": 2.4334596074665202e-20
+          },
+          "spl": {
+            "n": 273,
+            "median_delta": 0.0,
+            "statistic": 4043.0,
+            "p_value": 0.0016394702224922547
+          },
+          "steps": {
+            "n": 273,
+            "median_delta": 0.0,
+            "statistic": 4255.5,
+            "p_value": 2.640903464954649e-06
+          },
+          "alpha_rms": {
+            "n": 273,
+            "median_delta": 0.044626,
+            "statistic": 1999.0,
+            "p_value": 1.8364853753540296e-37
+          }
+        }
+      },
+      "eadwa_we0_vs_eadwa_we0.0005": {
+        "n_plan": 291,
+        "sr_mcnemar": {
+          "n": 291,
+          "n_a_only": 8,
+          "n_b_only": 0,
+          "p_value": 0.0078125
+        },
+        "metrics": {
+          "energy": {
+            "n": 270,
+            "median_delta": 302.53908399999955,
+            "statistic": 5732.0,
+            "p_value": 1.3695025977820532e-22
+          },
+          "energy_per_m": {
+            "n": 270,
+            "median_delta": 28.298251000000022,
+            "statistic": 5438.0,
+            "p_value": 1.3899125394268206e-23
+          },
+          "spl": {
+            "n": 270,
+            "median_delta": 0.0,
+            "statistic": 2812.0,
+            "p_value": 1.2552560543712805e-08
+          },
+          "steps": {
+            "n": 270,
+            "median_delta": -1.0,
+            "statistic": 4484.5,
+            "p_value": 5.625420198717226e-14
+          },
+          "alpha_rms": {
+            "n": 270,
+            "median_delta": 0.06547350000000002,
+            "statistic": 1205.0,
+            "p_value": 2.1612876541634756e-40
+          }
+        }
+      },
+      "eadwa_we0.0003_vs_eadwa_we0.0005": {
+        "n_plan": 291,
+        "sr_mcnemar": {
+          "n": 291,
+          "n_a_only": 3,
+          "n_b_only": 0,
+          "p_value": 0.25
+        },
+        "metrics": {
+          "energy": {
+            "n": 270,
+            "median_delta": 88.98394149999967,
+            "statistic": 10608.0,
+            "p_value": 2.183786151805572e-09
+          },
+          "energy_per_m": {
+            "n": 270,
+            "median_delta": 9.425362000000007,
+            "statistic": 10257.0,
+            "p_value": 3.92917147516225e-10
+          },
+          "spl": {
+            "n": 270,
+            "median_delta": 0.0,
+            "statistic": 1984.0,
+            "p_value": 1.1133770552569672e-12
+          },
+          "steps": {
+            "n": 270,
+            "median_delta": 0.0,
+            "statistic": 3888.0,
+            "p_value": 1.431609537249701e-06
+          },
+          "alpha_rms": {
+            "n": 270,
+            "median_delta": 0.015756499999999993,
+            "statistic": 8393.0,
+            "p_value": 1.2759142653730839e-14
+          }
+        }
+      }
+    },
+    "hard": {
+      "NMPC_we0_vs_NMPC_we0.05": {
+        "n_plan": 282,
+        "sr_mcnemar": {
+          "n": 282,
+          "n_a_only": 2,
+          "n_b_only": 0,
+          "p_value": 0.5
+        },
+        "metrics": {
+          "energy": {
+            "n": 235,
+            "median_delta": 25210.810346000002,
+            "statistic": 0.0,
+            "p_value": 2.6456440624018207e-40
+          },
+          "energy_per_m": {
+            "n": 235,
+            "median_delta": 2230.3515610000004,
+            "statistic": 0.0,
+            "p_value": 2.6456440624018207e-40
+          },
+          "spl": {
+            "n": 235,
+            "median_delta": -0.0012320000000000109,
+            "statistic": 4953.0,
+            "p_value": 4.3867429915127614e-11
+          },
+          "steps": {
+            "n": 235,
+            "median_delta": -3.0,
+            "statistic": 1542.5,
+            "p_value": 1.0157966013900111e-30
+          },
+          "alpha_rms": {
+            "n": 235,
+            "median_delta": 6.459349,
+            "statistic": 0.0,
+            "p_value": 2.6456440624018207e-40
+          }
+        }
+      },
+      "NMPC_we0_vs_NMPC_we0.1": {
+        "n_plan": 282,
+        "sr_mcnemar": {
+          "n": 282,
+          "n_a_only": 9,
+          "n_b_only": 1,
+          "p_value": 0.021484375
+        },
+        "metrics": {
+          "energy": {
+            "n": 228,
+            "median_delta": 25861.653395499998,
+            "statistic": 0.0,
+            "p_value": 3.707139181699306e-39
+          },
+          "energy_per_m": {
+            "n": 228,
+            "median_delta": 2274.319606,
+            "statistic": 0.0,
+            "p_value": 3.707139181699306e-39
+          },
+          "spl": {
+            "n": 228,
+            "median_delta": -0.0017754999999999854,
+            "statistic": 4191.0,
+            "p_value": 2.38008175416575e-12
+          },
+          "steps": {
+            "n": 228,
+            "median_delta": -3.0,
+            "statistic": 1938.0,
+            "p_value": 7.675115098732383e-27
+          },
+          "alpha_rms": {
+            "n": 228,
+            "median_delta": 6.525065999999999,
+            "statistic": 0.0,
+            "p_value": 3.707139181699306e-39
+          }
+        }
+      },
+      "NMPC_we0_vs_eadwa_we0": {
+        "n_plan": 282,
+        "sr_mcnemar": {
+          "n": 282,
+          "n_a_only": 24,
+          "n_b_only": 1,
+          "p_value": 1.5497207641601562e-06
+        },
+        "metrics": {
+          "energy": {
+            "n": 213,
+            "median_delta": 26789.75111,
+            "statistic": 1.0,
+            "p_value": 1.0781251280468982e-36
+          },
+          "energy_per_m": {
+            "n": 213,
+            "median_delta": 2315.783439,
+            "statistic": 1.0,
+            "p_value": 1.0781251280468982e-36
+          },
+          "spl": {
+            "n": 213,
+            "median_delta": 0.0018780000000000463,
+            "statistic": 6845.0,
+            "p_value": 0.0017040297225158533
+          },
+          "steps": {
+            "n": 213,
+            "median_delta": -19.0,
+            "statistic": 5.5,
+            "p_value": 1.014761229477259e-36
+          },
+          "alpha_rms": {
+            "n": 213,
+            "median_delta": 6.542898,
+            "statistic": 1.0,
+            "p_value": 1.0781251280468982e-36
+          }
+        }
+      },
+      "NMPC_we0_vs_eadwa_we0.0003": {
+        "n_plan": 282,
+        "sr_mcnemar": {
+          "n": 282,
+          "n_a_only": 33,
+          "n_b_only": 1,
+          "p_value": 4.0745362639427185e-09
+        },
+        "metrics": {
+          "energy": {
+            "n": 204,
+            "median_delta": 27079.290403500003,
+            "statistic": 1.0,
+            "p_value": 3.2205496566773927e-35
+          },
+          "energy_per_m": {
+            "n": 204,
+            "median_delta": 2362.1840045,
+            "statistic": 1.0,
+            "p_value": 3.2205496566773927e-35
+          },
+          "spl": {
+            "n": 204,
+            "median_delta": 0.002684999999999993,
+            "statistic": 5208.0,
+            "p_value": 3.251200471618472e-06
+          },
+          "steps": {
+            "n": 204,
+            "median_delta": -20.0,
+            "statistic": 1.5,
+            "p_value": 2.89058497592688e-35
+          },
+          "alpha_rms": {
+            "n": 204,
+            "median_delta": 6.624401000000001,
+            "statistic": 1.0,
+            "p_value": 3.2205496566773927e-35
+          }
+        }
+      },
+      "NMPC_we0_vs_eadwa_we0.0005": {
+        "n_plan": 282,
+        "sr_mcnemar": {
+          "n": 282,
+          "n_a_only": 41,
+          "n_b_only": 1,
+          "p_value": 1.9554136088117957e-11
+        },
+        "metrics": {
+          "energy": {
+            "n": 196,
+            "median_delta": 27392.534912000003,
+            "statistic": 1.0,
+            "p_value": 6.601431795647654e-34
+          },
+          "energy_per_m": {
+            "n": 196,
+            "median_delta": 2395.710396,
+            "statistic": 1.0,
+            "p_value": 6.601431795647654e-34
+          },
+          "spl": {
+            "n": 196,
+            "median_delta": 0.004780500000000021,
+            "statistic": 3550.0,
+            "p_value": 1.4194365567717087e-10
+          },
+          "steps": {
+            "n": 196,
+            "median_delta": -20.0,
+            "statistic": 0.0,
+            "p_value": 5.7693257722431314e-34
+          },
+          "alpha_rms": {
+            "n": 196,
+            "median_delta": 6.640452,
+            "statistic": 1.0,
+            "p_value": 6.601431795647654e-34
+          }
+        }
+      },
+      "NMPC_we0.05_vs_NMPC_we0.1": {
+        "n_plan": 282,
+        "sr_mcnemar": {
+          "n": 282,
+          "n_a_only": 7,
+          "n_b_only": 1,
+          "p_value": 0.0703125
+        },
+        "metrics": {
+          "energy": {
+            "n": 228,
+            "median_delta": 449.9011264999999,
+            "statistic": 2859.0,
+            "p_value": 1.553395399721361e-24
+          },
+          "energy_per_m": {
+            "n": 228,
+            "median_delta": 36.63496150000003,
+            "statistic": 2957.0,
+            "p_value": 4.262822278596589e-24
+          },
+          "spl": {
+            "n": 228,
+            "median_delta": -0.00022400000000000198,
+            "statistic": 6949.0,
+            "p_value": 0.0003256805130718676
+          },
+          "steps": {
+            "n": 228,
+            "median_delta": 0.0,
+            "statistic": 1543.5,
+            "p_value": 7.426264812673768e-10
+          },
+          "alpha_rms": {
+            "n": 228,
+            "median_delta": 0.03726550000000001,
+            "statistic": 4797.0,
+            "p_value": 1.2314168873792218e-16
+          }
+        }
+      },
+      "NMPC_we0.05_vs_eadwa_we0": {
+        "n_plan": 282,
+        "sr_mcnemar": {
+          "n": 282,
+          "n_a_only": 23,
+          "n_b_only": 2,
+          "p_value": 1.9431114196777344e-05
+        },
+        "metrics": {
+          "energy": {
+            "n": 212,
+            "median_delta": 655.5291090000001,
+            "statistic": 6559.0,
+            "p_value": 1.2265164846174122e-07
+          },
+          "energy_per_m": {
+            "n": 212,
+            "median_delta": 61.91495599999996,
+            "statistic": 6072.0,
+            "p_value": 5.407997526181694e-09
+          },
+          "spl": {
+            "n": 212,
+            "median_delta": 0.0029315000000000313,
+            "statistic": 5290.0,
+            "p_value": 2.5451308477027354e-07
+          },
+          "steps": {
+            "n": 212,
+            "median_delta": -17.0,
+            "statistic": 190.0,
+            "p_value": 2.0117504015963595e-35
+          },
+          "alpha_rms": {
+            "n": 212,
+            "median_delta": 0.04692499999999997,
+            "statistic": 7064.0,
+            "p_value": 2.303825450924364e-06
+          }
+        }
+      },
+      "NMPC_we0.05_vs_eadwa_we0.0003": {
+        "n_plan": 282,
+        "sr_mcnemar": {
+          "n": 282,
+          "n_a_only": 32,
+          "n_b_only": 2,
+          "p_value": 6.938353180885315e-08
+        },
+        "metrics": {
+          "energy": {
+            "n": 203,
+            "median_delta": 941.7475789999999,
+            "statistic": 3895.0,
+            "p_value": 1.2956400195001606e-14
+          },
+          "energy_per_m": {
+            "n": 203,
+            "median_delta": 92.96107699999993,
+            "statistic": 3504.0,
+            "p_value": 3.0123763817776895e-16
+          },
+          "spl": {
+            "n": 203,
+            "median_delta": 0.005060999999999982,
+            "statistic": 3716.0,
+            "p_value": 2.084320789373574e-11
+          },
+          "steps": {
+            "n": 203,
+            "median_delta": -17.0,
+            "statistic": 1.0,
+            "p_value": 4.14392305891588e-35
+          },
+          "alpha_rms": {
+            "n": 203,
+            "median_delta": 0.10424599999999995,
+            "statistic": 2114.5,
+            "p_value": 8.28699763090358e-23
+          }
+        }
+      },
+      "NMPC_we0.05_vs_eadwa_we0.0005": {
+        "n_plan": 282,
+        "sr_mcnemar": {
+          "n": 282,
+          "n_a_only": 40,
+          "n_b_only": 2,
+          "p_value": 4.1109160520136356e-10
+        },
+        "metrics": {
+          "energy": {
+            "n": 195,
+            "median_delta": 1055.0801540000002,
+            "statistic": 3205.0,
+            "p_value": 8.469903808418195e-16
+          },
+          "energy_per_m": {
+            "n": 195,
+            "median_delta": 98.86699699999997,
+            "statistic": 2770.0,
+            "p_value": 8.077787175875898e-18
+          },
+          "spl": {
+            "n": 195,
+            "median_delta": 0.006758000000000042,
+            "statistic": 2295.0,
+            "p_value": 1.7693862755558215e-16
+          },
+          "steps": {
+            "n": 195,
+            "median_delta": -18.0,
+            "statistic": 0.0,
+            "p_value": 8.231497900700337e-34
+          },
+          "alpha_rms": {
+            "n": 195,
+            "median_delta": 0.13256600000000002,
+            "statistic": 1184.0,
+            "p_value": 2.724190702612945e-26
+          }
+        }
+      },
+      "NMPC_we0.1_vs_eadwa_we0": {
+        "n_plan": 282,
+        "sr_mcnemar": {
+          "n": 282,
+          "n_a_only": 19,
+          "n_b_only": 4,
+          "p_value": 0.002599477767944336
+        },
+        "metrics": {
+          "energy": {
+            "n": 210,
+            "median_delta": 136.46346449999874,
+            "statistic": 9175.0,
+            "p_value": 0.03093288412866102
+          },
+          "energy_per_m": {
+            "n": 210,
+            "median_delta": 28.84771999999998,
+            "statistic": 8546.0,
+            "p_value": 0.004086757211348271
+          },
+          "spl": {
+            "n": 210,
+            "median_delta": 0.003969,
+            "statistic": 4662.0,
+            "p_value": 1.0000332509519435e-08
+          },
+          "steps": {
+            "n": 210,
+            "median_delta": -16.0,
+            "statistic": 3.5,
+            "p_value": 3.05576102732994e-36
+          },
+          "alpha_rms": {
+            "n": 210,
+            "median_delta": 0.012220000000000009,
+            "statistic": 9828.0,
+            "p_value": 0.15640651675212328
+          }
+        }
+      },
+      "NMPC_we0.1_vs_eadwa_we0.0003": {
+        "n_plan": 282,
+        "sr_mcnemar": {
+          "n": 282,
+          "n_a_only": 26,
+          "n_b_only": 2,
+          "p_value": 3.032386302947998e-06
+        },
+        "metrics": {
+          "energy": {
+            "n": 203,
+            "median_delta": 470.8900070000018,
+            "statistic": 6102.0,
+            "p_value": 3.922770478960026e-07
+          },
+          "energy_per_m": {
+            "n": 203,
+            "median_delta": 69.20390499999996,
+            "statistic": 5434.0,
+            "p_value": 4.36362699805128e-09
+          },
+          "spl": {
+            "n": 203,
+            "median_delta": 0.005673999999999957,
+            "statistic": 3341.0,
+            "p_value": 8.997475359447154e-13
+          },
+          "steps": {
+            "n": 203,
+            "median_delta": -17.0,
+            "statistic": 1.0,
+            "p_value": 4.0298984897459144e-35
+          },
+          "alpha_rms": {
+            "n": 203,
+            "median_delta": 0.06783800000000006,
+            "statistic": 4061.0,
+            "p_value": 5.996016351536868e-14
+          }
+        }
+      },
+      "NMPC_we0.1_vs_eadwa_we0.0005": {
+        "n_plan": 282,
+        "sr_mcnemar": {
+          "n": 282,
+          "n_a_only": 34,
+          "n_b_only": 2,
+          "p_value": 1.941225491464138e-08
+        },
+        "metrics": {
+          "energy": {
+            "n": 195,
+            "median_delta": 476.29224200000044,
+            "statistic": 5209.0,
+            "p_value": 3.6377891505347934e-08
+          },
+          "energy_per_m": {
+            "n": 195,
+            "median_delta": 59.93901400000004,
+            "statistic": 4423.0,
+            "p_value": 7.838334439584217e-11
+          },
+          "spl": {
+            "n": 195,
+            "median_delta": 0.007452000000000014,
+            "statistic": 2087.0,
+            "p_value": 2.2368656268407646e-17
+          },
+          "steps": {
+            "n": 195,
+            "median_delta": -18.0,
+            "statistic": 0.0,
+            "p_value": 8.3272846316748e-34
+          },
+          "alpha_rms": {
+            "n": 195,
+            "median_delta": 0.10100700000000001,
+            "statistic": 2374.0,
+            "p_value": 9.006322410272655e-20
+          }
+        }
+      },
+      "eadwa_we0_vs_eadwa_we0.0003": {
+        "n_plan": 282,
+        "sr_mcnemar": {
+          "n": 282,
+          "n_a_only": 13,
+          "n_b_only": 4,
+          "p_value": 0.049041748046875
+        },
+        "metrics": {
+          "energy": {
+            "n": 201,
+            "median_delta": 323.06927800000085,
+            "statistic": 1844.0,
+            "p_value": 8.300863900059873e-24
+          },
+          "energy_per_m": {
+            "n": 201,
+            "median_delta": 30.05572300000017,
+            "statistic": 1356.0,
+            "p_value": 1.7249496456000935e-26
+          },
+          "spl": {
+            "n": 201,
+            "median_delta": 0.0013400000000000079,
+            "statistic": 2697.0,
+            "p_value": 4.2820215298933096e-15
+          },
+          "steps": {
+            "n": 201,
+            "median_delta": -1.0,
+            "statistic": 1558.0,
+            "p_value": 2.305367625625096e-12
+          },
+          "alpha_rms": {
+            "n": 201,
+            "median_delta": 0.04269299999999998,
+            "statistic": 2166.0,
+            "p_value": 4.043221728205366e-22
+          }
+        }
+      },
+      "eadwa_we0_vs_eadwa_we0.0005": {
+        "n_plan": 282,
+        "sr_mcnemar": {
+          "n": 282,
+          "n_a_only": 24,
+          "n_b_only": 7,
+          "p_value": 0.003326892852783203
+        },
+        "metrics": {
+          "energy": {
+            "n": 190,
+            "median_delta": 439.2179130000004,
+            "statistic": 1657.0,
+            "p_value": 1.5160265471528258e-22
+          },
+          "energy_per_m": {
+            "n": 190,
+            "median_delta": 43.25024450000001,
+            "statistic": 1159.0,
+            "p_value": 1.8863867250479114e-25
+          },
+          "spl": {
+            "n": 190,
+            "median_delta": 0.002998999999999974,
+            "statistic": 1573.0,
+            "p_value": 2.9883194483412863e-19
+          },
+          "steps": {
+            "n": 190,
+            "median_delta": -1.0,
+            "statistic": 1322.0,
+            "p_value": 1.1801183305742845e-16
+          },
+          "alpha_rms": {
+            "n": 190,
+            "median_delta": 0.06414999999999998,
+            "statistic": 1045.0,
+            "p_value": 3.841961386602228e-26
+          }
+        }
+      },
+      "eadwa_we0.0003_vs_eadwa_we0.0005": {
+        "n_plan": 282,
+        "sr_mcnemar": {
+          "n": 282,
+          "n_a_only": 11,
+          "n_b_only": 3,
+          "p_value": 0.057373046875
+        },
+        "metrics": {
+          "energy": {
+            "n": 194,
+            "median_delta": 199.61427950000007,
+            "statistic": 4322.0,
+            "p_value": 5.4402026347866374e-11
+          },
+          "energy_per_m": {
+            "n": 194,
+            "median_delta": 18.967168500000014,
+            "statistic": 3904.0,
+            "p_value": 1.3202068917383231e-12
+          },
+          "spl": {
+            "n": 194,
+            "median_delta": 0.0015080000000000093,
+            "statistic": 1663.0,
+            "p_value": 1.448112756843743e-19
+          },
+          "steps": {
+            "n": 194,
+            "median_delta": -1.0,
+            "statistic": 2225.0,
+            "p_value": 1.0708087222543824e-08
+          },
+          "alpha_rms": {
+            "n": 194,
+            "median_delta": 0.02267050000000001,
+            "statistic": 3473.0,
+            "p_value": 2.128962776498208e-14
+          }
+        }
+      }
+    },
+    "medium": {
+      "NMPC_we0_vs_NMPC_we0.05": {
+        "n_plan": 282,
+        "sr_mcnemar": {
+          "n": 282,
+          "n_a_only": 1,
+          "n_b_only": 0,
+          "p_value": 1.0
+        },
+        "metrics": {
+          "energy": {
+            "n": 246,
+            "median_delta": 26058.196426,
+            "statistic": 3.0,
+            "p_value": 4.3370315443564984e-42
+          },
+          "energy_per_m": {
+            "n": 246,
+            "median_delta": 2390.1818409999996,
+            "statistic": 3.0,
+            "p_value": 4.3370315443564984e-42
+          },
+          "spl": {
+            "n": 246,
+            "median_delta": -0.00019400000000002748,
+            "statistic": 4695.0,
+            "p_value": 8.430427071197788e-08
+          },
+          "steps": {
+            "n": 246,
+            "median_delta": -2.0,
+            "statistic": 1574.0,
+            "p_value": 1.3780542515922916e-31
+          },
+          "alpha_rms": {
+            "n": 246,
+            "median_delta": 6.843672,
+            "statistic": 0.0,
+            "p_value": 4.180735372281383e-42
+          }
+        }
+      },
+      "NMPC_we0_vs_NMPC_we0.1": {
+        "n_plan": 282,
+        "sr_mcnemar": {
+          "n": 282,
+          "n_a_only": 8,
+          "n_b_only": 0,
+          "p_value": 0.0078125
+        },
+        "metrics": {
+          "energy": {
+            "n": 239,
+            "median_delta": 26289.826651,
+            "statistic": 3.0,
+            "p_value": 6.079636951715636e-41
+          },
+          "energy_per_m": {
+            "n": 239,
+            "median_delta": 2449.599088,
+            "statistic": 3.0,
+            "p_value": 6.079636951715636e-41
+          },
+          "spl": {
+            "n": 239,
+            "median_delta": -9.999999999998899e-05,
+            "statistic": 4042.0,
+            "p_value": 7.448124808165691e-09
+          },
+          "steps": {
+            "n": 239,
+            "median_delta": -3.0,
+            "statistic": 1147.0,
+            "p_value": 1.6590063241193309e-34
+          },
+          "alpha_rms": {
+            "n": 239,
+            "median_delta": 6.916732,
+            "statistic": 0.0,
+            "p_value": 5.854225252043657e-41
+          }
+        }
+      },
+      "NMPC_we0_vs_eadwa_we0": {
+        "n_plan": 282,
+        "sr_mcnemar": {
+          "n": 282,
+          "n_a_only": 11,
+          "n_b_only": 0,
+          "p_value": 0.0009765625
+        },
+        "metrics": {
+          "energy": {
+            "n": 236,
+            "median_delta": 25865.526432,
+            "statistic": 5.0,
+            "p_value": 1.9339891795838866e-40
+          },
+          "energy_per_m": {
+            "n": 236,
+            "median_delta": 2436.0435765,
+            "statistic": 4.0,
+            "p_value": 1.9094841783284175e-40
+          },
+          "spl": {
+            "n": 236,
+            "median_delta": 0.003101500000000035,
+            "statistic": 5157.0,
+            "p_value": 2.487239464395668e-07
+          },
+          "steps": {
+            "n": 236,
+            "median_delta": -20.0,
+            "statistic": 1.0,
+            "p_value": 2.317754427398033e-40
+          },
+          "alpha_rms": {
+            "n": 236,
+            "median_delta": 6.889416,
+            "statistic": 1.0,
+            "p_value": 1.8378065124149424e-40
+          }
+        }
+      },
+      "NMPC_we0_vs_eadwa_we0.0003": {
+        "n_plan": 282,
+        "sr_mcnemar": {
+          "n": 282,
+          "n_a_only": 26,
+          "n_b_only": 0,
+          "p_value": 2.9802322387695312e-08
+        },
+        "metrics": {
+          "energy": {
+            "n": 221,
+            "median_delta": 26130.680776,
+            "statistic": 1.0,
+            "p_value": 5.268207545655081e-38
+          },
+          "energy_per_m": {
+            "n": 221,
+            "median_delta": 2484.20125,
+            "statistic": 1.0,
+            "p_value": 5.268207545655081e-38
+          },
+          "spl": {
+            "n": 221,
+            "median_delta": 0.004138000000000086,
+            "statistic": 2837.0,
+            "p_value": 2.588739459071318e-13
+          },
+          "steps": {
+            "n": 221,
+            "median_delta": -20.0,
+            "statistic": 0.0,
+            "p_value": 4.474773148251081e-38
+          },
+          "alpha_rms": {
+            "n": 221,
+            "median_delta": 6.940277,
+            "statistic": 0.0,
+            "p_value": 5.196919962223324e-38
+          }
+        }
+      },
+      "NMPC_we0_vs_eadwa_we0.0005": {
+        "n_plan": 282,
+        "sr_mcnemar": {
+          "n": 282,
+          "n_a_only": 31,
+          "n_b_only": 0,
+          "p_value": 9.313225746154785e-10
+        },
+        "metrics": {
+          "energy": {
+            "n": 216,
+            "median_delta": 26171.690871000003,
+            "statistic": 1.0,
+            "p_value": 3.4754102547904815e-37
+          },
+          "energy_per_m": {
+            "n": 216,
+            "median_delta": 2503.8774299999995,
+            "statistic": 1.0,
+            "p_value": 3.4754102547904815e-37
+          },
+          "spl": {
+            "n": 216,
+            "median_delta": 0.004884999999999973,
+            "statistic": 2222.0,
+            "p_value": 3.2941237552944166e-16
+          },
+          "steps": {
+            "n": 216,
+            "median_delta": -21.0,
+            "statistic": 0.0,
+            "p_value": 4.3621647096009415e-37
+          },
+          "alpha_rms": {
+            "n": 216,
+            "median_delta": 6.990999,
+            "statistic": 0.0,
+            "p_value": 3.427297285516997e-37
+          }
+        }
+      },
+      "NMPC_we0.05_vs_NMPC_we0.1": {
+        "n_plan": 282,
+        "sr_mcnemar": {
+          "n": 282,
+          "n_a_only": 8,
+          "n_b_only": 1,
+          "p_value": 0.0390625
+        },
+        "metrics": {
+          "energy": {
+            "n": 238,
+            "median_delta": 335.6218640000002,
+            "statistic": 3735.0,
+            "p_value": 6.1057836205822e-23
+          },
+          "energy_per_m": {
+            "n": 238,
+            "median_delta": 31.59372249999997,
+            "statistic": 3673.0,
+            "p_value": 3.410007914238958e-23
+          },
+          "spl": {
+            "n": 238,
+            "median_delta": 0.0,
+            "statistic": 6197.0,
+            "p_value": 0.013884995673389081
+          },
+          "steps": {
+            "n": 238,
+            "median_delta": -1.0,
+            "statistic": 1031.0,
+            "p_value": 5.583039013957424e-18
+          },
+          "alpha_rms": {
+            "n": 238,
+            "median_delta": 0.032696,
+            "statistic": 6712.0,
+            "p_value": 1.6442151419740712e-12
+          }
+        }
+      },
+      "NMPC_we0.05_vs_eadwa_we0": {
+        "n_plan": 282,
+        "sr_mcnemar": {
+          "n": 282,
+          "n_a_only": 10,
+          "n_b_only": 0,
+          "p_value": 0.001953125
+        },
+        "metrics": {
+          "energy": {
+            "n": 236,
+            "median_delta": 112.44926900000019,
+            "statistic": 11018.0,
+            "p_value": 0.0047423688138675864
+          },
+          "energy_per_m": {
+            "n": 236,
+            "median_delta": 22.311544499999968,
+            "statistic": 10381.0,
+            "p_value": 0.0006019235939928404
+          },
+          "spl": {
+            "n": 236,
+            "median_delta": 0.004472500000000046,
+            "statistic": 3937.5,
+            "p_value": 2.189160562888119e-11
+          },
+          "steps": {
+            "n": 236,
+            "median_delta": -17.0,
+            "statistic": 3.5,
+            "p_value": 1.5724632979731747e-40
+          },
+          "alpha_rms": {
+            "n": 236,
+            "median_delta": 0.04646499999999998,
+            "statistic": 9211.0,
+            "p_value": 5.4904082571983884e-06
+          }
+        }
+      },
+      "NMPC_we0.05_vs_eadwa_we0.0003": {
+        "n_plan": 282,
+        "sr_mcnemar": {
+          "n": 282,
+          "n_a_only": 25,
+          "n_b_only": 0,
+          "p_value": 5.960464477539063e-08
+        },
+        "metrics": {
+          "energy": {
+            "n": 221,
+            "median_delta": 475.47639100000015,
+            "statistic": 6811.0,
+            "p_value": 9.940867900088643e-09
+          },
+          "energy_per_m": {
+            "n": 221,
+            "median_delta": 57.78758200000016,
+            "statistic": 6145.0,
+            "p_value": 1.2627985696670054e-10
+          },
+          "spl": {
+            "n": 221,
+            "median_delta": 0.005564000000000013,
+            "statistic": 2001.0,
+            "p_value": 3.371314348232408e-17
+          },
+          "steps": {
+            "n": 221,
+            "median_delta": -17.0,
+            "statistic": 2.0,
+            "p_value": 4.302722516240683e-38
+          },
+          "alpha_rms": {
+            "n": 221,
+            "median_delta": 0.09827599999999992,
+            "statistic": 2691.0,
+            "p_value": 8.204188368024464e-24
+          }
+        }
+      },
+      "NMPC_we0.05_vs_eadwa_we0.0005": {
+        "n_plan": 282,
+        "sr_mcnemar": {
+          "n": 282,
+          "n_a_only": 30,
+          "n_b_only": 0,
+          "p_value": 1.862645149230957e-09
+        },
+        "metrics": {
+          "energy": {
+            "n": 216,
+            "median_delta": 637.9474319999999,
+            "statistic": 5256.0,
+            "p_value": 2.1097415467165344e-12
+          },
+          "energy_per_m": {
+            "n": 216,
+            "median_delta": 68.76120350000002,
+            "statistic": 4690.0,
+            "p_value": 2.130080167472409e-14
+          },
+          "spl": {
+            "n": 216,
+            "median_delta": 0.006777499999999992,
+            "statistic": 1401.0,
+            "p_value": 6.2735610759761145e-21
+          },
+          "steps": {
+            "n": 216,
+            "median_delta": -18.0,
+            "statistic": 2.0,
+            "p_value": 2.944324090061249e-37
+          },
+          "alpha_rms": {
+            "n": 216,
+            "median_delta": 0.11506150000000001,
+            "statistic": 1421.0,
+            "p_value": 4.2006518938608474e-29
+          }
+        }
+      },
+      "NMPC_we0.1_vs_eadwa_we0": {
+        "n_plan": 282,
+        "sr_mcnemar": {
+          "n": 282,
+          "n_a_only": 11,
+          "n_b_only": 8,
+          "p_value": 0.6476058959960938
+        },
+        "metrics": {
+          "energy": {
+            "n": 228,
+            "median_delta": -167.35246050000023,
+            "statistic": 12343.0,
+            "p_value": 0.476423444770783
+          },
+          "energy_per_m": {
+            "n": 228,
+            "median_delta": -4.243840500000005,
+            "statistic": 13010.0,
+            "p_value": 0.9656017558624757
+          },
+          "spl": {
+            "n": 228,
+            "median_delta": 0.004761499999999974,
+            "statistic": 3128.0,
+            "p_value": 2.7880468778205916e-13
+          },
+          "steps": {
+            "n": 228,
+            "median_delta": -16.0,
+            "statistic": 680.0,
+            "p_value": 1.9050803121164215e-35
+          },
+          "alpha_rms": {
+            "n": 228,
+            "median_delta": 0.023320500000000022,
+            "statistic": 11125.0,
+            "p_value": 0.05316082166255999
+          }
+        }
+      },
+      "NMPC_we0.1_vs_eadwa_we0.0003": {
+        "n_plan": 282,
+        "sr_mcnemar": {
+          "n": 282,
+          "n_a_only": 22,
+          "n_b_only": 4,
+          "p_value": 0.0005335211753845215
+        },
+        "metrics": {
+          "energy": {
+            "n": 217,
+            "median_delta": 171.64730200000122,
+            "statistic": 9649.0,
+            "p_value": 0.018693519812633622
+          },
+          "energy_per_m": {
+            "n": 217,
+            "median_delta": 27.441964999999982,
+            "statistic": 8875.0,
+            "p_value": 0.001435249475497458
+          },
+          "spl": {
+            "n": 217,
+            "median_delta": 0.006024000000000029,
+            "statistic": 1746.5,
+            "p_value": 3.207824846186829e-18
+          },
+          "steps": {
+            "n": 217,
+            "median_delta": -17.0,
+            "statistic": 216.0,
+            "p_value": 3.842377432223651e-36
+          },
+          "alpha_rms": {
+            "n": 217,
+            "median_delta": 0.07175400000000004,
+            "statistic": 4181.0,
+            "p_value": 1.4970117465649896e-16
+          }
+        }
+      },
+      "NMPC_we0.1_vs_eadwa_we0.0005": {
+        "n_plan": 282,
+        "sr_mcnemar": {
+          "n": 282,
+          "n_a_only": 27,
+          "n_b_only": 4,
+          "p_value": 3.39532271027565e-05
+        },
+        "metrics": {
+          "energy": {
+            "n": 212,
+            "median_delta": 232.3286465000001,
+            "statistic": 7802.0,
+            "p_value": 9.640424019919321e-05
+          },
+          "energy_per_m": {
+            "n": 212,
+            "median_delta": 37.079769500000054,
+            "statistic": 7055.0,
+            "p_value": 2.192401195162182e-06
+          },
+          "spl": {
+            "n": 212,
+            "median_delta": 0.0069110000000000005,
+            "statistic": 1277.0,
+            "p_value": 4.437308568333031e-21
+          },
+          "steps": {
+            "n": 212,
+            "median_delta": -18.0,
+            "statistic": 212.0,
+            "p_value": 2.599735426150941e-35
+          },
+          "alpha_rms": {
+            "n": 212,
+            "median_delta": 0.087978,
+            "statistic": 2379.0,
+            "p_value": 2.1919835434547856e-23
+          }
+        }
+      },
+      "eadwa_we0_vs_eadwa_we0.0003": {
+        "n_plan": 282,
+        "sr_mcnemar": {
+          "n": 282,
+          "n_a_only": 17,
+          "n_b_only": 2,
+          "p_value": 0.000728607177734375
+        },
+        "metrics": {
+          "energy": {
+            "n": 219,
+            "median_delta": 310.55068200000005,
+            "statistic": 2393.0,
+            "p_value": 8.537148790414644e-25
+          },
+          "energy_per_m": {
+            "n": 219,
+            "median_delta": 29.304771000000073,
+            "statistic": 2280.0,
+            "p_value": 2.430664067397854e-25
+          },
+          "spl": {
+            "n": 219,
+            "median_delta": 0.0008129999999999526,
+            "statistic": 2792.5,
+            "p_value": 7.267487007209167e-13
+          },
+          "steps": {
+            "n": 219,
+            "median_delta": -1.0,
+            "statistic": 2344.0,
+            "p_value": 1.137048815046169e-10
+          },
+          "alpha_rms": {
+            "n": 219,
+            "median_delta": 0.033735000000000015,
+            "statistic": 2680.0,
+            "p_value": 1.9452693012071042e-23
+          }
+        }
+      },
+      "eadwa_we0_vs_eadwa_we0.0005": {
+        "n_plan": 282,
+        "sr_mcnemar": {
+          "n": 282,
+          "n_a_only": 20,
+          "n_b_only": 0,
+          "p_value": 1.9073486328125e-06
+        },
+        "metrics": {
+          "energy": {
+            "n": 216,
+            "median_delta": 513.1882460000002,
+            "statistic": 1907.0,
+            "p_value": 1.423551053964265e-26
+          },
+          "energy_per_m": {
+            "n": 216,
+            "median_delta": 48.0175445,
+            "statistic": 1644.0,
+            "p_value": 6.297488256595441e-28
+          },
+          "spl": {
+            "n": 216,
+            "median_delta": 0.0018124999999999947,
+            "statistic": 1584.0,
+            "p_value": 1.309407627230044e-19
+          },
+          "steps": {
+            "n": 216,
+            "median_delta": -1.0,
+            "statistic": 2075.5,
+            "p_value": 4.5850692039808365e-18
+          },
+          "alpha_rms": {
+            "n": 216,
+            "median_delta": 0.059917499999999985,
+            "statistic": 1484.0,
+            "p_value": 9.079793660079939e-29
+          }
+        }
+      },
+      "eadwa_we0.0003_vs_eadwa_we0.0005": {
+        "n_plan": 282,
+        "sr_mcnemar": {
+          "n": 282,
+          "n_a_only": 5,
+          "n_b_only": 0,
+          "p_value": 0.0625
+        },
+        "metrics": {
+          "energy": {
+            "n": 216,
+            "median_delta": 173.42477450000115,
+            "statistic": 5666.0,
+            "p_value": 4.667253023064805e-11
+          },
+          "energy_per_m": {
+            "n": 216,
+            "median_delta": 17.55817749999997,
+            "statistic": 5356.0,
+            "p_value": 4.571364079426568e-12
+          },
+          "spl": {
+            "n": 216,
+            "median_delta": 0.0010570000000000301,
+            "statistic": 1650.5,
+            "p_value": 3.256918052644472e-19
+          },
+          "steps": {
+            "n": 216,
+            "median_delta": -0.5,
+            "statistic": 2532.5,
+            "p_value": 2.9784585131703974e-09
+          },
+          "alpha_rms": {
+            "n": 216,
+            "median_delta": 0.025107000000000046,
+            "statistic": 4496.0,
+            "p_value": 4.046334721675299e-15
+          }
+        }
+      }
+    },
+    "all": {
+      "NMPC_we0_vs_NMPC_we0.05": {
+        "n_plan": 855,
+        "sr_mcnemar": {
+          "n": 855,
+          "n_a_only": 5,
+          "n_b_only": 0,
+          "p_value": 0.0625
+        },
+        "metrics": {
+          "energy": {
+            "n": 763,
+            "median_delta": 26429.972154,
+            "statistic": 17.0,
+            "p_value": 1.6122150787168087e-126
+          },
+          "energy_per_m": {
+            "n": 763,
+            "median_delta": 2490.609842,
+            "statistic": 17.0,
+            "p_value": 1.6122150787168087e-126
+          },
+          "spl": {
+            "n": 763,
+            "median_delta": 0.0,
+            "statistic": 43351.5,
+            "p_value": 1.5305553633085704e-15
+          },
+          "steps": {
+            "n": 763,
+            "median_delta": -3.0,
+            "statistic": 12511.0,
+            "p_value": 1.91236150952331e-100
+          },
+          "alpha_rms": {
+            "n": 763,
+            "median_delta": 7.056818,
+            "statistic": 22.0,
+            "p_value": 1.6442543361971467e-126
+          }
+        }
+      },
+      "NMPC_we0_vs_NMPC_we0.1": {
+        "n_plan": 855,
+        "sr_mcnemar": {
+          "n": 855,
+          "n_a_only": 22,
+          "n_b_only": 1,
+          "p_value": 5.7220458984375e-06
+        },
+        "metrics": {
+          "energy": {
+            "n": 746,
+            "median_delta": 26824.508197500003,
+            "statistic": 19.0,
+            "p_value": 9.662361105670671e-124
+          },
+          "energy_per_m": {
+            "n": 746,
+            "median_delta": 2520.886411,
+            "statistic": 22.0,
+            "p_value": 9.779750656588034e-124
+          },
+          "spl": {
+            "n": 746,
+            "median_delta": 0.0,
+            "statistic": 38703.0,
+            "p_value": 9.387218309338366e-17
+          },
+          "steps": {
+            "n": 746,
+            "median_delta": -3.0,
+            "statistic": 11485.5,
+            "p_value": 1.7432785389637245e-101
+          },
+          "alpha_rms": {
+            "n": 746,
+            "median_delta": 7.0953925,
+            "statistic": 18.0,
+            "p_value": 9.623544666182738e-124
+          }
+        }
+      },
+      "NMPC_we0_vs_eadwa_we0": {
+        "n_plan": 855,
+        "sr_mcnemar": {
+          "n": 855,
+          "n_a_only": 41,
+          "n_b_only": 1,
+          "p_value": 1.9554136088117957e-11
+        },
+        "metrics": {
+          "energy": {
+            "n": 727,
+            "median_delta": 26654.132459,
+            "statistic": 43.0,
+            "p_value": 1.3456445767652066e-120
+          },
+          "energy_per_m": {
+            "n": 727,
+            "median_delta": 2517.97087,
+            "statistic": 37.0,
+            "p_value": 1.3127092794540921e-120
+          },
+          "spl": {
+            "n": 727,
+            "median_delta": 0.0008849999999999136,
+            "statistic": 41682.5,
+            "p_value": 2.2539941145463794e-18
+          },
+          "steps": {
+            "n": 727,
+            "median_delta": -19.0,
+            "statistic": 10.0,
+            "p_value": 1.3654458491433306e-120
+          },
+          "alpha_rms": {
+            "n": 727,
+            "median_delta": 7.130575,
+            "statistic": 8.0,
+            "p_value": 1.1645182060690568e-120
+          }
+        }
+      },
+      "NMPC_we0_vs_eadwa_we0.0003": {
+        "n_plan": 855,
+        "sr_mcnemar": {
+          "n": 855,
+          "n_a_only": 70,
+          "n_b_only": 1,
+          "p_value": 6.098637220230962e-20
+        },
+        "metrics": {
+          "energy": {
+            "n": 698,
+            "median_delta": 26838.976978,
+            "statistic": 28.0,
+            "p_value": 6.852819200770676e-116
+          },
+          "energy_per_m": {
+            "n": 698,
+            "median_delta": 2550.974516,
+            "statistic": 26.0,
+            "p_value": 6.794108621689794e-116
+          },
+          "spl": {
+            "n": 698,
+            "median_delta": 0.001953000000000038,
+            "statistic": 29049.5,
+            "p_value": 4.23526836040618e-29
+          },
+          "steps": {
+            "n": 698,
+            "median_delta": -20.0,
+            "statistic": 3.0,
+            "p_value": 3.4212682877622297e-116
+          },
+          "alpha_rms": {
+            "n": 698,
+            "median_delta": 7.197367,
+            "statistic": 3.0,
+            "p_value": 6.153965201624943e-116
+          }
+        }
+      },
+      "NMPC_we0_vs_eadwa_we0.0005": {
+        "n_plan": 855,
+        "sr_mcnemar": {
+          "n": 855,
+          "n_a_only": 86,
+          "n_b_only": 1,
+          "p_value": 1.137373342260413e-24
+        },
+        "metrics": {
+          "energy": {
+            "n": 682,
+            "median_delta": 27170.228294,
+            "statistic": 27.0,
+            "p_value": 2.7923288274274166e-113
+          },
+          "energy_per_m": {
+            "n": 682,
+            "median_delta": 2578.8094149999997,
+            "statistic": 25.0,
+            "p_value": 2.767846538650143e-113
+          },
+          "spl": {
+            "n": 682,
+            "median_delta": 0.0033295000000000408,
+            "statistic": 21725.5,
+            "p_value": 4.247010281405816e-39
+          },
+          "steps": {
+            "n": 682,
+            "median_delta": -20.0,
+            "statistic": 0.0,
+            "p_value": 2.0837373735456456e-113
+          },
+          "alpha_rms": {
+            "n": 682,
+            "median_delta": 7.2167265,
+            "statistic": 3.0,
+            "p_value": 2.5122744619761707e-113
+          }
+        }
+      },
+      "NMPC_we0.05_vs_NMPC_we0.1": {
+        "n_plan": 855,
+        "sr_mcnemar": {
+          "n": 855,
+          "n_a_only": 18,
+          "n_b_only": 2,
+          "p_value": 0.0004024505615234375
+        },
+        "metrics": {
+          "energy": {
+            "n": 745,
+            "median_delta": 263.57077299999946,
+            "statistic": 45178.0,
+            "p_value": 2.537180052381143e-57
+          },
+          "energy_per_m": {
+            "n": 745,
+            "median_delta": 25.7192849999999,
+            "statistic": 45467.0,
+            "p_value": 5.571895932425416e-57
+          },
+          "spl": {
+            "n": 745,
+            "median_delta": 0.0,
+            "statistic": 53971.5,
+            "p_value": 0.0006156033319363036
+          },
+          "steps": {
+            "n": 745,
+            "median_delta": 0.0,
+            "statistic": 12546.0,
+            "p_value": 7.660391505925246e-39
+          },
+          "alpha_rms": {
+            "n": 745,
+            "median_delta": 0.028314000000000006,
+            "statistic": 69258.5,
+            "p_value": 1.93001701859948e-32
+          }
+        }
+      },
+      "NMPC_we0.05_vs_eadwa_we0": {
+        "n_plan": 855,
+        "sr_mcnemar": {
+          "n": 855,
+          "n_a_only": 39,
+          "n_b_only": 4,
+          "p_value": 3.1081526685738936e-08
+        },
+        "metrics": {
+          "energy": {
+            "n": 724,
+            "median_delta": 53.3389715000003,
+            "statistic": 114473.0,
+            "p_value": 0.002922510534923126
+          },
+          "energy_per_m": {
+            "n": 724,
+            "median_delta": 12.116037500000004,
+            "statistic": 108031.0,
+            "p_value": 3.7869181896695635e-05
+          },
+          "spl": {
+            "n": 724,
+            "median_delta": 0.0018660000000000343,
+            "statistic": 31867.0,
+            "p_value": 3.275553728047239e-29
+          },
+          "steps": {
+            "n": 724,
+            "median_delta": -16.0,
+            "statistic": 1402.5,
+            "p_value": 6.015657032187905e-118
+          },
+          "alpha_rms": {
+            "n": 724,
+            "median_delta": 0.041370500000000004,
+            "statistic": 83178.0,
+            "p_value": 1.402533209003013e-17
+          }
+        }
+      },
+      "NMPC_we0.05_vs_eadwa_we0.0003": {
+        "n_plan": 855,
+        "sr_mcnemar": {
+          "n": 855,
+          "n_a_only": 68,
+          "n_b_only": 4,
+          "p_value": 4.620814601991648e-16
+        },
+        "metrics": {
+          "energy": {
+            "n": 695,
+            "median_delta": 298.11604499999976,
+            "statistic": 81303.0,
+            "p_value": 7.207078729766666e-14
+          },
+          "energy_per_m": {
+            "n": 695,
+            "median_delta": 33.88290199999983,
+            "statistic": 74942.0,
+            "p_value": 3.774297258467217e-18
+          },
+          "spl": {
+            "n": 695,
+            "median_delta": 0.003565999999999958,
+            "statistic": 20893.0,
+            "p_value": 9.376600635065209e-41
+          },
+          "steps": {
+            "n": 695,
+            "median_delta": -17.0,
+            "statistic": 699.0,
+            "p_value": 1.8979334985556283e-114
+          },
+          "alpha_rms": {
+            "n": 695,
+            "median_delta": 0.092247,
+            "statistic": 24315.5,
+            "p_value": 2.1928252740831354e-74
+          }
+        }
+      },
+      "NMPC_we0.05_vs_eadwa_we0.0005": {
+        "n_plan": 855,
+        "sr_mcnemar": {
+          "n": 855,
+          "n_a_only": 84,
+          "n_b_only": 4,
+          "p_value": 1.5803951224724757e-20
+        },
+        "metrics": {
+          "energy": {
+            "n": 679,
+            "median_delta": 402.9490710000009,
+            "statistic": 68566.0,
+            "p_value": 4.9416905434513854e-20
+          },
+          "energy_per_m": {
+            "n": 679,
+            "median_delta": 44.32129200000003,
+            "statistic": 61903.0,
+            "p_value": 1.206915291285011e-25
+          },
+          "spl": {
+            "n": 679,
+            "median_delta": 0.0043600000000000305,
+            "statistic": 14501.0,
+            "p_value": 1.2729796038773383e-51
+          },
+          "steps": {
+            "n": 679,
+            "median_delta": -17.0,
+            "statistic": 681.5,
+            "p_value": 8.46577476375344e-112
+          },
+          "alpha_rms": {
+            "n": 679,
+            "median_delta": 0.1139,
+            "statistic": 13162.0,
+            "p_value": 5.424894728175492e-89
+          }
+        }
+      },
+      "NMPC_we0.1_vs_eadwa_we0": {
+        "n_plan": 855,
+        "sr_mcnemar": {
+          "n": 855,
+          "n_a_only": 36,
+          "n_b_only": 17,
+          "p_value": 0.012660335802414213
+        },
+        "metrics": {
+          "energy": {
+            "n": 711,
+            "median_delta": -191.76010799999995,
+            "statistic": 113336.0,
+            "p_value": 0.015805375583287148
+          },
+          "energy_per_m": {
+            "n": 711,
+            "median_delta": -8.773275000000012,
+            "statistic": 119688.0,
+            "p_value": 0.20985504652255005
+          },
+          "spl": {
+            "n": 711,
+            "median_delta": 0.0018780000000000463,
+            "statistic": 27460.5,
+            "p_value": 4.4350340851083124e-32
+          },
+          "steps": {
+            "n": 711,
+            "median_delta": -16.0,
+            "statistic": 2136.0,
+            "p_value": 1.852820302367644e-114
+          },
+          "alpha_rms": {
+            "n": 711,
+            "median_delta": 0.01137100000000002,
+            "statistic": 109195.0,
+            "p_value": 0.001528457696730226
+          }
+        }
+      },
+      "NMPC_we0.1_vs_eadwa_we0.0003": {
+        "n_plan": 855,
+        "sr_mcnemar": {
+          "n": 855,
+          "n_a_only": 57,
+          "n_b_only": 9,
+          "p_value": 1.1827848105236058e-09
+        },
+        "metrics": {
+          "energy": {
+            "n": 690,
+            "median_delta": -0.14218799999935072,
+            "statistic": 107189.0,
+            "p_value": 0.021869314514565
+          },
+          "energy_per_m": {
+            "n": 690,
+            "median_delta": 6.010528499999964,
+            "statistic": 99443.0,
+            "p_value": 0.00016228529984046742
+          },
+          "spl": {
+            "n": 690,
+            "median_delta": 0.0034310000000000174,
+            "statistic": 19147.0,
+            "p_value": 2.4732400172033633e-42
+          },
+          "steps": {
+            "n": 690,
+            "median_delta": -16.0,
+            "statistic": 690.0,
+            "p_value": 1.2481737431498099e-113
+          },
+          "alpha_rms": {
+            "n": 690,
+            "median_delta": 0.06285949999999998,
+            "statistic": 43456.0,
+            "p_value": 2.1566571303246212e-47
+          }
+        }
+      },
+      "NMPC_we0.1_vs_eadwa_we0.0005": {
+        "n_plan": 855,
+        "sr_mcnemar": {
+          "n": 855,
+          "n_a_only": 73,
+          "n_b_only": 9,
+          "p_value": 1.3767370902215938e-13
+        },
+        "metrics": {
+          "energy": {
+            "n": 674,
+            "median_delta": 63.9944230000001,
+            "statistic": 92784.0,
+            "p_value": 3.4194479245842506e-05
+          },
+          "energy_per_m": {
+            "n": 674,
+            "median_delta": 16.420357000000024,
+            "statistic": 84090.0,
+            "p_value": 4.55096317913874e-09
+          },
+          "spl": {
+            "n": 674,
+            "median_delta": 0.00453899999999996,
+            "statistic": 13575.0,
+            "p_value": 5.191455681930819e-52
+          },
+          "steps": {
+            "n": 674,
+            "median_delta": -17.0,
+            "statistic": 674.0,
+            "p_value": 5.593871946196553e-111
+          },
+          "alpha_rms": {
+            "n": 674,
+            "median_delta": 0.0838315,
+            "statistic": 24370.0,
+            "p_value": 6.832986587101677e-70
+          }
+        }
+      },
+      "eadwa_we0_vs_eadwa_we0.0003": {
+        "n_plan": 855,
+        "sr_mcnemar": {
+          "n": 855,
+          "n_a_only": 35,
+          "n_b_only": 6,
+          "p_value": 4.873598300036974e-06
+        },
+        "metrics": {
+          "energy": {
+            "n": 693,
+            "median_delta": 259.91801899999973,
+            "statistic": 30017.0,
+            "p_value": 1.194903609655619e-65
+          },
+          "energy_per_m": {
+            "n": 693,
+            "median_delta": 25.140622000000008,
+            "statistic": 27510.0,
+            "p_value": 3.0361616231329827e-69
+          },
+          "spl": {
+            "n": 693,
+            "median_delta": 0.00010500000000002174,
+            "statistic": 28125.5,
+            "p_value": 1.1705978182950115e-27
+          },
+          "steps": {
+            "n": 693,
+            "median_delta": 0.0,
+            "statistic": 23239.0,
+            "p_value": 3.61840694843377e-26
+          },
+          "alpha_rms": {
+            "n": 693,
+            "median_delta": 0.04118100000000002,
+            "statistic": 20895.0,
+            "p_value": 3.361395100412109e-79
+          }
+        }
+      },
+      "eadwa_we0_vs_eadwa_we0.0005": {
+        "n_plan": 855,
+        "sr_mcnemar": {
+          "n": 855,
+          "n_a_only": 52,
+          "n_b_only": 7,
+          "p_value": 1.3589917802203644e-09
+        },
+        "metrics": {
+          "energy": {
+            "n": 676,
+            "median_delta": 391.48388899999964,
+            "statistic": 25497.0,
+            "p_value": 1.3059297260926464e-68
+          },
+          "energy_per_m": {
+            "n": 676,
+            "median_delta": 38.02400749999998,
+            "statistic": 22368.0,
+            "p_value": 2.1643822724294024e-73
+          },
+          "spl": {
+            "n": 676,
+            "median_delta": 0.0010315000000000185,
+            "statistic": 17508.0,
+            "p_value": 2.809928765778114e-44
+          },
+          "steps": {
+            "n": 676,
+            "median_delta": -1.0,
+            "statistic": 21736.5,
+            "p_value": 4.775885684638204e-46
+          },
+          "alpha_rms": {
+            "n": 676,
+            "median_delta": 0.06418499999999998,
+            "statistic": 11347.0,
+            "p_value": 1.5427389909551806e-91
+          }
+        }
+      },
+      "eadwa_we0.0003_vs_eadwa_we0.0005": {
+        "n_plan": 855,
+        "sr_mcnemar": {
+          "n": 855,
+          "n_a_only": 19,
+          "n_b_only": 3,
+          "p_value": 0.0008554458618164062
+        },
+        "metrics": {
+          "energy": {
+            "n": 680,
+            "median_delta": 146.2449590000001,
+            "statistic": 59182.0,
+            "p_value": 2.3793932796044293e-28
+          },
+          "energy_per_m": {
+            "n": 680,
+            "median_delta": 13.873151500000006,
+            "statistic": 55839.0,
+            "p_value": 1.3519388476354612e-31
+          },
+          "spl": {
+            "n": 680,
+            "median_delta": 0.0006470000000000087,
+            "statistic": 15673.0,
+            "p_value": 1.8890814617756207e-48
+          },
+          "steps": {
+            "n": 680,
+            "median_delta": 0.0,
+            "statistic": 25415.0,
+            "p_value": 1.7983365721423025e-21
+          },
+          "alpha_rms": {
+            "n": 680,
+            "median_delta": 0.021537999999999946,
+            "statistic": 47107.5,
+            "p_value": 6.139110539176872e-41
+          }
+        }
+      }
+    }
+  }
+}

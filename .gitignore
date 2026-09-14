@@ -1,0 +1,17 @@
+# Python cache files
+**/__pycache__
+*.pyc
+MUJOCO_LOG.TXT
+
+# Editor / tooling
+.vscode/
+.claude/
+**/.claude/
+
+# Casadi compiler files
+tmp_casadi_compiler_shell*.o
+tmp_casadi_compiler_shell*.so
+jit_tmp*.c
+
+# Generated stats
+inference/results/global_paired/*/seed_stats.*

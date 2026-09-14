@@ -1,0 +1,980 @@
+
+================================================================================
+GLOBAL PAIRED BENCHMARK RESULTS
+================================================================================
+Timestamp:              2026-06-16T00:28:25.208951
+Lookahead distance:     2.0 m
+OMPL interpolation:     200 points
+OMPL solve budget:      30.0 s
+OMPL inflation radius:  0.1 m
+Max episode steps:      600
+Episodes/world:         100
+Goal distance range:    [8.0, 20.0] m
+Seed:                   42
+Controllers:            ['NMPC_we0', 'NMPC_we0.05', 'NMPC_we0.1', 'eadwa_we0', 'eadwa_we0.0003', 'eadwa_we0.0005']
+  NMPC_we0: type=NMPC, energy_weight=0.0, deterministic=N/A (NMPC)
+  NMPC_we0.05: type=NMPC, energy_weight=0.05, deterministic=N/A (NMPC)
+  NMPC_we0.1: type=NMPC, energy_weight=0.1, deterministic=N/A (NMPC)
+  eadwa_we0: type=EADWA, energy_weight=0.0, deterministic=N/A (NMPC)
+  eadwa_we0.0003: type=EADWA, energy_weight=0.0003, deterministic=N/A (NMPC)
+  eadwa_we0.0005: type=EADWA, energy_weight=0.0005, deterministic=N/A (NMPC)
+
+================================================================================
+DIFFICULTY: EASY
+================================================================================
+Episodes: 300  |  Planned: 291  |  Plan fail: 3.0%
+
+  --------------------------------------------------------------------------
+  Controller: NMPC_we0
+  --------------------------------------------------------------------------
+  A. FULL SYSTEM METRICS (all 300 episodes)
+    End-to-end success rate:    94.7%
+    End-to-end collision rate:  0.0%
+    End-to-end timeout rate:    2.3%
+    Plan fail rate:             3.0%
+  B. CONTROLLER-CONDITIONED (291 planned episodes, batch-means CI: 5 batches/world)
+    Success Rate (|plan):   97.6% +/- 1.8%  (284/291)
+    Collision Rate (|plan): 0.0% +/- 0.0%  (0/291)
+    Timeout Rate (|plan):   2.4% +/- 1.8%  (7/291)
+  C. SUCCESS-ONLY METRICS (284 episodes)
+    SPL:               0.9838 +/- 0.0056
+    Eavg (success):    35133.4394 +/- 718.2964 J
+    J/m  (success):    3249.7602 +/- 51.6056 J/m
+    RMS ang.acc (succ):7.7321 +/- 0.1436 rad/s^2
+    Steps (success):   221.9906 +/- 5.3443
+  D. ALL-EPISODE METRICS
+    Decision time:     23.4319 +/- 0.2632 ms/step
+
+  --------------------------------------------------------------------------
+  Controller: NMPC_we0.05
+  --------------------------------------------------------------------------
+  A. FULL SYSTEM METRICS (all 300 episodes)
+    End-to-end success rate:    94.0%
+    End-to-end collision rate:  0.0%
+    End-to-end timeout rate:    3.0%
+    Plan fail rate:             3.0%
+  B. CONTROLLER-CONDITIONED (291 planned episodes, batch-means CI: 5 batches/world)
+    Success Rate (|plan):   96.9% +/- 2.4%  (282/291)
+    Collision Rate (|plan): 0.0% +/- 0.0%  (0/291)
+    Timeout Rate (|plan):   3.1% +/- 2.4%  (9/291)
+  C. SUCCESS-ONLY METRICS (282 episodes)
+    SPL:               0.9846 +/- 0.0055
+    Eavg (success):    6567.6457 +/- 511.9245 J
+    J/m  (success):    618.0694 +/- 44.5772 J/m
+    RMS ang.acc (succ):0.4525 +/- 0.0198 rad/s^2
+    Steps (success):   225.4915 +/- 6.3589
+  D. ALL-EPISODE METRICS
+    Decision time:     39.6984 +/- 0.7418 ms/step
+
+  --------------------------------------------------------------------------
+  Controller: NMPC_we0.1
+  --------------------------------------------------------------------------
+  A. FULL SYSTEM METRICS (all 300 episodes)
+    End-to-end success rate:    93.0%
+    End-to-end collision rate:  0.0%
+    End-to-end timeout rate:    4.0%
+    Plan fail rate:             3.0%
+  B. CONTROLLER-CONDITIONED (291 planned episodes, batch-means CI: 5 batches/world)
+    Success Rate (|plan):   95.8% +/- 3.5%  (279/291)
+    Collision Rate (|plan): 0.0% +/- 0.0%  (0/291)
+    Timeout Rate (|plan):   4.2% +/- 3.5%  (12/291)
+  C. SUCCESS-ONLY METRICS (279 episodes)
+    SPL:               0.9845 +/- 0.0054
+    Eavg (success):    6379.8655 +/- 458.6447 J
+    J/m  (success):    599.7513 +/- 40.8814 J/m
+    RMS ang.acc (succ):0.4303 +/- 0.0205 rad/s^2
+    Steps (success):   225.3720 +/- 5.5730
+  D. ALL-EPISODE METRICS
+    Decision time:     49.0130 +/- 1.0927 ms/step
+
+  --------------------------------------------------------------------------
+  Controller: eadwa_we0
+  --------------------------------------------------------------------------
+  A. FULL SYSTEM METRICS (all 300 episodes)
+    End-to-end success rate:    92.7%
+    End-to-end collision rate:  0.0%
+    End-to-end timeout rate:    4.3%
+    Plan fail rate:             3.0%
+  B. CONTROLLER-CONDITIONED (291 planned episodes, batch-means CI: 5 batches/world)
+    Success Rate (|plan):   95.5% +/- 2.4%  (278/291)
+    Collision Rate (|plan): 0.0% +/- 0.0%  (0/291)
+    Timeout Rate (|plan):   4.5% +/- 2.4%  (13/291)
+  C. SUCCESS-ONLY METRICS (278 episodes)
+    SPL:               0.9797 +/- 0.0072
+    Eavg (success):    6819.3002 +/- 582.2160 J
+    J/m  (success):    635.0574 +/- 48.3925 J/m
+    RMS ang.acc (succ):0.4104 +/- 0.0162 rad/s^2
+    Steps (success):   241.0266 +/- 5.3899
+  D. ALL-EPISODE METRICS
+    Decision time:     5.9086 +/- 0.0165 ms/step
+
+  --------------------------------------------------------------------------
+  Controller: eadwa_we0.0003
+  --------------------------------------------------------------------------
+  A. FULL SYSTEM METRICS (all 300 episodes)
+    End-to-end success rate:    91.0%
+    End-to-end collision rate:  0.0%
+    End-to-end timeout rate:    6.0%
+    Plan fail rate:             3.0%
+  B. CONTROLLER-CONDITIONED (291 planned episodes, batch-means CI: 5 batches/world)
+    Success Rate (|plan):   93.8% +/- 2.7%  (273/291)
+    Collision Rate (|plan): 0.0% +/- 0.0%  (0/291)
+    Timeout Rate (|plan):   6.2% +/- 2.7%  (18/291)
+  C. SUCCESS-ONLY METRICS (273 episodes)
+    SPL:               0.9797 +/- 0.0067
+    Eavg (success):    6563.9695 +/- 515.8654 J
+    J/m  (success):    612.9587 +/- 43.9715 J/m
+    RMS ang.acc (succ):0.3558 +/- 0.0183 rad/s^2
+    Steps (success):   241.0052 +/- 5.0908
+  D. ALL-EPISODE METRICS
+    Decision time:     5.9009 +/- 0.0155 ms/step
+
+  --------------------------------------------------------------------------
+  Controller: eadwa_we0.0005
+  --------------------------------------------------------------------------
+  A. FULL SYSTEM METRICS (all 300 episodes)
+    End-to-end success rate:    90.0%
+    End-to-end collision rate:  0.0%
+    End-to-end timeout rate:    7.0%
+    Plan fail rate:             3.0%
+  B. CONTROLLER-CONDITIONED (291 planned episodes, batch-means CI: 5 batches/world)
+    Success Rate (|plan):   92.8% +/- 2.6%  (270/291)
+    Collision Rate (|plan): 0.0% +/- 0.0%  (0/291)
+    Timeout Rate (|plan):   7.2% +/- 2.6%  (21/291)
+  C. SUCCESS-ONLY METRICS (270 episodes)
+    SPL:               0.9792 +/- 0.0068
+    Eavg (success):    6426.3188 +/- 485.9092 J
+    J/m  (success):    599.0325 +/- 41.7568 J/m
+    RMS ang.acc (succ):0.3375 +/- 0.0177 rad/s^2
+    Steps (success):   241.6694 +/- 5.2723
+  D. ALL-EPISODE METRICS
+    Decision time:     5.9061 +/- 0.0138 ms/step
+
+================================================================================
+DIFFICULTY: HARD
+================================================================================
+Episodes: 300  |  Planned: 282  |  Plan fail: 6.0%
+
+  --------------------------------------------------------------------------
+  Controller: NMPC_we0
+  --------------------------------------------------------------------------
+  A. FULL SYSTEM METRICS (all 300 episodes)
+    End-to-end success rate:    79.0%
+    End-to-end collision rate:  0.3%
+    End-to-end timeout rate:    14.7%
+    Plan fail rate:             6.0%
+  B. CONTROLLER-CONDITIONED (282 planned episodes, batch-means CI: 5 batches/world)
+    Success Rate (|plan):   84.0% +/- 5.6%  (237/282)
+    Collision Rate (|plan): 0.4% +/- 0.8%  (1/282)
+    Timeout Rate (|plan):   15.7% +/- 5.3%  (44/282)
+  C. SUCCESS-ONLY METRICS (237 episodes)
+    SPL:               0.8953 +/- 0.0207
+    Eavg (success):    37957.5552 +/- 1832.7991 J
+    J/m  (success):    3156.5242 +/- 67.2356 J/m
+    RMS ang.acc (succ):6.9073 +/- 0.1264 rad/s^2
+    Steps (success):   247.1594 +/- 10.9530
+  D. ALL-EPISODE METRICS
+    Decision time:     25.1868 +/- 0.4710 ms/step
+
+  --------------------------------------------------------------------------
+  Controller: NMPC_we0.05
+  --------------------------------------------------------------------------
+  A. FULL SYSTEM METRICS (all 300 episodes)
+    End-to-end success rate:    78.3%
+    End-to-end collision rate:  0.3%
+    End-to-end timeout rate:    15.3%
+    Plan fail rate:             6.0%
+  B. CONTROLLER-CONDITIONED (282 planned episodes, batch-means CI: 5 batches/world)
+    Success Rate (|plan):   83.3% +/- 5.9%  (235/282)
+    Collision Rate (|plan): 0.4% +/- 0.8%  (1/282)
+    Timeout Rate (|plan):   16.4% +/- 5.6%  (46/282)
+  C. SUCCESS-ONLY METRICS (235 episodes)
+    SPL:               0.8972 +/- 0.0207
+    Eavg (success):    12216.2885 +/- 929.4802 J
+    J/m  (success):    1012.5245 +/- 54.9167 J/m
+    RMS ang.acc (succ):0.5811 +/- 0.0253 rad/s^2
+    Steps (success):   250.1419 +/- 10.8945
+  D. ALL-EPISODE METRICS
+    Decision time:     40.2782 +/- 1.4519 ms/step
+
+  --------------------------------------------------------------------------
+  Controller: NMPC_we0.1
+  --------------------------------------------------------------------------
+  A. FULL SYSTEM METRICS (all 300 episodes)
+    End-to-end success rate:    76.3%
+    End-to-end collision rate:  0.0%
+    End-to-end timeout rate:    17.7%
+    Plan fail rate:             6.0%
+  B. CONTROLLER-CONDITIONED (282 planned episodes, batch-means CI: 5 batches/world)
+    Success Rate (|plan):   81.1% +/- 5.4%  (229/282)
+    Collision Rate (|plan): 0.0% +/- 0.0%  (0/282)
+    Timeout Rate (|plan):   18.9% +/- 5.4%  (53/282)
+  C. SUCCESS-ONLY METRICS (229 episodes)
+    SPL:               0.8979 +/- 0.0208
+    Eavg (success):    11631.2809 +/- 883.2515 J
+    J/m  (success):    964.8908 +/- 53.2182 J/m
+    RMS ang.acc (succ):0.5459 +/- 0.0215 rad/s^2
+    Steps (success):   249.5924 +/- 10.9726
+  D. ALL-EPISODE METRICS
+    Decision time:     47.1950 +/- 1.5824 ms/step
+
+  --------------------------------------------------------------------------
+  Controller: eadwa_we0
+  --------------------------------------------------------------------------
+  A. FULL SYSTEM METRICS (all 300 episodes)
+    End-to-end success rate:    71.3%
+    End-to-end collision rate:  1.7%
+    End-to-end timeout rate:    21.0%
+    Plan fail rate:             6.0%
+  B. CONTROLLER-CONDITIONED (282 planned episodes, batch-means CI: 5 batches/world)
+    Success Rate (|plan):   75.8% +/- 6.0%  (214/282)
+    Collision Rate (|plan): 1.8% +/- 1.5%  (5/282)
+    Timeout Rate (|plan):   22.4% +/- 5.9%  (63/282)
+  C. SUCCESS-ONLY METRICS (214 episodes)
+    SPL:               0.8937 +/- 0.0189
+    Eavg (success):    11085.7840 +/- 634.5390 J
+    J/m  (success):    912.8365 +/- 39.2373 J/m
+    RMS ang.acc (succ):0.5408 +/- 0.0232 rad/s^2
+    Steps (success):   267.0713 +/- 10.5018
+  D. ALL-EPISODE METRICS
+    Decision time:     5.9033 +/- 0.0091 ms/step
+
+  --------------------------------------------------------------------------
+  Controller: eadwa_we0.0003
+  --------------------------------------------------------------------------
+  A. FULL SYSTEM METRICS (all 300 episodes)
+    End-to-end success rate:    68.3%
+    End-to-end collision rate:  0.7%
+    End-to-end timeout rate:    25.0%
+    Plan fail rate:             6.0%
+  B. CONTROLLER-CONDITIONED (282 planned episodes, batch-means CI: 5 batches/world)
+    Success Rate (|plan):   72.6% +/- 5.5%  (205/282)
+    Collision Rate (|plan): 0.7% +/- 1.1%  (2/282)
+    Timeout Rate (|plan):   26.7% +/- 5.4%  (75/282)
+  C. SUCCESS-ONLY METRICS (205 episodes)
+    SPL:               0.8933 +/- 0.0208
+    Eavg (success):    10593.9001 +/- 697.5636 J
+    J/m  (success):    872.2443 +/- 41.4536 J/m
+    RMS ang.acc (succ):0.4764 +/- 0.0194 rad/s^2
+    Steps (success):   267.9057 +/- 11.8726
+  D. ALL-EPISODE METRICS
+    Decision time:     5.9070 +/- 0.0075 ms/step
+
+  --------------------------------------------------------------------------
+  Controller: eadwa_we0.0005
+  --------------------------------------------------------------------------
+  A. FULL SYSTEM METRICS (all 300 episodes)
+    End-to-end success rate:    65.7%
+    End-to-end collision rate:  2.0%
+    End-to-end timeout rate:    26.3%
+    Plan fail rate:             6.0%
+  B. CONTROLLER-CONDITIONED (282 planned episodes, batch-means CI: 5 batches/world)
+    Success Rate (|plan):   69.8% +/- 5.6%  (197/282)
+    Collision Rate (|plan): 2.1% +/- 1.9%  (6/282)
+    Timeout Rate (|plan):   28.0% +/- 5.8%  (79/282)
+  C. SUCCESS-ONLY METRICS (197 episodes)
+    SPL:               0.8912 +/- 0.0207
+    Eavg (success):    10367.7435 +/- 698.8513 J
+    J/m  (success):    849.7905 +/- 43.6689 J/m
+    RMS ang.acc (succ):0.4489 +/- 0.0186 rad/s^2
+    Steps (success):   269.6959 +/- 12.3998
+  D. ALL-EPISODE METRICS
+    Decision time:     5.9097 +/- 0.0116 ms/step
+
+================================================================================
+DIFFICULTY: MEDIUM
+================================================================================
+Episodes: 300  |  Planned: 282  |  Plan fail: 6.0%
+
+  --------------------------------------------------------------------------
+  Controller: NMPC_we0
+  --------------------------------------------------------------------------
+  A. FULL SYSTEM METRICS (all 300 episodes)
+    End-to-end success rate:    82.3%
+    End-to-end collision rate:  0.3%
+    End-to-end timeout rate:    11.3%
+    Plan fail rate:             6.0%
+  B. CONTROLLER-CONDITIONED (282 planned episodes, batch-means CI: 5 batches/world)
+    Success Rate (|plan):   87.6% +/- 5.7%  (247/282)
+    Collision Rate (|plan): 0.4% +/- 0.8%  (1/282)
+    Timeout Rate (|plan):   12.1% +/- 5.3%  (34/282)
+  C. SUCCESS-ONLY METRICS (247 episodes)
+    SPL:               0.9494 +/- 0.0105
+    Eavg (success):    35771.0162 +/- 1417.9062 J
+    J/m  (success):    3153.6867 +/- 75.2847 J/m
+    RMS ang.acc (succ):7.1520 +/- 0.1657 rad/s^2
+    Steps (success):   233.8138 +/- 6.8824
+  D. ALL-EPISODE METRICS
+    Decision time:     24.4656 +/- 0.5728 ms/step
+
+  --------------------------------------------------------------------------
+  Controller: NMPC_we0.05
+  --------------------------------------------------------------------------
+  A. FULL SYSTEM METRICS (all 300 episodes)
+    End-to-end success rate:    82.0%
+    End-to-end collision rate:  0.3%
+    End-to-end timeout rate:    11.7%
+    Plan fail rate:             6.0%
+  B. CONTROLLER-CONDITIONED (282 planned episodes, batch-means CI: 5 batches/world)
+    Success Rate (|plan):   87.2% +/- 6.1%  (246/282)
+    Collision Rate (|plan): 0.4% +/- 0.8%  (1/282)
+    Timeout Rate (|plan):   12.4% +/- 5.7%  (35/282)
+  C. SUCCESS-ONLY METRICS (246 episodes)
+    SPL:               0.9516 +/- 0.0104
+    Eavg (success):    9772.5358 +/- 1009.5829 J
+    J/m  (success):    854.7589 +/- 74.0818 J/m
+    RMS ang.acc (succ):0.5362 +/- 0.0224 rad/s^2
+    Steps (success):   235.7854 +/- 6.9123
+  D. ALL-EPISODE METRICS
+    Decision time:     40.2166 +/- 1.0266 ms/step
+
+  --------------------------------------------------------------------------
+  Controller: NMPC_we0.1
+  --------------------------------------------------------------------------
+  A. FULL SYSTEM METRICS (all 300 episodes)
+    End-to-end success rate:    79.7%
+    End-to-end collision rate:  0.3%
+    End-to-end timeout rate:    14.0%
+    Plan fail rate:             6.0%
+  B. CONTROLLER-CONDITIONED (282 planned episodes, batch-means CI: 5 batches/world)
+    Success Rate (|plan):   84.7% +/- 5.9%  (239/282)
+    Collision Rate (|plan): 0.4% +/- 0.8%  (1/282)
+    Timeout Rate (|plan):   14.9% +/- 5.5%  (42/282)
+  C. SUCCESS-ONLY METRICS (239 episodes)
+    SPL:               0.9526 +/- 0.0099
+    Eavg (success):    9246.8601 +/- 928.9707 J
+    J/m  (success):    807.0090 +/- 67.9308 J/m
+    RMS ang.acc (succ):0.5061 +/- 0.0202 rad/s^2
+    Steps (success):   239.0919 +/- 8.5145
+  D. ALL-EPISODE METRICS
+    Decision time:     47.7554 +/- 1.4515 ms/step
+
+  --------------------------------------------------------------------------
+  Controller: eadwa_we0
+  --------------------------------------------------------------------------
+  A. FULL SYSTEM METRICS (all 300 episodes)
+    End-to-end success rate:    78.7%
+    End-to-end collision rate:  1.3%
+    End-to-end timeout rate:    14.0%
+    Plan fail rate:             6.0%
+  B. CONTROLLER-CONDITIONED (282 planned episodes, batch-means CI: 5 batches/world)
+    Success Rate (|plan):   83.6% +/- 6.4%  (236/282)
+    Collision Rate (|plan): 1.4% +/- 1.4%  (4/282)
+    Timeout Rate (|plan):   14.9% +/- 5.6%  (42/282)
+  C. SUCCESS-ONLY METRICS (236 episodes)
+    SPL:               0.9464 +/- 0.0103
+    Eavg (success):    9240.0926 +/- 890.1858 J
+    J/m  (success):    805.6390 +/- 64.8455 J/m
+    RMS ang.acc (succ):0.5068 +/- 0.0397 rad/s^2
+    Steps (success):   253.7102 +/- 7.0106
+  D. ALL-EPISODE METRICS
+    Decision time:     5.9125 +/- 0.0088 ms/step
+
+  --------------------------------------------------------------------------
+  Controller: eadwa_we0.0003
+  --------------------------------------------------------------------------
+  A. FULL SYSTEM METRICS (all 300 episodes)
+    End-to-end success rate:    73.7%
+    End-to-end collision rate:  1.3%
+    End-to-end timeout rate:    19.0%
+    Plan fail rate:             6.0%
+  B. CONTROLLER-CONDITIONED (282 planned episodes, batch-means CI: 5 batches/world)
+    Success Rate (|plan):   78.3% +/- 6.7%  (221/282)
+    Collision Rate (|plan): 1.4% +/- 1.4%  (4/282)
+    Timeout Rate (|plan):   20.2% +/- 6.1%  (57/282)
+  C. SUCCESS-ONLY METRICS (221 episodes)
+    SPL:               0.9457 +/- 0.0114
+    Eavg (success):    8664.7572 +/- 801.6751 J
+    J/m  (success):    753.8735 +/- 60.3552 J/m
+    RMS ang.acc (succ):0.4291 +/- 0.0213 rad/s^2
+    Steps (success):   254.6506 +/- 7.7112
+  D. ALL-EPISODE METRICS
+    Decision time:     5.9168 +/- 0.0100 ms/step
+
+  --------------------------------------------------------------------------
+  Controller: eadwa_we0.0005
+  --------------------------------------------------------------------------
+  A. FULL SYSTEM METRICS (all 300 episodes)
+    End-to-end success rate:    72.0%
+    End-to-end collision rate:  1.3%
+    End-to-end timeout rate:    20.7%
+    Plan fail rate:             6.0%
+  B. CONTROLLER-CONDITIONED (282 planned episodes, batch-means CI: 5 batches/world)
+    Success Rate (|plan):   76.5% +/- 6.6%  (216/282)
+    Collision Rate (|plan): 1.4% +/- 1.4%  (4/282)
+    Timeout Rate (|plan):   22.1% +/- 6.0%  (62/282)
+  C. SUCCESS-ONLY METRICS (216 episodes)
+    SPL:               0.9441 +/- 0.0116
+    Eavg (success):    8489.8565 +/- 793.6719 J
+    J/m  (success):    738.1614 +/- 59.6793 J/m
+    RMS ang.acc (succ):0.4062 +/- 0.0221 rad/s^2
+    Steps (success):   254.3269 +/- 7.7438
+  D. ALL-EPISODE METRICS
+    Decision time:     5.9187 +/- 0.0092 ms/step
+
+================================================================================
+DIFFICULTY: ALL
+================================================================================
+Episodes: 900  |  Planned: 855  |  Plan fail: 5.0%
+
+  --------------------------------------------------------------------------
+  Controller: NMPC_we0
+  --------------------------------------------------------------------------
+  A. FULL SYSTEM METRICS (all 900 episodes)
+    End-to-end success rate:    85.3%
+    End-to-end collision rate:  0.2%
+    End-to-end timeout rate:    9.4%
+    Plan fail rate:             5.0%
+  B. CONTROLLER-CONDITIONED (855 planned episodes, batch-means CI: 5 batches/world)
+    Success Rate (|plan):   89.7% +/- 3.1%  (768/855)
+    Collision Rate (|plan): 0.2% +/- 0.3%  (2/855)
+    Timeout Rate (|plan):   10.1% +/- 2.9%  (85/855)
+  C. SUCCESS-ONLY METRICS (768 episodes)
+    SPL:               0.9428 +/- 0.0133
+    Eavg (success):    36287.3370 +/- 828.3582 J
+    J/m  (success):    3186.6570 +/- 37.2482 J/m
+    RMS ang.acc (succ):7.2638 +/- 0.1306 rad/s^2
+    Steps (success):   234.3213 +/- 5.3012
+  D. ALL-EPISODE METRICS
+    Decision time:     24.3614 +/- 0.3254 ms/step
+
+  --------------------------------------------------------------------------
+  Controller: NMPC_we0.05
+  --------------------------------------------------------------------------
+  A. FULL SYSTEM METRICS (all 900 episodes)
+    End-to-end success rate:    84.8%
+    End-to-end collision rate:  0.2%
+    End-to-end timeout rate:    10.0%
+    Plan fail rate:             5.0%
+  B. CONTROLLER-CONDITIONED (855 planned episodes, batch-means CI: 5 batches/world)
+    Success Rate (|plan):   89.1% +/- 3.2%  (763/855)
+    Collision Rate (|plan): 0.2% +/- 0.3%  (2/855)
+    Timeout Rate (|plan):   10.6% +/- 3.1%  (90/855)
+  C. SUCCESS-ONLY METRICS (763 episodes)
+    SPL:               0.9445 +/- 0.0131
+    Eavg (success):    9518.8233 +/- 833.5275 J
+    J/m  (success):    828.4509 +/- 58.3804 J/m
+    RMS ang.acc (succ):0.5233 +/- 0.0201 rad/s^2
+    Steps (success):   237.1396 +/- 5.3675
+  D. ALL-EPISODE METRICS
+    Decision time:     40.0644 +/- 0.5949 ms/step
+
+  --------------------------------------------------------------------------
+  Controller: NMPC_we0.1
+  --------------------------------------------------------------------------
+  A. FULL SYSTEM METRICS (all 900 episodes)
+    End-to-end success rate:    83.0%
+    End-to-end collision rate:  0.1%
+    End-to-end timeout rate:    11.9%
+    Plan fail rate:             5.0%
+  B. CONTROLLER-CONDITIONED (855 planned episodes, batch-means CI: 5 batches/world)
+    Success Rate (|plan):   87.2% +/- 3.3%  (747/855)
+    Collision Rate (|plan): 0.1% +/- 0.2%  (1/855)
+    Timeout Rate (|plan):   12.7% +/- 3.2%  (107/855)
+  C. SUCCESS-ONLY METRICS (747 episodes)
+    SPL:               0.9450 +/- 0.0131
+    Eavg (success):    9086.0022 +/- 773.9842 J
+    J/m  (success):    790.5504 +/- 54.0153 J/m
+    RMS ang.acc (succ):0.4941 +/- 0.0183 rad/s^2
+    Steps (success):   238.0188 +/- 5.4819
+  D. ALL-EPISODE METRICS
+    Decision time:     47.9878 +/- 0.7726 ms/step
+
+  --------------------------------------------------------------------------
+  Controller: eadwa_we0
+  --------------------------------------------------------------------------
+  A. FULL SYSTEM METRICS (all 900 episodes)
+    End-to-end success rate:    80.9%
+    End-to-end collision rate:  1.0%
+    End-to-end timeout rate:    13.1%
+    Plan fail rate:             5.0%
+  B. CONTROLLER-CONDITIONED (855 planned episodes, batch-means CI: 5 batches/world)
+    Success Rate (|plan):   85.0% +/- 3.7%  (728/855)
+    Collision Rate (|plan): 1.1% +/- 0.7%  (9/855)
+    Timeout Rate (|plan):   13.9% +/- 3.4%  (118/855)
+  C. SUCCESS-ONLY METRICS (728 episodes)
+    SPL:               0.9399 +/- 0.0128
+    Eavg (success):    9048.3923 +/- 652.2355 J
+    J/m  (success):    784.5110 +/- 44.3284 J/m
+    RMS ang.acc (succ):0.4860 +/- 0.0224 rad/s^2
+    Steps (success):   253.9360 +/- 5.3000
+  D. ALL-EPISODE METRICS
+    Decision time:     5.9081 +/- 0.0065 ms/step
+
+  --------------------------------------------------------------------------
+  Controller: eadwa_we0.0003
+  --------------------------------------------------------------------------
+  A. FULL SYSTEM METRICS (all 900 episodes)
+    End-to-end success rate:    77.7%
+    End-to-end collision rate:  0.7%
+    End-to-end timeout rate:    16.7%
+    Plan fail rate:             5.0%
+  B. CONTROLLER-CONDITIONED (855 planned episodes, batch-means CI: 5 batches/world)
+    Success Rate (|plan):   81.6% +/- 3.9%  (699/855)
+    Collision Rate (|plan): 0.7% +/- 0.6%  (6/855)
+    Timeout Rate (|plan):   17.7% +/- 3.7%  (150/855)
+  C. SUCCESS-ONLY METRICS (699 episodes)
+    SPL:               0.9396 +/- 0.0132
+    Eavg (success):    8607.5423 +/- 616.9988 J
+    J/m  (success):    746.3588 +/- 41.4737 J/m
+    RMS ang.acc (succ):0.4204 +/- 0.0183 rad/s^2
+    Steps (success):   254.5205 +/- 5.6859
+  D. ALL-EPISODE METRICS
+    Decision time:     5.9082 +/- 0.0064 ms/step
+
+  --------------------------------------------------------------------------
+  Controller: eadwa_we0.0005
+  --------------------------------------------------------------------------
+  A. FULL SYSTEM METRICS (all 900 episodes)
+    End-to-end success rate:    75.9%
+    End-to-end collision rate:  1.1%
+    End-to-end timeout rate:    18.0%
+    Plan fail rate:             5.0%
+  B. CONTROLLER-CONDITIONED (855 planned episodes, batch-means CI: 5 batches/world)
+    Success Rate (|plan):   79.7% +/- 4.0%  (683/855)
+    Collision Rate (|plan): 1.2% +/- 0.8%  (10/855)
+    Timeout Rate (|plan):   19.1% +/- 3.8%  (162/855)
+  C. SUCCESS-ONLY METRICS (683 episodes)
+    SPL:               0.9382 +/- 0.0133
+    Eavg (success):    8427.9729 +/- 604.9968 J
+    J/m  (success):    728.9948 +/- 40.5796 J/m
+    RMS ang.acc (succ):0.3975 +/- 0.0174 rad/s^2
+    Steps (success):   255.2307 +/- 5.8941
+  D. ALL-EPISODE METRICS
+    Decision time:     5.9115 +/- 0.0064 ms/step
+
+================================================================================
+PAIRED SIGNIFICANCE TESTS (additive to the CIs above)
+  Wilcoxon signed-rank on per-episode differences (mutual-success episodes);
+  McNemar (exact) on paired success/failure. median d is (first - second).
+================================================================================
+
+  difficulty: EASY
+  NMPC_we0 vs NMPC_we0.05  (n_plan=291)
+    SR  (McNemar):  p=0.5000  [only NMPC_we0: 2, only NMPC_we0.05: 0]
+    energy                     p=5.65e-48  median d=+2.792e+04  n=282
+    energy_per_m               p=5.65e-48  median d=+2747  n=282
+    spl                        p=0.1983  median d=+0  n=282
+    steps                      p=1.31e-41  median d=-3  n=282
+    alpha_rms                  p=6.15e-48  median d=+7.567  n=282
+  NMPC_we0 vs NMPC_we0.1  (n_plan=291)
+    SR  (McNemar):  p=0.0625  [only NMPC_we0: 5, only NMPC_we0.1: 0]
+    energy                     p=1.75e-47  median d=+2.808e+04  n=279
+    energy_per_m               p=1.77e-47  median d=+2762  n=279
+    spl                        p=0.5090  median d=+0  n=279
+    steps                      p=3.44e-44  median d=-3  n=279
+    alpha_rms                  p=1.89e-47  median d=+7.576  n=279
+  NMPC_we0 vs eadwa_we0  (n_plan=291)
+    SR  (McNemar):  p=0.0312  [only NMPC_we0: 6, only eadwa_we0: 0]
+    energy                     p=2.78e-47  median d=+2.803e+04  n=278
+    energy_per_m               p=2.72e-47  median d=+2727  n=278
+    spl                        p=2.01e-12  median d=+0  n=278
+    steps                      p=2.33e-47  median d=-19  n=278
+    alpha_rms                  p=2.44e-47  median d=+7.603  n=278
+  NMPC_we0 vs eadwa_we0.0003  (n_plan=291)
+    SR  (McNemar):  p=9.77e-04  [only NMPC_we0: 11, only eadwa_we0.0003: 0]
+    energy                     p=1.80e-46  median d=+2.812e+04  n=273
+    energy_per_m               p=1.78e-46  median d=+2754  n=273
+    spl                        p=1.00e-13  median d=+0  n=273
+    steps                      p=1.08e-46  median d=-19  n=273
+    alpha_rms                  p=1.59e-46  median d=+7.672  n=273
+  NMPC_we0 vs eadwa_we0.0005  (n_plan=291)
+    SR  (McNemar):  p=1.22e-04  [only NMPC_we0: 14, only eadwa_we0.0005: 0]
+    energy                     p=5.51e-46  median d=+2.826e+04  n=270
+    energy_per_m               p=5.45e-46  median d=+2776  n=270
+    spl                        p=8.71e-16  median d=+0  n=270
+    steps                      p=3.35e-46  median d=-20  n=270
+    alpha_rms                  p=4.93e-46  median d=+7.687  n=270
+  NMPC_we0.05 vs NMPC_we0.1  (n_plan=291)
+    SR  (McNemar):  p=0.2500  [only NMPC_we0.05: 3, only NMPC_we0.1: 0]
+    energy                     p=1.48e-13  median d=+135.1  n=279
+    energy_per_m               p=1.14e-13  median d=+12.54  n=279
+    spl                        p=0.7935  median d=+0  n=279
+    steps                      p=7.89e-15  median d=+0  n=279
+    alpha_rms                  p=7.15e-08  median d=+0.01892  n=279
+  NMPC_we0.05 vs eadwa_we0  (n_plan=291)
+    SR  (McNemar):  p=0.2891  [only NMPC_we0.05: 6, only eadwa_we0: 2]
+    energy                     p=4.49e-04  median d=-173.7  n=276
+    energy_per_m               p=0.0089  median d=-11.39  n=276
+    spl                        p=1.67e-14  median d=+0  n=276
+    steps                      p=6.72e-46  median d=-16  n=276
+    alpha_rms                  p=1.52e-07  median d=+0.02503  n=276
+  NMPC_we0.05 vs eadwa_we0.0003  (n_plan=291)
+    SR  (McNemar):  p=0.0225  [only NMPC_we0.05: 11, only eadwa_we0.0003: 2]
+    energy                     p=0.2941  median d=-49.09  n=271
+    energy_per_m               p=0.9303  median d=-1.028  n=271
+    spl                        p=1.63e-15  median d=+0  n=271
+    steps                      p=4.27e-45  median d=-16  n=271
+    alpha_rms                  p=8.06e-31  median d=+0.07732  n=271
+  NMPC_we0.05 vs eadwa_we0.0005  (n_plan=291)
+    SR  (McNemar):  p=0.0042  [only NMPC_we0.05: 14, only eadwa_we0.0005: 2]
+    energy                     p=0.7877  median d=-28.04  n=268
+    energy_per_m               p=0.1870  median d=+1.245  n=268
+    spl                        p=8.84e-18  median d=+0  n=268
+    steps                      p=1.46e-44  median d=-17  n=268
+    alpha_rms                  p=8.20e-38  median d=+0.09515  n=268
+  NMPC_we0.1 vs eadwa_we0  (n_plan=291)
+    SR  (McNemar):  p=1.0000  [only NMPC_we0.1: 6, only eadwa_we0: 5]
+    energy                     p=2.24e-09  median d=-427.5  n=273
+    energy_per_m               p=1.62e-07  median d=-36.74  n=273
+    spl                        p=9.91e-14  median d=+0  n=273
+    steps                      p=1.07e-46  median d=-16  n=273
+    alpha_rms                  p=0.0614  median d=+0.000853  n=273
+  NMPC_we0.1 vs eadwa_we0.0003  (n_plan=291)
+    SR  (McNemar):  p=0.1460  [only NMPC_we0.1: 9, only eadwa_we0.0003: 3]
+    energy                     p=2.36e-04  median d=-214.3  n=270
+    energy_per_m               p=0.0056  median d=-15.96  n=270
+    spl                        p=8.34e-15  median d=+0  n=270
+    steps                      p=3.13e-46  median d=-16  n=270
+    alpha_rms                  p=5.42e-20  median d=+0.05457  n=270
+  NMPC_we0.1 vs eadwa_we0.0005  (n_plan=291)
+    SR  (McNemar):  p=0.0352  [only NMPC_we0.1: 12, only eadwa_we0.0005: 3]
+    energy                     p=0.0154  median d=-173.6  n=267
+    energy_per_m               p=0.1890  median d=-10.95  n=267
+    spl                        p=6.29e-17  median d=+0  n=267
+    steps                      p=1.03e-45  median d=-16  n=267
+    alpha_rms                  p=2.70e-30  median d=+0.06713  n=267
+  eadwa_we0 vs eadwa_we0.0003  (n_plan=291)
+    SR  (McNemar):  p=0.0625  [only eadwa_we0: 5, only eadwa_we0.0003: 0]
+    energy                     p=7.65e-20  median d=+186.8  n=273
+    energy_per_m               p=2.43e-20  median d=+17.11  n=273
+    spl                        p=0.0016  median d=+0  n=273
+    steps                      p=2.64e-06  median d=+0  n=273
+    alpha_rms                  p=1.84e-37  median d=+0.04463  n=273
+  eadwa_we0 vs eadwa_we0.0005  (n_plan=291)
+    SR  (McNemar):  p=0.0078  [only eadwa_we0: 8, only eadwa_we0.0005: 0]
+    energy                     p=1.37e-22  median d=+302.5  n=270
+    energy_per_m               p=1.39e-23  median d=+28.3  n=270
+    spl                        p=1.26e-08  median d=+0  n=270
+    steps                      p=5.63e-14  median d=-1  n=270
+    alpha_rms                  p=2.16e-40  median d=+0.06547  n=270
+  eadwa_we0.0003 vs eadwa_we0.0005  (n_plan=291)
+    SR  (McNemar):  p=0.2500  [only eadwa_we0.0003: 3, only eadwa_we0.0005: 0]
+    energy                     p=2.18e-09  median d=+88.98  n=270
+    energy_per_m               p=3.93e-10  median d=+9.425  n=270
+    spl                        p=1.11e-12  median d=+0  n=270
+    steps                      p=1.43e-06  median d=+0  n=270
+    alpha_rms                  p=1.28e-14  median d=+0.01576  n=270
+
+  difficulty: HARD
+  NMPC_we0 vs NMPC_we0.05  (n_plan=282)
+    SR  (McNemar):  p=0.5000  [only NMPC_we0: 2, only NMPC_we0.05: 0]
+    energy                     p=2.65e-40  median d=+2.521e+04  n=235
+    energy_per_m               p=2.65e-40  median d=+2230  n=235
+    spl                        p=4.39e-11  median d=-0.001232  n=235
+    steps                      p=1.02e-30  median d=-3  n=235
+    alpha_rms                  p=2.65e-40  median d=+6.459  n=235
+  NMPC_we0 vs NMPC_we0.1  (n_plan=282)
+    SR  (McNemar):  p=0.0215  [only NMPC_we0: 9, only NMPC_we0.1: 1]
+    energy                     p=3.71e-39  median d=+2.586e+04  n=228
+    energy_per_m               p=3.71e-39  median d=+2274  n=228
+    spl                        p=2.38e-12  median d=-0.001775  n=228
+    steps                      p=7.68e-27  median d=-3  n=228
+    alpha_rms                  p=3.71e-39  median d=+6.525  n=228
+  NMPC_we0 vs eadwa_we0  (n_plan=282)
+    SR  (McNemar):  p=1.55e-06  [only NMPC_we0: 24, only eadwa_we0: 1]
+    energy                     p=1.08e-36  median d=+2.679e+04  n=213
+    energy_per_m               p=1.08e-36  median d=+2316  n=213
+    spl                        p=0.0017  median d=+0.001878  n=213
+    steps                      p=1.01e-36  median d=-19  n=213
+    alpha_rms                  p=1.08e-36  median d=+6.543  n=213
+  NMPC_we0 vs eadwa_we0.0003  (n_plan=282)
+    SR  (McNemar):  p=4.07e-09  [only NMPC_we0: 33, only eadwa_we0.0003: 1]
+    energy                     p=3.22e-35  median d=+2.708e+04  n=204
+    energy_per_m               p=3.22e-35  median d=+2362  n=204
+    spl                        p=3.25e-06  median d=+0.002685  n=204
+    steps                      p=2.89e-35  median d=-20  n=204
+    alpha_rms                  p=3.22e-35  median d=+6.624  n=204
+  NMPC_we0 vs eadwa_we0.0005  (n_plan=282)
+    SR  (McNemar):  p=1.96e-11  [only NMPC_we0: 41, only eadwa_we0.0005: 1]
+    energy                     p=6.60e-34  median d=+2.739e+04  n=196
+    energy_per_m               p=6.60e-34  median d=+2396  n=196
+    spl                        p=1.42e-10  median d=+0.004781  n=196
+    steps                      p=5.77e-34  median d=-20  n=196
+    alpha_rms                  p=6.60e-34  median d=+6.64  n=196
+  NMPC_we0.05 vs NMPC_we0.1  (n_plan=282)
+    SR  (McNemar):  p=0.0703  [only NMPC_we0.05: 7, only NMPC_we0.1: 1]
+    energy                     p=1.55e-24  median d=+449.9  n=228
+    energy_per_m               p=4.26e-24  median d=+36.63  n=228
+    spl                        p=3.26e-04  median d=-0.000224  n=228
+    steps                      p=7.43e-10  median d=+0  n=228
+    alpha_rms                  p=1.23e-16  median d=+0.03727  n=228
+  NMPC_we0.05 vs eadwa_we0  (n_plan=282)
+    SR  (McNemar):  p=1.94e-05  [only NMPC_we0.05: 23, only eadwa_we0: 2]
+    energy                     p=1.23e-07  median d=+655.5  n=212
+    energy_per_m               p=5.41e-09  median d=+61.91  n=212
+    spl                        p=2.55e-07  median d=+0.002932  n=212
+    steps                      p=2.01e-35  median d=-17  n=212
+    alpha_rms                  p=2.30e-06  median d=+0.04692  n=212
+  NMPC_we0.05 vs eadwa_we0.0003  (n_plan=282)
+    SR  (McNemar):  p=6.94e-08  [only NMPC_we0.05: 32, only eadwa_we0.0003: 2]
+    energy                     p=1.30e-14  median d=+941.7  n=203
+    energy_per_m               p=3.01e-16  median d=+92.96  n=203
+    spl                        p=2.08e-11  median d=+0.005061  n=203
+    steps                      p=4.14e-35  median d=-17  n=203
+    alpha_rms                  p=8.29e-23  median d=+0.1042  n=203
+  NMPC_we0.05 vs eadwa_we0.0005  (n_plan=282)
+    SR  (McNemar):  p=4.11e-10  [only NMPC_we0.05: 40, only eadwa_we0.0005: 2]
+    energy                     p=8.47e-16  median d=+1055  n=195
+    energy_per_m               p=8.08e-18  median d=+98.87  n=195
+    spl                        p=1.77e-16  median d=+0.006758  n=195
+    steps                      p=8.23e-34  median d=-18  n=195
+    alpha_rms                  p=2.72e-26  median d=+0.1326  n=195
+  NMPC_we0.1 vs eadwa_we0  (n_plan=282)
+    SR  (McNemar):  p=0.0026  [only NMPC_we0.1: 19, only eadwa_we0: 4]
+    energy                     p=0.0309  median d=+136.5  n=210
+    energy_per_m               p=0.0041  median d=+28.85  n=210
+    spl                        p=1.00e-08  median d=+0.003969  n=210
+    steps                      p=3.06e-36  median d=-16  n=210
+    alpha_rms                  p=0.1564  median d=+0.01222  n=210
+  NMPC_we0.1 vs eadwa_we0.0003  (n_plan=282)
+    SR  (McNemar):  p=3.03e-06  [only NMPC_we0.1: 26, only eadwa_we0.0003: 2]
+    energy                     p=3.92e-07  median d=+470.9  n=203
+    energy_per_m               p=4.36e-09  median d=+69.2  n=203
+    spl                        p=9.00e-13  median d=+0.005674  n=203
+    steps                      p=4.03e-35  median d=-17  n=203
+    alpha_rms                  p=6.00e-14  median d=+0.06784  n=203
+  NMPC_we0.1 vs eadwa_we0.0005  (n_plan=282)
+    SR  (McNemar):  p=1.94e-08  [only NMPC_we0.1: 34, only eadwa_we0.0005: 2]
+    energy                     p=3.64e-08  median d=+476.3  n=195
+    energy_per_m               p=7.84e-11  median d=+59.94  n=195
+    spl                        p=2.24e-17  median d=+0.007452  n=195
+    steps                      p=8.33e-34  median d=-18  n=195
+    alpha_rms                  p=9.01e-20  median d=+0.101  n=195
+  eadwa_we0 vs eadwa_we0.0003  (n_plan=282)
+    SR  (McNemar):  p=0.0490  [only eadwa_we0: 13, only eadwa_we0.0003: 4]
+    energy                     p=8.30e-24  median d=+323.1  n=201
+    energy_per_m               p=1.72e-26  median d=+30.06  n=201
+    spl                        p=4.28e-15  median d=+0.00134  n=201
+    steps                      p=2.31e-12  median d=-1  n=201
+    alpha_rms                  p=4.04e-22  median d=+0.04269  n=201
+  eadwa_we0 vs eadwa_we0.0005  (n_plan=282)
+    SR  (McNemar):  p=0.0033  [only eadwa_we0: 24, only eadwa_we0.0005: 7]
+    energy                     p=1.52e-22  median d=+439.2  n=190
+    energy_per_m               p=1.89e-25  median d=+43.25  n=190
+    spl                        p=2.99e-19  median d=+0.002999  n=190
+    steps                      p=1.18e-16  median d=-1  n=190
+    alpha_rms                  p=3.84e-26  median d=+0.06415  n=190
+  eadwa_we0.0003 vs eadwa_we0.0005  (n_plan=282)
+    SR  (McNemar):  p=0.0574  [only eadwa_we0.0003: 11, only eadwa_we0.0005: 3]
+    energy                     p=5.44e-11  median d=+199.6  n=194
+    energy_per_m               p=1.32e-12  median d=+18.97  n=194
+    spl                        p=1.45e-19  median d=+0.001508  n=194
+    steps                      p=1.07e-08  median d=-1  n=194
+    alpha_rms                  p=2.13e-14  median d=+0.02267  n=194
+
+  difficulty: MEDIUM
+  NMPC_we0 vs NMPC_we0.05  (n_plan=282)
+    SR  (McNemar):  p=1.0000  [only NMPC_we0: 1, only NMPC_we0.05: 0]
+    energy                     p=4.34e-42  median d=+2.606e+04  n=246
+    energy_per_m               p=4.34e-42  median d=+2390  n=246
+    spl                        p=8.43e-08  median d=-0.000194  n=246
+    steps                      p=1.38e-31  median d=-2  n=246
+    alpha_rms                  p=4.18e-42  median d=+6.844  n=246
+  NMPC_we0 vs NMPC_we0.1  (n_plan=282)
+    SR  (McNemar):  p=0.0078  [only NMPC_we0: 8, only NMPC_we0.1: 0]
+    energy                     p=6.08e-41  median d=+2.629e+04  n=239
+    energy_per_m               p=6.08e-41  median d=+2450  n=239
+    spl                        p=7.45e-09  median d=-0.0001  n=239
+    steps                      p=1.66e-34  median d=-3  n=239
+    alpha_rms                  p=5.85e-41  median d=+6.917  n=239
+  NMPC_we0 vs eadwa_we0  (n_plan=282)
+    SR  (McNemar):  p=9.77e-04  [only NMPC_we0: 11, only eadwa_we0: 0]
+    energy                     p=1.93e-40  median d=+2.587e+04  n=236
+    energy_per_m               p=1.91e-40  median d=+2436  n=236
+    spl                        p=2.49e-07  median d=+0.003102  n=236
+    steps                      p=2.32e-40  median d=-20  n=236
+    alpha_rms                  p=1.84e-40  median d=+6.889  n=236
+  NMPC_we0 vs eadwa_we0.0003  (n_plan=282)
+    SR  (McNemar):  p=2.98e-08  [only NMPC_we0: 26, only eadwa_we0.0003: 0]
+    energy                     p=5.27e-38  median d=+2.613e+04  n=221
+    energy_per_m               p=5.27e-38  median d=+2484  n=221
+    spl                        p=2.59e-13  median d=+0.004138  n=221
+    steps                      p=4.47e-38  median d=-20  n=221
+    alpha_rms                  p=5.20e-38  median d=+6.94  n=221
+  NMPC_we0 vs eadwa_we0.0005  (n_plan=282)
+    SR  (McNemar):  p=9.31e-10  [only NMPC_we0: 31, only eadwa_we0.0005: 0]
+    energy                     p=3.48e-37  median d=+2.617e+04  n=216
+    energy_per_m               p=3.48e-37  median d=+2504  n=216
+    spl                        p=3.29e-16  median d=+0.004885  n=216
+    steps                      p=4.36e-37  median d=-21  n=216
+    alpha_rms                  p=3.43e-37  median d=+6.991  n=216
+  NMPC_we0.05 vs NMPC_we0.1  (n_plan=282)
+    SR  (McNemar):  p=0.0391  [only NMPC_we0.05: 8, only NMPC_we0.1: 1]
+    energy                     p=6.11e-23  median d=+335.6  n=238
+    energy_per_m               p=3.41e-23  median d=+31.59  n=238
+    spl                        p=0.0139  median d=+0  n=238
+    steps                      p=5.58e-18  median d=-1  n=238
+    alpha_rms                  p=1.64e-12  median d=+0.0327  n=238
+  NMPC_we0.05 vs eadwa_we0  (n_plan=282)
+    SR  (McNemar):  p=0.0020  [only NMPC_we0.05: 10, only eadwa_we0: 0]
+    energy                     p=0.0047  median d=+112.4  n=236
+    energy_per_m               p=6.02e-04  median d=+22.31  n=236
+    spl                        p=2.19e-11  median d=+0.004473  n=236
+    steps                      p=1.57e-40  median d=-17  n=236
+    alpha_rms                  p=5.49e-06  median d=+0.04646  n=236
+  NMPC_we0.05 vs eadwa_we0.0003  (n_plan=282)
+    SR  (McNemar):  p=5.96e-08  [only NMPC_we0.05: 25, only eadwa_we0.0003: 0]
+    energy                     p=9.94e-09  median d=+475.5  n=221
+    energy_per_m               p=1.26e-10  median d=+57.79  n=221
+    spl                        p=3.37e-17  median d=+0.005564  n=221
+    steps                      p=4.30e-38  median d=-17  n=221
+    alpha_rms                  p=8.20e-24  median d=+0.09828  n=221
+  NMPC_we0.05 vs eadwa_we0.0005  (n_plan=282)
+    SR  (McNemar):  p=1.86e-09  [only NMPC_we0.05: 30, only eadwa_we0.0005: 0]
+    energy                     p=2.11e-12  median d=+637.9  n=216
+    energy_per_m               p=2.13e-14  median d=+68.76  n=216
+    spl                        p=6.27e-21  median d=+0.006777  n=216
+    steps                      p=2.94e-37  median d=-18  n=216
+    alpha_rms                  p=4.20e-29  median d=+0.1151  n=216
+  NMPC_we0.1 vs eadwa_we0  (n_plan=282)
+    SR  (McNemar):  p=0.6476  [only NMPC_we0.1: 11, only eadwa_we0: 8]
+    energy                     p=0.4764  median d=-167.4  n=228
+    energy_per_m               p=0.9656  median d=-4.244  n=228
+    spl                        p=2.79e-13  median d=+0.004761  n=228
+    steps                      p=1.91e-35  median d=-16  n=228
+    alpha_rms                  p=0.0532  median d=+0.02332  n=228
+  NMPC_we0.1 vs eadwa_we0.0003  (n_plan=282)
+    SR  (McNemar):  p=5.34e-04  [only NMPC_we0.1: 22, only eadwa_we0.0003: 4]
+    energy                     p=0.0187  median d=+171.6  n=217
+    energy_per_m               p=0.0014  median d=+27.44  n=217
+    spl                        p=3.21e-18  median d=+0.006024  n=217
+    steps                      p=3.84e-36  median d=-17  n=217
+    alpha_rms                  p=1.50e-16  median d=+0.07175  n=217
+  NMPC_we0.1 vs eadwa_we0.0005  (n_plan=282)
+    SR  (McNemar):  p=3.40e-05  [only NMPC_we0.1: 27, only eadwa_we0.0005: 4]
+    energy                     p=9.64e-05  median d=+232.3  n=212
+    energy_per_m               p=2.19e-06  median d=+37.08  n=212
+    spl                        p=4.44e-21  median d=+0.006911  n=212
+    steps                      p=2.60e-35  median d=-18  n=212
+    alpha_rms                  p=2.19e-23  median d=+0.08798  n=212
+  eadwa_we0 vs eadwa_we0.0003  (n_plan=282)
+    SR  (McNemar):  p=7.29e-04  [only eadwa_we0: 17, only eadwa_we0.0003: 2]
+    energy                     p=8.54e-25  median d=+310.6  n=219
+    energy_per_m               p=2.43e-25  median d=+29.3  n=219
+    spl                        p=7.27e-13  median d=+0.000813  n=219
+    steps                      p=1.14e-10  median d=-1  n=219
+    alpha_rms                  p=1.95e-23  median d=+0.03374  n=219
+  eadwa_we0 vs eadwa_we0.0005  (n_plan=282)
+    SR  (McNemar):  p=1.91e-06  [only eadwa_we0: 20, only eadwa_we0.0005: 0]
+    energy                     p=1.42e-26  median d=+513.2  n=216
+    energy_per_m               p=6.30e-28  median d=+48.02  n=216
+    spl                        p=1.31e-19  median d=+0.001812  n=216
+    steps                      p=4.59e-18  median d=-1  n=216
+    alpha_rms                  p=9.08e-29  median d=+0.05992  n=216
+  eadwa_we0.0003 vs eadwa_we0.0005  (n_plan=282)
+    SR  (McNemar):  p=0.0625  [only eadwa_we0.0003: 5, only eadwa_we0.0005: 0]
+    energy                     p=4.67e-11  median d=+173.4  n=216
+    energy_per_m               p=4.57e-12  median d=+17.56  n=216
+    spl                        p=3.26e-19  median d=+0.001057  n=216
+    steps                      p=2.98e-09  median d=-0.5  n=216
+    alpha_rms                  p=4.05e-15  median d=+0.02511  n=216
+
+  difficulty: ALL
+  NMPC_we0 vs NMPC_we0.05  (n_plan=855)
+    SR  (McNemar):  p=0.0625  [only NMPC_we0: 5, only NMPC_we0.05: 0]
+    energy                     p=1.61e-126  median d=+2.643e+04  n=763
+    energy_per_m               p=1.61e-126  median d=+2491  n=763
+    spl                        p=1.53e-15  median d=+0  n=763
+    steps                      p=1.91e-100  median d=-3  n=763
+    alpha_rms                  p=1.64e-126  median d=+7.057  n=763
+  NMPC_we0 vs NMPC_we0.1  (n_plan=855)
+    SR  (McNemar):  p=5.72e-06  [only NMPC_we0: 22, only NMPC_we0.1: 1]
+    energy                     p=9.66e-124  median d=+2.682e+04  n=746
+    energy_per_m               p=9.78e-124  median d=+2521  n=746
+    spl                        p=9.39e-17  median d=+0  n=746
+    steps                      p=1.74e-101  median d=-3  n=746
+    alpha_rms                  p=9.62e-124  median d=+7.095  n=746
+  NMPC_we0 vs eadwa_we0  (n_plan=855)
+    SR  (McNemar):  p=1.96e-11  [only NMPC_we0: 41, only eadwa_we0: 1]
+    energy                     p=1.35e-120  median d=+2.665e+04  n=727
+    energy_per_m               p=1.31e-120  median d=+2518  n=727
+    spl                        p=2.25e-18  median d=+0.000885  n=727
+    steps                      p=1.37e-120  median d=-19  n=727
+    alpha_rms                  p=1.16e-120  median d=+7.131  n=727
+  NMPC_we0 vs eadwa_we0.0003  (n_plan=855)
+    SR  (McNemar):  p=6.10e-20  [only NMPC_we0: 70, only eadwa_we0.0003: 1]
+    energy                     p=6.85e-116  median d=+2.684e+04  n=698
+    energy_per_m               p=6.79e-116  median d=+2551  n=698
+    spl                        p=4.24e-29  median d=+0.001953  n=698
+    steps                      p=3.42e-116  median d=-20  n=698
+    alpha_rms                  p=6.15e-116  median d=+7.197  n=698
+  NMPC_we0 vs eadwa_we0.0005  (n_plan=855)
+    SR  (McNemar):  p=1.14e-24  [only NMPC_we0: 86, only eadwa_we0.0005: 1]
+    energy                     p=2.79e-113  median d=+2.717e+04  n=682
+    energy_per_m               p=2.77e-113  median d=+2579  n=682
+    spl                        p=4.25e-39  median d=+0.00333  n=682
+    steps                      p=2.08e-113  median d=-20  n=682
+    alpha_rms                  p=2.51e-113  median d=+7.217  n=682
+  NMPC_we0.05 vs NMPC_we0.1  (n_plan=855)
+    SR  (McNemar):  p=4.02e-04  [only NMPC_we0.05: 18, only NMPC_we0.1: 2]
+    energy                     p=2.54e-57  median d=+263.6  n=745
+    energy_per_m               p=5.57e-57  median d=+25.72  n=745
+    spl                        p=6.16e-04  median d=+0  n=745
+    steps                      p=7.66e-39  median d=+0  n=745
+    alpha_rms                  p=1.93e-32  median d=+0.02831  n=745
+  NMPC_we0.05 vs eadwa_we0  (n_plan=855)
+    SR  (McNemar):  p=3.11e-08  [only NMPC_we0.05: 39, only eadwa_we0: 4]
+    energy                     p=0.0029  median d=+53.34  n=724
+    energy_per_m               p=3.79e-05  median d=+12.12  n=724
+    spl                        p=3.28e-29  median d=+0.001866  n=724
+    steps                      p=6.02e-118  median d=-16  n=724
+    alpha_rms                  p=1.40e-17  median d=+0.04137  n=724
+  NMPC_we0.05 vs eadwa_we0.0003  (n_plan=855)
+    SR  (McNemar):  p=4.62e-16  [only NMPC_we0.05: 68, only eadwa_we0.0003: 4]
+    energy                     p=7.21e-14  median d=+298.1  n=695
+    energy_per_m               p=3.77e-18  median d=+33.88  n=695
+    spl                        p=9.38e-41  median d=+0.003566  n=695
+    steps                      p=1.90e-114  median d=-17  n=695
+    alpha_rms                  p=2.19e-74  median d=+0.09225  n=695
+  NMPC_we0.05 vs eadwa_we0.0005  (n_plan=855)
+    SR  (McNemar):  p=1.58e-20  [only NMPC_we0.05: 84, only eadwa_we0.0005: 4]
+    energy                     p=4.94e-20  median d=+402.9  n=679
+    energy_per_m               p=1.21e-25  median d=+44.32  n=679
+    spl                        p=1.27e-51  median d=+0.00436  n=679
+    steps                      p=8.47e-112  median d=-17  n=679
+    alpha_rms                  p=5.42e-89  median d=+0.1139  n=679
+  NMPC_we0.1 vs eadwa_we0  (n_plan=855)
+    SR  (McNemar):  p=0.0127  [only NMPC_we0.1: 36, only eadwa_we0: 17]
+    energy                     p=0.0158  median d=-191.8  n=711
+    energy_per_m               p=0.2099  median d=-8.773  n=711
+    spl                        p=4.44e-32  median d=+0.001878  n=711
+    steps                      p=1.85e-114  median d=-16  n=711
+    alpha_rms                  p=0.0015  median d=+0.01137  n=711
+  NMPC_we0.1 vs eadwa_we0.0003  (n_plan=855)
+    SR  (McNemar):  p=1.18e-09  [only NMPC_we0.1: 57, only eadwa_we0.0003: 9]
+    energy                     p=0.0219  median d=-0.1422  n=690
+    energy_per_m               p=1.62e-04  median d=+6.011  n=690
+    spl                        p=2.47e-42  median d=+0.003431  n=690
+    steps                      p=1.25e-113  median d=-16  n=690
+    alpha_rms                  p=2.16e-47  median d=+0.06286  n=690
+  NMPC_we0.1 vs eadwa_we0.0005  (n_plan=855)
+    SR  (McNemar):  p=1.38e-13  [only NMPC_we0.1: 73, only eadwa_we0.0005: 9]
+    energy                     p=3.42e-05  median d=+63.99  n=674
+    energy_per_m               p=4.55e-09  median d=+16.42  n=674
+    spl                        p=5.19e-52  median d=+0.004539  n=674
+    steps                      p=5.59e-111  median d=-17  n=674
+    alpha_rms                  p=6.83e-70  median d=+0.08383  n=674
+  eadwa_we0 vs eadwa_we0.0003  (n_plan=855)
+    SR  (McNemar):  p=4.87e-06  [only eadwa_we0: 35, only eadwa_we0.0003: 6]
+    energy                     p=1.19e-65  median d=+259.9  n=693
+    energy_per_m               p=3.04e-69  median d=+25.14  n=693
+    spl                        p=1.17e-27  median d=+0.000105  n=693
+    steps                      p=3.62e-26  median d=+0  n=693
+    alpha_rms                  p=3.36e-79  median d=+0.04118  n=693
+  eadwa_we0 vs eadwa_we0.0005  (n_plan=855)
+    SR  (McNemar):  p=1.36e-09  [only eadwa_we0: 52, only eadwa_we0.0005: 7]
+    energy                     p=1.31e-68  median d=+391.5  n=676
+    energy_per_m               p=2.16e-73  median d=+38.02  n=676
+    spl                        p=2.81e-44  median d=+0.001032  n=676
+    steps                      p=4.78e-46  median d=-1  n=676
+    alpha_rms                  p=1.54e-91  median d=+0.06418  n=676
+  eadwa_we0.0003 vs eadwa_we0.0005  (n_plan=855)
+    SR  (McNemar):  p=8.55e-04  [only eadwa_we0.0003: 19, only eadwa_we0.0005: 3]
+    energy                     p=2.38e-28  median d=+146.2  n=680
+    energy_per_m               p=1.35e-31  median d=+13.87  n=680
+    spl                        p=1.89e-48  median d=+0.000647  n=680
+    steps                      p=1.80e-21  median d=+0  n=680
+    alpha_rms                  p=6.14e-41  median d=+0.02154  n=680
+
+================================================================================

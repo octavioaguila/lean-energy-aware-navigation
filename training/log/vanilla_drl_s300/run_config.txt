@@ -1,0 +1,12 @@
+Run config — 2026-08-28 07:14:48
+mode: normal
+difficulties: ['easy', 'medium', 'hard']
+train_worlds: 9
+val_worlds:   9
+n_envs: 9
+max_ep_steps: 600
+total_steps: 5000000
+energy_weight: 0.0
+step_weight: 1.0
+seed: 300
+git_commit: 8418457

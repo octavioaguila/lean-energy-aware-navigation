@@ -1,0 +1,7 @@
+mujoco==3.3.3
+stable-baselines3[extra]==2.7.1
+gymnasium==1.2.3
+casadi==3.7.2
+numpy==2.2.5
+ompl==1.7.0
+scipy==1.15.3

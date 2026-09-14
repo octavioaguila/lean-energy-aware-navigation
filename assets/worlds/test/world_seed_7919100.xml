@@ -1,0 +1,117 @@
+<mujoco model="Agilex Bunker">
+  <!-- Compiler options -->
+  <compiler angle="radian" meshdir="../../bunker" coordinate="local" autolimits="true"/>
+
+  <!-- Integrator options -->
+  <option timestep="0.01" cone="elliptic" integrator="RK4"/>
+
+  <!-- Visual options -->
+  <visual>
+    <headlight diffuse="0.6 0.6 0.6" ambient="0.1 0.1 0.1" specular="0 0 0"/>
+    <rgba haze="0.15 0.25 0.35 1"/>
+    <global azimuth="120" elevation="-20"/>
+  </visual>
+
+  <default>
+    <default class="agilex_bunker">
+	</default>
+  </default>
+	
+  
+  <!-- Assets and textures definitions -->
+  <asset>
+  
+	<!-- General scene meshes and materials -->
+    <texture type="skybox" builtin="gradient" rgb1="0.3 0.5 0.7" rgb2="0 0 0" width="512" height="3072"/>
+    <texture type="2d" name="groundplane" builtin="checker" mark="edge" rgb1="0.2 0.3 0.4" rgb2="0.1 0.2 0.3" markrgb="0.8 0.8 0.8" width="300" height="300"/>
+    <material name="groundplane" texture="groundplane" texuniform="true" texrepeat="5 5" reflectance="0.2"/>
+
+    <include file="../../bunker/bunker_assests.xml"/>
+
+  </asset>
+
+  <!-- Worldbody and bodies definitions -->
+  <worldbody>
+    <light name="spotlight" mode="targetbodycom" target="mobile_base" pos="0 0 100" castshadow="false"/>
+    <geom conaffinity="1" condim="3" name="floor" size="0 0 0.05" type="plane" material="groundplane"/>
+
+    <include file="../../bunker/bunker_body.xml"/>
+
+    <body name="mid_goal_marker" pos="-2 -4 0.1" mocap="true">
+      <site name="mid_goal_sphere" type="sphere" size="0.1" rgba="1.0 1.0 0.0 1"/>
+    </body>
+
+    <body name="final_goal_marker" pos="-2 -4 0.1" mocap="true">
+      <site name="final_goal_sphere" type="sphere" size="0.1" rgba="1.0 0.0 0.0 1"/>
+    </body>
+
+  
+    <!-- Generated Obstacles (Seed: 7919100, Count: 21) -->
+    <body name="obstacle_0" pos="9.0991 -3.2708 0.4166" euler="0 0 2.659765">
+      <geom type="box" size="0.2658 0.2987 0.4166" rgba="0.6 0.2 0 1" contype="1" conaffinity="1"/>
+    </body>
+    <body name="obstacle_1" pos="2.5636 0.3965 0.2339" euler="0 0 3.791492">
+      <geom type="box" size="0.2669 0.3061 0.2339" rgba="0.6 0.2 0 1" contype="1" conaffinity="1"/>
+    </body>
+    <body name="obstacle_2" pos="3.7754 6.4319 0.4845" euler="0 0 1.538155">
+      <geom type="box" size="0.5438 0.2962 0.4845" rgba="0.6 0.2 0 1" contype="1" conaffinity="1"/>
+    </body>
+    <body name="obstacle_3" pos="8.3701 2.5167 0.5755" euler="0 0 0.884244">
+      <geom type="box" size="0.3440 0.1915 0.5755" rgba="0.6 0.2 0 1" contype="1" conaffinity="1"/>
+    </body>
+    <body name="obstacle_4" pos="5.5493 5.9133 0.5818">
+      <geom type="cylinder" size="0.5431 0.5818" rgba="0 0.6 0.2 1" contype="1" conaffinity="1"/>
+    </body>
+    <body name="obstacle_5" pos="-1.4120 -3.5452 0.4619" euler="0 0 3.709782">
+      <geom type="box" size="0.3867 0.2030 0.4619" rgba="0.6 0.2 0 1" contype="1" conaffinity="1"/>
+    </body>
+    <body name="obstacle_6" pos="2.2067 8.2284 0.3650" euler="0 0 5.858710">
+      <geom type="box" size="0.1736 0.3927 0.3650" rgba="0.6 0.2 0 1" contype="1" conaffinity="1"/>
+    </body>
+    <body name="obstacle_7" pos="5.6175 0.1626 0.5948" euler="0 0 1.758477">
+      <geom type="box" size="0.3540 0.5062 0.5948" rgba="0.6 0.2 0 1" contype="1" conaffinity="1"/>
+    </body>
+    <body name="obstacle_8" pos="2.5725 -2.8426 0.3924">
+      <geom type="cylinder" size="0.2538 0.3924" rgba="0 0.6 0.2 1" contype="1" conaffinity="1"/>
+    </body>
+    <body name="obstacle_9" pos="0.0603 0.6889 0.2782">
+      <geom type="cylinder" size="0.5994 0.2782" rgba="0 0.6 0.2 1" contype="1" conaffinity="1"/>
+    </body>
+    <body name="obstacle_10" pos="-2.8196 -0.0502 0.2621" euler="0 0 3.241538">
+      <geom type="box" size="0.3868 0.4503 0.2621" rgba="0.6 0.2 0 1" contype="1" conaffinity="1"/>
+    </body>
+    <body name="obstacle_11" pos="9.4026 8.2887 0.2577" euler="0 0 2.133433">
+      <geom type="box" size="0.4050 0.4536 0.2577" rgba="0.6 0.2 0 1" contype="1" conaffinity="1"/>
+    </body>
+    <body name="obstacle_12" pos="3.9783 -0.6971 0.3779">
+      <geom type="cylinder" size="0.2617 0.3779" rgba="0 0.6 0.2 1" contype="1" conaffinity="1"/>
+    </body>
+    <body name="obstacle_13" pos="7.2795 4.0294 0.4026" euler="0 0 0.297707">
+      <geom type="box" size="0.2325 0.5034 0.4026" rgba="0.6 0.2 0 1" contype="1" conaffinity="1"/>
+    </body>
+    <body name="obstacle_14" pos="2.0856 4.7946 0.5116" euler="0 0 1.044406">
+      <geom type="box" size="0.2133 0.5435 0.5116" rgba="0.6 0.2 0 1" contype="1" conaffinity="1"/>
+    </body>
+    <body name="obstacle_15" pos="8.7561 3.9092 0.2842">
+      <geom type="cylinder" size="0.3399 0.2842" rgba="0 0.6 0.2 1" contype="1" conaffinity="1"/>
+    </body>
+    <body name="obstacle_16" pos="9.4616 -1.8630 0.5161" euler="0 0 4.850336">
+      <geom type="box" size="0.1714 0.2170 0.5161" rgba="0.6 0.2 0 1" contype="1" conaffinity="1"/>
+    </body>
+    <body name="obstacle_17" pos="-2.2633 5.5840 0.2935" euler="0 0 1.459529">
+      <geom type="box" size="0.4430 0.1652 0.2935" rgba="0.6 0.2 0 1" contype="1" conaffinity="1"/>
+    </body>
+    <body name="obstacle_18" pos="3.7993 4.1526 0.5103">
+      <geom type="cylinder" size="0.3419 0.5103" rgba="0 0.6 0.2 1" contype="1" conaffinity="1"/>
+    </body>
+    <body name="obstacle_19" pos="9.3896 0.3820 0.5579" euler="0 0 5.043588">
+      <geom type="box" size="0.1637 0.2770 0.5579" rgba="0.6 0.2 0 1" contype="1" conaffinity="1"/>
+    </body>
+    <body name="obstacle_20" pos="0.8945 2.6637 0.5271">
+      <geom type="cylinder" size="0.4922 0.5271" rgba="0 0.6 0.2 1" contype="1" conaffinity="1"/>
+    </body>
+</worldbody>
+  
+  <include file="../../bunker/bunker_actuators.xml"/>
+
+</mujoco>
