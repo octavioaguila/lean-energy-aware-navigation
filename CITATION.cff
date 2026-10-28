@@ -1,0 +1,38 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the paper below."
+title: "LEAN: Local Energy-Aware Navigation for Skid-Steer Robots"
+authors:
+  - family-names: "Aguila-Rigordi"
+    given-names: "Octavio"
+  - family-names: "Torres-Torriti"
+    given-names: "Miguel"
+  - family-names: "Toro"
+    given-names: "Rodrigo"
+  - family-names: "Auat Cheein"
+    given-names: "Fernando"
+  - family-names: "Araya"
+    given-names: "Mauricio"
+repository-code: "https://github.com/octavioaguila/lean-energy-aware-navigation"
+license: MIT
+preferred-citation:
+  type: article
+  title: "LEAN: Local Energy-Aware Navigation for Skid-Steer Robots Via Deep Reinforcement Learning"
+  authors:
+    - family-names: "Aguila-Rigordi"
+      given-names: "Octavio"
+    - family-names: "Torres-Torriti"
+      given-names: "Miguel"
+    - family-names: "Toro"
+      given-names: "Rodrigo"
+    - family-names: "Auat Cheein"
+      given-names: "Fernando"
+    - family-names: "Araya"
+      given-names: "Mauricio"
+  journal: "IEEE Robotics and Automation Letters"
+  publisher:
+    name: "IEEE"
+  year: 2026
+  start: 1
+  end: 8
+  doi: "10.1109/LRA.2026.3746160"
+  url: "https://ieeexplore.ieee.org/abstract/document/11743899"
